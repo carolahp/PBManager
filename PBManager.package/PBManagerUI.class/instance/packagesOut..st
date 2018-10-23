@@ -4,5 +4,11 @@ packagesOut: anArray
 	packagesListOut := self newList.
 	packagesListOut
 		items: anArray asSortedCollection sorted;
-		displayBlock: [:item | item ].
+		displayBlock: [:item | item ];
+		doubleClickAction: [:event | 
+			| item index |
+			index := event selectedRowIndex.
+			item := (packagesListOut listItems) at: index.
+			packagesListOut items: ((packagesListOut listItems) removeIndex: index).
+			packagesListIn items: ((packagesListIn listItems) add: item; yourself)].
 		
