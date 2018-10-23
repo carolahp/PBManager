@@ -1,0 +1,14 @@
+{
+	"commentStamp" : "",
+	"super" : "ComposablePresenter",
+	"category" : "PBManager",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"packagesListOut",
+		"packagesListIn"
+	],
+	"name" : "PBManagerUI",
+	"type" : "normal"
+}

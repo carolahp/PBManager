@@ -1,0 +1,15 @@
+{
+	"commentStamp" : "",
+	"super" : "Object",
+	"category" : "PBManager",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"tonelFullRepository",
+		"repositoryPath",
+		"packages"
+	],
+	"name" : "PBManagerRepository",
+	"type" : "normal"
+}

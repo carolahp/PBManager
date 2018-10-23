@@ -1,0 +1,3 @@
+accessing
+repositoryPathString
+	^ repositoryPath asString
