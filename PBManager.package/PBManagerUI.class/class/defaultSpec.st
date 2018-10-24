@@ -5,8 +5,10 @@ defaultSpec
 		newRow: 
 			[ :row | 
 				row 
-					newColumn: [ :c | c add: #packagesInList.	];
-					newColumn: [ :d | d add: #packagesOutList. ].
+					newColumn: [ :c | c add: #labelIn  height: self toolbarHeight . 
+											c add: #packagesInList.	];
+					newColumn: [ :c | c add: #labelOut height: self toolbarHeight . 
+										   c add: #packagesOutList. ].
 			];
 		yourself
 	

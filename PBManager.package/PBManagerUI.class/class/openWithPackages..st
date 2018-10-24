@@ -1,8 +1,4 @@
 instance creation
-openWithPackages: aDictionary
+openWithPackages: anArray
 	<example>
-	| inst |
-	inst := self new
-				packagesIn:  (aDictionary select: [:val | val ]) keys;
-				packagesOut: (aDictionary reject: [:val | val ]) keys.
-	^ inst  openWithSpec.
+	^ self new packages: anArray; openWithSpec.

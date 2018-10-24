@@ -1,11 +1,9 @@
 initialization
 initialize 
-	| dic pcks |
+	| packArr packages |
 	super initialize.
 	
-	pcks := (PBManagerRepository withPath: './pharo70-sources/src') packages.
+	packages := (PBManagerRepository withPath: './pharo70-sources/src') packages.
 	"create dictionary indicating which packages belong to the kernel"
-	dic := Dictionary newFromKeys: pcks andValues: (Array new: (pcks size)).
-	dic keysDo: [ :k | (k indexOf: $s) > 0  ifTrue: [dic at: k put: true]
-														ifFalse: [dic at: k put: false] ].
-	PBManagerUI openWithPackages: dic.
+	packArr := packages collect: [ :k | { k . (k indexOf: $z) > 0 }].
+	PBManagerUI openWithPackages: packArr.
