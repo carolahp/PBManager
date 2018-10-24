@@ -8,7 +8,9 @@
 	"instvars" : [
 		"packagesListOut",
 		"packagesListIn",
-		"packages"
+		"packages",
+		"labelIn",
+		"labelOut"
 	],
 	"name" : "PBManagerUI",
 	"type" : "normal"

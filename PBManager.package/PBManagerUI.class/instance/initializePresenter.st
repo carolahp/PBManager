@@ -11,4 +11,4 @@ initializePresenter
 		| item | 
 		item := (packagesListIn listItems at: (event selectedRowIndex)) .
 		self togglePackage: item.
-		].
+		]. 
