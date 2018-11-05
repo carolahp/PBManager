@@ -1,9 +1,9 @@
 initialization
 initialize 
-	| packages |
+	| repo |
 	super initialize.
 	
-	packages := (PBManagerRepository withPath: '/tmp/pharo-src') packages.
+	repo := PBManagerRepository withPath: '/tmp/pharo-src'.
 	"packages := { {'a' . true}. {'b' . true}.{'c' . true}.{'d' . false}.{'e' . false}. }."
 	"create dictionary indicating which packages belong to the kernel"
-	PBManagerUI openWithPackages: packages.
+	PBManagerUI openWithRepository: repo.

@@ -1,5 +1,5 @@
 initialization
-packages: aDictionary
+pbmRepository: aPBManagerRepository
 	"receives anArray containing the names of all the packages"
-	packages := aDictionary.
+	pbmRepository := aPBManagerRepository.
 	self updatePackagesLists 
