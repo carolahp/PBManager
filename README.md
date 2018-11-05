@@ -1,2 +1,2 @@
 # PBManager
-Pharo Bootstrap UI manager
+Pharo Bootstrap manager with UI
