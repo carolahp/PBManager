@@ -1,5 +1,5 @@
 initialization
-packages: anArray
+packages: aDictionary
 	"receives anArray containing the names of all the packages"
-	packages := anArray.
+	packages := aDictionary.
 	self updatePackagesLists 
