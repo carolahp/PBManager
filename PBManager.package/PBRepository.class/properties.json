@@ -11,7 +11,8 @@
 		"ui",
 		"packages",
 		"packagesListFull",
-		"packagesListBS"
+		"packagesListBS",
+		"ringEnvironment"
 	],
 	"name" : "PBRepository",
 	"type" : "normal"

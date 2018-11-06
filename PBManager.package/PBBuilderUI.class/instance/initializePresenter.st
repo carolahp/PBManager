@@ -2,7 +2,7 @@ initialization
 initializePresenter
 	packagesListOut doubleClickAction: 
 	[:event | 
-		| item | 
+		| item |
 		item := (packagesListOut listItems at: (event selectedRowIndex)) .
 		self togglePackage: item.
 		].
