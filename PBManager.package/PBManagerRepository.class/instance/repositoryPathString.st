@@ -1,3 +1,0 @@
-accessing
-repositoryPathString
-	^ repositoryPath asString

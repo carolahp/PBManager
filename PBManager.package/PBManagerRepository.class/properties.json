@@ -1,5 +1,5 @@
 {
-	"commentStamp" : "",
+	"commentStamp" : "CaroHernandez 11/6/2018 11:52",
 	"super" : "Object",
 	"category" : "PBManager",
 	"classinstvars" : [ ],
@@ -8,7 +8,10 @@
 	"instvars" : [
 		"tonelFullRepository",
 		"repositoryPath",
-		"packages"
+		"packages",
+		"ui",
+		"packagesListFull",
+		"packagesListBS"
 	],
 	"name" : "PBManagerRepository",
 	"type" : "normal"
