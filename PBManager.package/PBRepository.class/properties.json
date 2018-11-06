@@ -8,11 +8,11 @@
 	"instvars" : [
 		"tonelFullRepository",
 		"repositoryPath",
-		"packages",
 		"ui",
+		"packages",
 		"packagesListFull",
 		"packagesListBS"
 	],
-	"name" : "PBManagerRepository",
+	"name" : "PBRepository",
 	"type" : "normal"
 }

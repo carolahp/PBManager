@@ -1,0 +1,9 @@
+temporary
+AdditionalPackages
+	^{
+	'ReflectionMirrors-Primitives'.
+	'InitializePackagesCommandLineHandler'.
+	'Kernel-Chronology-Extras'.
+	'Math-Operations-Extensions'.
+	'Debugging-Core'.
+	}

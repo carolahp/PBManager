@@ -6,6 +6,6 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [ ],
-	"name" : "PBManager",
+	"name" : "PBBuilder",
 	"type" : "normal"
 }

@@ -6,4 +6,4 @@ setParameters: aDictionary
 	packagesListFull := aDictionary at: #packagesListFull ifAbsent: [ nil ].
 	packagesListBS   := aDictionary at: #packagesListBS   ifAbsent: [ #() ].
 	
-	showUI ifTrue: [ self ui: (PBManagerUI withRepository: self) ]
+	showUI ifTrue: [ self ui: (PBBuilderUI withRepository: self) ]

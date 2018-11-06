@@ -12,6 +12,6 @@
 		"labelIn",
 		"labelOut"
 	],
-	"name" : "PBManagerUI",
+	"name" : "PBBuilderUI",
 	"type" : "normal"
 }

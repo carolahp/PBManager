@@ -1,0 +1,12 @@
+temporary
+CompilerGroup
+	^{
+	'AST-Core'.
+	'Collections-Arithmetic'.
+	'Collections-Atomic'.
+	'CodeExport'.
+	'CodeImport'.
+	'CodeImportCommandLineHandlers'.
+	'Jobs'.
+	'OpalCompiler-Core'
+	}
