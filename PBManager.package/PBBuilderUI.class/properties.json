@@ -10,7 +10,10 @@
 		"packagesListIn",
 		"pbmRepository",
 		"labelIn",
-		"labelOut"
+		"labelOut",
+		"buttonBootstrap",
+		"buttonAddAll",
+		"buttonRemoveAll"
 	],
 	"name" : "PBBuilderUI",
 	"type" : "normal"
