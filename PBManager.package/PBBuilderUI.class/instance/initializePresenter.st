@@ -25,5 +25,5 @@ initializePresenter
 	 ].
 	buttonBootstrap whenActionPerformedDo:  
 	[ :event |
-		self bootstrapBlock value: pbmRepository packagesListBootstrap
+		self bootstrapBlock value: pbmRepository packagesNamesInBootstrap
 	 ].

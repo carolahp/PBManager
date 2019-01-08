@@ -7,11 +7,11 @@ newWithUI
 	
 	pbRepo := PBRepository new 
 					repositoryPath: path ;
-					packagesListBootstrap: packagesListBootstrap ;
-					packagesListFull: packagesListFull.
+					packagesDefaultListBootstrap: packagesListBootstrap ;
+					packagesDefaultListFull: packagesListFull.
 	pbUI := PBBuilderUI new 
 					pbmRepository: pbRepo;
-					bootstrapBlock: [ :packages | Transcript show: packages  ] .
+					bootstrapBlock: [ :packages | PBCustomPackagesBootstrap for32Bits bootstrapWithEnvironment: pbRepo ringEnvironmentForBootstrap ] .
 	^ self new 
 		pbRepository: pbRepo;
 		pbBuilderUI: pbUI

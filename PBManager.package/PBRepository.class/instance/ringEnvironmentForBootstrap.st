@@ -1,0 +1,3 @@
+API
+ringEnvironmentForBootstrap
+	^ self tonelFullRepository asRingEnvironmentWith: self packagesNamesInBootstrap

@@ -19,8 +19,8 @@ packages
 								newFromKeys: packagesInRepo "packages names"
 								andValues: (packagesInRepo
 												    collect: [ :rPackage | 
-														self packagesListBootstrap anySatisfy: [ :bsPackage | bsPackage = rPackage ] ]). "set true only the packages considered in the BS list"
+														self packagesDefaultListBootstrap anySatisfy: [ :bsPackage | bsPackage = rPackage ] ]). "set true only the packages considered in the BS list"
 			"initialize my ring environment for the selected full packages"
-			ringEnvironment := self tonelFullRepository asRingEnvironmentWith: self packagesListFull
+			self checkDependecies ifTrue: [ringEnvironment := self tonelFullRepository asRingEnvironmentWith: self packagesDefaultListFull]
 			].
 	^ packages.
