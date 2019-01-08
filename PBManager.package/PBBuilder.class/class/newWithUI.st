@@ -6,10 +6,12 @@ newWithUI
 	packagesListFull := PBBuilder kernelGroup.
 	
 	pbRepo := PBRepository new 
-							repositoryPath: path ;
-							packagesListBootstrap: packagesListBootstrap ;
-							packagesListFull: packagesListFull.
-	pbUI := PBBuilderUI withRepository: pbRepo.
+					repositoryPath: path ;
+					packagesListBootstrap: packagesListBootstrap ;
+					packagesListFull: packagesListFull.
+	pbUI := PBBuilderUI new 
+					pbmRepository: pbRepo;
+					bootstrapBlock: [ :packages | Transcript show: packages  ] .
 	^ self new 
 		pbRepository: pbRepo;
 		pbBuilderUI: pbUI

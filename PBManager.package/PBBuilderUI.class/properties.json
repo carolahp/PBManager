@@ -13,7 +13,8 @@
 		"labelOut",
 		"buttonBootstrap",
 		"buttonAddAll",
-		"buttonRemoveAll"
+		"buttonRemoveAll",
+		"bootstrapBlock"
 	],
 	"name" : "PBBuilderUI",
 	"type" : "normal"
