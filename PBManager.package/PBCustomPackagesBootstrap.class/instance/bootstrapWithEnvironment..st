@@ -5,6 +5,7 @@ bootstrapWithEnvironment: aRingEnvironment
 	PBStepStartedSignal log: 'Starting  Process.'.
 
 	ringEnvironment := aRingEnvironment.
+	self ensureBaselineOfPharoBootstrap.
 	[self createImage ] on:AssertionFailure do: [ :e | e resume ].
 	self initializeImage.
 		
