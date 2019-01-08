@@ -13,3 +13,6 @@ initializeWidgets
 	buttonAddAll := self newButton.
 	buttonAddAll label: 'add all'.
 	
+	buttonEditSourceCode := self newButton.
+	buttonEditSourceCode label: 'Edit sources'
+	

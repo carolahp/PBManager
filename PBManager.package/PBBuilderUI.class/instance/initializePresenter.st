@@ -23,7 +23,13 @@ initializePresenter
 	[ :event |
 		(packagesListIn listItems) collect: [ :item | self togglePackage: item ].
 	 ].
+
 	buttonBootstrap whenActionPerformedDo:  
 	[ :event |
-		self bootstrapBlock value: pbmRepository packagesNamesInBootstrap
+		self blockBootstrap value: pbmRepository packagesNamesInBootstrap
+	 ].
+
+	buttonEditSourceCode whenActionPerformedDo:  
+	[ :event |
+		self blockEditSourceCode value
 	 ].
