@@ -6,12 +6,15 @@ newWithUI
 	packagesListFull := PBBuilder kernelGroup.
 	
 	pbRepo := PBRepository new 
-					repositoryPath: path ;
-					packagesDefaultListBootstrap: packagesListBootstrap ;
-					packagesDefaultListFull: packagesListFull.
+					repositoryPath: path
+					;packagesDefaultListBootstrap: packagesListBootstrap
+					;packagesDefaultListFull: packagesListFull
+					";checkDependecies: true"
+					.
 	pbUI := PBBuilderUI new 
-					pbmRepository: pbRepo;
-					bootstrapBlock: [ :packages | PBCustomPackagesBootstrap for32Bits bootstrapWithEnvironment: pbRepo ringEnvironmentForBootstrap ] .
+					pbmRepository: pbRepo
+					;bootstrapBlock: [ :packages | PBCustomPackagesBootstrap for32Bits
+															bootstrapWithEnvironment: pbRepo ringEnvironmentForBootstrap ] .
 	^ self new 
 		pbRepository: pbRepo;
 		pbBuilderUI: pbUI
