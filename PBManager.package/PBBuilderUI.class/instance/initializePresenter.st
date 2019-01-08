@@ -23,3 +23,7 @@ initializePresenter
 	[ :event |
 		(packagesListIn listItems) collect: [ :item | self togglePackage: item ].
 	 ].
+	buttonBootstrap whenActionPerformedDo:  
+	[ :event |
+		.
+	 ].

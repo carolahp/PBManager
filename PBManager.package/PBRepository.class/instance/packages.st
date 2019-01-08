@@ -1,5 +1,6 @@
 accessing
 packages
+"contains all the packages considered in the lists In and Out for the bootstrap UI"
 	| allPackagesInRepo packagesInRepo |
 	packages 
 		ifNil: [ 
@@ -18,7 +19,7 @@ packages
 								newFromKeys: packagesInRepo "packages names"
 								andValues: (packagesInRepo
 												    collect: [ :rPackage | 
-														self packagesListBS anySatisfy: [ :bsPackage | bsPackage = rPackage ] ]). "set true only the packages considered in the BS list"
+														self packagesListBootstrap anySatisfy: [ :bsPackage | bsPackage = rPackage ] ]). "set true only the packages considered in the BS list"
 			"initialize my ring environment for the selected full packages"
 			ringEnvironment := self tonelFullRepository asRingEnvironmentWith: self packagesListFull
 			].

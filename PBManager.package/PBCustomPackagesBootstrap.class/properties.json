@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "PBBootstrap",
+	"category" : "PBManager",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "PBCustomPackagesBootstrap",
+	"type" : "normal"
+}

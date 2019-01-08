@@ -1,12 +1,13 @@
 {
-	"commentStamp" : "CaroHernandez 1/8/2019 11:12",
+	"commentStamp" : "CaroHernandez 1/8/2019 13:02",
 	"super" : "Object",
 	"category" : "PBManager",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"pbRepository"
+		"pbRepository",
+		"pbBuilderUI"
 	],
 	"name" : "PBBuilder",
 	"type" : "normal"

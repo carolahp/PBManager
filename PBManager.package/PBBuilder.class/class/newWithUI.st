@@ -1,13 +1,15 @@
 example methods
 newWithUI
-	| path showUI packagesListBootstrap packagesListFull |
+	| path packagesListBootstrap packagesListFull pbRepo pbUI |
 	path := (Smalltalk os environment at: 'BOOTSTRAP_REPOSITORY'),'/src'.
-	showUI := true.
 	packagesListBootstrap := nil ."PBBuilder kernelGroup."
 	packagesListFull := PBBuilder kernelGroup.
 	
-	^ self new pbRepository: (PBRepository new 
-										repositoryPath: path ;
-										packagesListBootstrap: packagesListBootstrap ;
-										packagesListFull: packagesListFull;
-										showUI: showUI ).
+	pbRepo := PBRepository new 
+							repositoryPath: path ;
+							packagesListBootstrap: packagesListBootstrap ;
+							packagesListFull: packagesListFull.
+	pbUI := PBBuilderUI withRepository: pbRepo.
+	^ self new 
+		pbRepository: pbRepo;
+		pbBuilderUI: pbUI
