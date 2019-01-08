@@ -1,4 +1,4 @@
 accessing - private
 packagesListBS
-	packagesListBS ifNil: [ ^#() ].
-	^packagesListBS
+	packagesListBootstrap ifNil: [ ^#() ].
+	^packagesListBootstrap

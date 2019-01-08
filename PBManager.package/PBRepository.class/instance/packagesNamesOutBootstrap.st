@@ -1,3 +1,3 @@
 accessing
-packagesNamesOutBS
+packagesNamesOutBootstrap
 	^ (self packages reject: [ :x | x ] ) keys

@@ -8,6 +8,6 @@ newWithUI
 	
 	^ self new pbRepository: (PBRepository new 
 										repositoryPath: path ;
-										packagesListBS: packagesListBootstrap ;
+										packagesListBootstrap: packagesListBootstrap ;
 										packagesListFull: packagesListFull;
 										showUI: showUI ).
