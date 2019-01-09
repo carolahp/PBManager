@@ -16,6 +16,7 @@ newWithUI
 					;blockBootstrap: [ 
 						[ PBBootstrapManual for32Bits
 								environment: pbRepo ringEnvironmentForBootstrap;
+								setDefaultOptions;
 								bootstrap  
 						] on: Warning do:  [ :e | e resume ] ]
 					;blockShowSourceCode: [
