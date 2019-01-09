@@ -5,7 +5,9 @@
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
-	"instvars" : [ ],
-	"name" : "PBCustomPackagesBootstrap",
+	"instvars" : [
+		"builder"
+	],
+	"name" : "PBBootstrapManual",
 	"type" : "normal"
 }
