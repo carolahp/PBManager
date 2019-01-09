@@ -15,8 +15,8 @@
 		"buttonAddAll",
 		"buttonRemoveAll",
 		"bootstrapBlock",
-		"blockEditSourceCode",
-		"buttonEditSourceCode"
+		"blockShowSourceCode",
+		"buttonShowSourceCode"
 	],
 	"name" : "PBBuilderUI",
 	"type" : "normal"

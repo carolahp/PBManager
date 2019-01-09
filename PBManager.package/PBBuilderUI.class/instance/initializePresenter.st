@@ -29,7 +29,7 @@ initializePresenter
 		self blockBootstrap value: pbmRepository packagesNamesInBootstrap
 	 ].
 
-	buttonEditSourceCode whenActionPerformedDo:  
+	buttonShowSourceCode whenActionPerformedDo:  
 	[ :event |
-		self blockEditSourceCode value
+		self blockShowSourceCode value
 	 ].
