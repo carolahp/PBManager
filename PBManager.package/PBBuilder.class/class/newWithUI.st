@@ -13,8 +13,13 @@ newWithUI
 					.
 	pbUI := PBBuilderUI new 
 					pbmRepository: pbRepo
-					;blockBootstrap: [ :packages | [ PBCustomPackagesBootstrap for32Bits
-															bootstrapWithEnvironment: pbRepo ringEnvironmentForBootstrap ] on: Warning do:  [ :e | e resume ] ] .
+					;blockBootstrap: [ 
+						[ PBCustomPackagesBootstrap for32Bits
+								bootstrapWithEnvironment: pbRepo ringEnvironmentForBootstrap 
+						] on: Warning do:  [ :e | e resume ] ]
+					;blockShowSourceCode: [
+					 	pbRepo ringEnvironmentForBootstrap browse 
+						 ] .
 	^ self new 
 		pbRepository: pbRepo;
 		pbBuilderUI: pbUI

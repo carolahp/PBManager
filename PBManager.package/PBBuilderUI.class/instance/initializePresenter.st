@@ -26,7 +26,7 @@ initializePresenter
 
 	buttonBootstrap whenActionPerformedDo:  
 	[ :event |
-		self blockBootstrap value: pbmRepository packagesNamesInBootstrap
+		self blockBootstrap value
 	 ].
 
 	buttonShowSourceCode whenActionPerformedDo:  
