@@ -1,3 +1,3 @@
 accessing
-bootstrapedImage
+bootstrapedImageInMemory
 	^ builder espellBackend simulator objectMemory

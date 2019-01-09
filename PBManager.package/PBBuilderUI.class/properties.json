@@ -16,7 +16,9 @@
 		"buttonRemoveAll",
 		"bootstrapBlock",
 		"blockShowSourceCode",
-		"buttonShowSourceCode"
+		"buttonShowSourceCode",
+		"blockInspectImage",
+		"buttonInspectImage"
 	],
 	"name" : "PBBuilderUI",
 	"type" : "normal"

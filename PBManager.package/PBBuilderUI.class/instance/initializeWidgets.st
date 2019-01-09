@@ -14,5 +14,8 @@ initializeWidgets
 	buttonAddAll label: 'add all'.
 	
 	buttonShowSourceCode := self newButton.
-	buttonShowSourceCode label: 'Show sources'
+	buttonShowSourceCode label: 'Show sources'.
+	
+	buttonInspectImage := self newButton.
+	buttonInspectImage label: 'Inspect generated Image'
 	

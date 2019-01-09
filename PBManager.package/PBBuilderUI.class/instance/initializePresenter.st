@@ -33,3 +33,8 @@ initializePresenter
 	[ :event |
 		self blockShowSourceCode value
 	 ].
+
+	buttonInspectImage whenActionPerformedDo:  
+	[ :event |
+		self blockInspectImage value
+	 ].

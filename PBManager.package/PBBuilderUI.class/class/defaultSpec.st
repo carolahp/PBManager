@@ -13,11 +13,17 @@ defaultSpec
 						newColumn: [ :c | c add: #labelIn height: self toolbarHeight .
 												c add: #buttonRemoveAll  height: self toolbarHeight .  
 											   c add: #packagesInList.				 
-												c newRow: [
+												c 
+													newRow: [
 													 :row1 |
 															row1 
 																newColumn: [ :c1 | c1 add: #buttonShowSourceCode ];
 																newColumn: [ :c1 | c1 add: #buttonBootstrap ]
+													] height: self toolbarHeight;
+													newRow: [
+													 :row1 |
+															row1 
+																newColumn: [ :c1 | c1 add: #buttonInspectImage ]
 													] height: self toolbarHeight
 						]
 					]  
