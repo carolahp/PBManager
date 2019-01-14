@@ -3,7 +3,7 @@ newWithUI
 	| path packagesListBootstrap packagesListFull pbRepo pbUI pbBManual |
 	path := (Smalltalk os environment at: 'BOOTSTRAP_REPOSITORY'),'/src'.
 	packagesListBootstrap := nil ."PBBuilder kernelGroup."
-	packagesListFull := PBBuilder AllPackagesForHermes.
+	packagesListFull := PBBuilder AllPackagesForHermes, PBBuilder TestsForBootstrap .
 	pbBManual := PBBootstrapManual for32Bits.
 	pbRepo := PBRepository new 
 					repositoryPath: path
