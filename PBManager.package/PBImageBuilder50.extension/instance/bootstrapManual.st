@@ -8,5 +8,5 @@ bootstrapManual
 		createClasses;
 		installMethods;
 		installExtensionMethods;
-		initializeImageManual
+		initializeImageManualDoing: '1+2'
 		"writeImage"
