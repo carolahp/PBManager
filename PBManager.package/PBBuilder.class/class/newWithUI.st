@@ -1,8 +1,7 @@
 example methods
 newWithUI
-	| path packagesListBootstrap packagesListFull pbRepo pbUI pbBManual basePath |
-	basePath := Smalltalk os environment at: 'BOOTSTRAP_REPOSITORY' ifAbsent: ['../../..'].
-	path := basePath,'/src'.
+	| path packagesListBootstrap packagesListFull pbRepo pbUI pbBManual |
+	path := (Smalltalk os environment at: 'BOOTSTRAP_REPOSITORY'),'/src'.
 	packagesListBootstrap := nil ."PBBuilder kernelGroup."
 	packagesListFull := PBBuilder AllPackagesForHermes, PBBuilder TestsForBootstrap .
 	pbBManual := PBBootstrapManual for32Bits.
