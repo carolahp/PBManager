@@ -1,0 +1,14 @@
+{
+	"commentStamp" : "",
+	"super" : "RGEnvironment",
+	"category" : "Seed-Basic-LanguageDefinition",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"definitionLoader",
+		"behaviorDefinitionMap"
+	],
+	"name" : "LanguageRuntimeDefinition",
+	"type" : "normal"
+}

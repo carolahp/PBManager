@@ -1,3 +1,3 @@
 API
 ringEnvironmentForBootstrap
-	^ self tonelFullRepository asRingEnvironmentWith: self packagesNamesInBootstrap
+	^ self tonelFullRepository asRingEnvironmentWith: self packagesNamesInBootstrap languageDefinition: self languageDefinition

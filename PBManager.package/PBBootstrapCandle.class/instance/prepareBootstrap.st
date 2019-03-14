@@ -1,2 +1,3 @@
 bootstrapping
 prepareBootstrap
+	ringEnvironment fixProtoObjectClassSuperclass 

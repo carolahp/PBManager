@@ -1,3 +1,3 @@
 bootstrapping
-environment: aRingEnvironment
-	ringEnvironment := aRingEnvironment 
+environment: aPharoCandleLanguageDefinition
+	ringEnvironment := aPharoCandleLanguageDefinition

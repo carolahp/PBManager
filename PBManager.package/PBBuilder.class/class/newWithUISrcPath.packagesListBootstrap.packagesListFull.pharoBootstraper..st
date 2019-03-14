@@ -16,12 +16,12 @@ newWithUISrcPath: aPath packagesListBootstrap: aPackagesListBootstrap packagesLi
 					pbmRepository: pbRepo
 					;blockBootstrap: [ 
 						[ pbBManual
-								environment: pbRepo ringEnvironmentForBootstrap;
+								environment: ( pbRepo ringEnvironmentForBootstrapWithLanguageDefinition: pbBManual languageDefinitionClass );
 								setDefaultOptions;
 								bootstrap  
 						] on: Warning do:  [ :e | e resume ] ]
 					;blockShowSourceCode: [
-					 	pbRepo ringEnvironmentForBootstrap browse 
+					 	(pbRepo ringEnvironmentForBootstrapWithLanguageDefinition: pbBManual languageDefinitionClass) browse 
 						 ]
 					;blockInspectImage: [ 
 						pbBManual bootstrapedImageInMemory inspect

@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "LanguageRuntimeDefinition",
+	"category" : "Seed-PharoCandle",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "PharoCandleDefinition",
+	"type" : "normal"
+}

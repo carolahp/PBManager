@@ -1,0 +1,5 @@
+API
+ringEnvironmentForBootstrapWithLanguageDefinition: aLanguageDefinitionClass
+	^ self tonelFullRepository 
+		asRingEnvironmentWith: self packagesNamesInBootstrap 
+		languageDefinition: aLanguageDefinitionClass
