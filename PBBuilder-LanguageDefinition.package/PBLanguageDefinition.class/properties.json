@@ -1,0 +1,14 @@
+{
+	"commentStamp" : "",
+	"super" : "RGEnvironment",
+	"category" : "PBBuilder-LanguageDefinition",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"definitionLoader",
+		"behaviorDefinitionMap"
+	],
+	"name" : "PBLanguageDefinition",
+	"type" : "normal"
+}
