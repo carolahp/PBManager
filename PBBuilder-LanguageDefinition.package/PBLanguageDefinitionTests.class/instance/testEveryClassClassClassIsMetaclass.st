@@ -1,4 +1,4 @@
-tests
+metamodel
 testEveryClassClassClassIsMetaclass
 
 	| results metaclass |

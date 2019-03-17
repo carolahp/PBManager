@@ -1,3 +1,4 @@
 bootstrapping
 prepareBootstrap
-	ringEnvironment fixProtoObjectClassSuperclass 
+	self setDefaultOptions .
+	ringEnvironment := PBLanguageDefinitionPharoCandle default.

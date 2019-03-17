@@ -1,6 +1,8 @@
 as yet unclassified
 classRoles
 	^{
+		#ProcessorScheduler -> #PCProcessorScheduler.
+		#Context -> #PCContext.
 		#Class -> #PCClass.
 		#Metaclass -> #PCMetaclass.
 		#Array -> #PCArray.

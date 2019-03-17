@@ -1,4 +1,4 @@
-tests
+metamodel
 testEveryInheritanceChainEndsUpInObject
 
 	| results first |

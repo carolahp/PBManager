@@ -1,4 +1,4 @@
-tests
+metamodel
 testObjectInheritsFromNil
 	| results |
 	" We assume that the only class that inherits from nil is Object "

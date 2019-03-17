@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "PBSpurClassLoader",
+	"category" : "PBManager",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "PBSpurClassLoaderCandle",
+	"type" : "normal"
+}

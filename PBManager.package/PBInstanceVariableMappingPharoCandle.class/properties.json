@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "PBInstanceVariableMapping",
+	"category" : "PBManager",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "PBInstanceVariableMappingPharoCandle",
+	"type" : "normal"
+}

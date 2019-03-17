@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "PBImageBuilderSpur5032bit",
+	"category" : "PBManager",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "PBImageBuilderCandle",
+	"type" : "normal"
+}
