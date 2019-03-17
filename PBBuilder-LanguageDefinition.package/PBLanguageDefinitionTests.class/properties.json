@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "",
+	"super" : "TestCase",
+	"category" : "PBBuilder-LanguageDefinition",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"language"
+	],
+	"name" : "PBLanguageDefinitionTests",
+	"type" : "normal"
+}
