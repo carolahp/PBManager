@@ -1,6 +1,7 @@
 as yet unclassified
 classRoles
 	^{
+		#ProtoObject -> #PCObject.
 		#ProcessorScheduler -> #PCProcessorScheduler.
 		#Context -> #PCContext.
 		#Class -> #PCClass.

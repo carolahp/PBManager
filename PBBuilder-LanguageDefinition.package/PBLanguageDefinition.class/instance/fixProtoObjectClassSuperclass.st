@@ -1,4 +1,7 @@
 class roles
 fixProtoObjectClassSuperclass
-
-	"do nothing for now"
+	| object objectClass |
+	object := (self classWithRol: #ProtoObject).
+	objectClass := self classNamed: (object name, ' class').
+	objectClass superclass: object.
+	
