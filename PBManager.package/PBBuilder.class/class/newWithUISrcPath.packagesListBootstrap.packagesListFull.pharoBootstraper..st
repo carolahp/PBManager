@@ -21,7 +21,8 @@ newWithUISrcPath: aPath packagesListBootstrap: aPackagesListBootstrap packagesLi
 								bootstrap  
 						] on: Warning do:  [ :e | e resume ] ]
 					;blockShowSourceCode: [
-					 	(pbRepo ringEnvironmentForBootstrapWithLanguageDefinition: pbBManual languageDefinitionClass) browse 
+					 	(pbRepo ringEnvironmentForBootstrapWithLanguageDefinition: pbBManual languageDefinitionClass)
+											tonelFileReference: path asFileReference; browse 
 						 ]
 					;blockInspectImage: [ 
 						pbBManual bootstrapedImageInMemory inspect

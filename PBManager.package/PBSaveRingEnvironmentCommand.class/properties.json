@@ -1,0 +1,14 @@
+{
+	"commentStamp" : "",
+	"super" : "CmdCommand",
+	"category" : "PBManager-UI",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"languageDefinition",
+		"tonelFileReference"
+	],
+	"name" : "PBSaveRingEnvironmentCommand",
+	"type" : "normal"
+}
