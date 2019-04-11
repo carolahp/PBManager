@@ -3,10 +3,10 @@ bootstrap
 
 	self
 		initializeBootstrapEnvironment;
-		createVMStubs";
+		createVMStubs;
 		flushNewSpace;
 		createInitialObjects;
 		createClasses;
 		installMethods;
 		installExtensionMethods;
-		initializeImage"
+		initializeImage

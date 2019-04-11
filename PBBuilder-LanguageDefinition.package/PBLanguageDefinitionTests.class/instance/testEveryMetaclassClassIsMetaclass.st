@@ -3,7 +3,7 @@ testEveryMetaclassClassIsMetaclass
 
 	| results metaclass |
 	" We get all the metacclasses except 'Metaclass' "
-	metaclass := language classWithRol: #Metaclass.
+	metaclass := language classWithRole: #Metaclass.
 	results := language allClasses reject: [ :c | c == metaclass or: [ c isMetaclass not ] ].
 	" Get the metaclass for each metaclass "
 	results := results collect: [ :c | c metaclass ].

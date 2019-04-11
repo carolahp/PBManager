@@ -7,7 +7,8 @@
 	"classvars" : [ ],
 	"instvars" : [
 		"definitionLoader",
-		"behaviorDefinitionMap"
+		"behaviorDefinitionMap",
+		"tonelFileReference"
 	],
 	"name" : "PBLanguageDefinition",
 	"type" : "normal"

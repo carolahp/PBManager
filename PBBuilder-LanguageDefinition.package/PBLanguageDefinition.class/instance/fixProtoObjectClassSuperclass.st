@@ -1,7 +1,8 @@
 class roles
 fixProtoObjectClassSuperclass
-	| object objectClass |
-	object := (self classWithRol: #ProtoObject).
+	| object objectClass class |
+	object := self classWithRole: #ProtoObject.
 	objectClass := self classNamed: (object name, ' class').
-	objectClass superclass: object.
+	class := self classWithRole: #Class.
+	objectClass superclass: class.
 	

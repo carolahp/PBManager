@@ -22,16 +22,14 @@ createVMStubs
 	objectSpace falseObject setClass: (self createStubForClassNamed: #PCFalse).
 	objectSpace trueObject setClass: (self createStubForClassNamed: #PCTrue).
 	
-	
 	objectSpace backend smallIntegerClass: (self createStubForClassNamed: #PCSmallInteger).
 	objectSpace backend characterClass: (self createStubForClassNamed: #PCCharacter).
-	"objectSpace backend byteSymbolClass: (self createStubForClassNamed: #PCByteSymbol)."
-	"objectSpace backend byteStringClass: (self createStubForClassNamed: #PCByteString)."
+	objectSpace backend byteSymbolClass: (self createStubForClassNamed: #PCSymbol).
+	objectSpace backend byteStringClass: (self createStubForClassNamed: #PCString).
 	objectSpace backend byteArrayClass: (self createStubForClassNamed: #PCByteArray).
 	objectSpace backend associationClass: (self createStubForClassNamed: #PCAssociation).
-	self halt.
 	objectSpace backend arrayClass: (self createStubForClassNamed: #PCArray).
-	objectSpace backend symbolTableClass: (self createStubForClassNamed: #PCSymbol).
+	objectSpace backend symbolTableClass: objectSpace backend byteSymbolClass.
 	objectSpace backend largeNegativeIntegerClass: (self createStubForClassNamed: #PCLargeNegativeInteger).
 	objectSpace backend largePositiveIntegerClass: (self createStubForClassNamed: #PCLargePositiveInteger).
 	objectSpace backend methodClass: (self createStubForClassNamed: #PCCompiledMethod).
@@ -51,5 +49,4 @@ createVMStubs
 	objectSpace backend processorAssociation: (self classNamed: #PCAssociation) mirror basicNew.
 	objectSpace backend processorAssociation
 		instanceVariableAtIndex: 2 put: (self createStubForClassNamed: #PCProcessorScheduler) basicNew.
-	self halt.
 	objectSpace backend specialSelectors: ((self classNamed: #PCArray) mirror basicNew: 64)

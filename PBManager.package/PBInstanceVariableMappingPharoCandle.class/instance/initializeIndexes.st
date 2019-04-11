@@ -3,7 +3,7 @@ initializeIndexes
 	| pcClass pcContext pcProcess pcProcessorScheduler pcDictionary |
 	 
 	" Class "
-	pcClass := (environment classWithRol: #Class) name.
+	pcClass := (environment classWithRole: #Class) name.
 	classNameIndex := self lookup: #name in: pcClass.
 	classMethodDictionaryIndex := self lookup: #methodDict in: pcClass.
 	classSuperclassIndex := self lookup: #superclass in: pcClass.
@@ -15,7 +15,7 @@ initializeIndexes
 	"classSharedPoolsIndex := self lookup: #sharedPools in: #Class."
 	
 	" Context "
-	pcContext := (environment classWithRol: #Context) name.	
+	pcContext := (environment classWithRole: #Context) name.	
 	contextPcIndex := self lookup: #pc in: pcContext.
 	contextSenderIndex := self lookup: #sender in: pcContext.
 	contextStackpIndex := self lookup: #stackp in: pcContext.
@@ -24,7 +24,7 @@ initializeIndexes
 	"contextClosureOrNilIndex := self lookup: #closureOrNil in: pcContext."
 		
 	" Process "
-	pcProcess := (environment classWithRol: #Process) name.
+	pcProcess := (environment classWithRole: #Process) name.
 	processContextIndex := self lookup: #suspendedContext in: pcProcess.
 	processPriorityIndex := self lookup: #priority in: pcProcess.
 	processPriorityListIndex := self lookup: #myList in: pcProcess.
@@ -35,9 +35,9 @@ initializeIndexes
 	"smalltalkImageGlobalsIndex := self lookup: #globals in: #SmalltalkImage."
 	
 	" ProcessorScheduler "
-	pcProcessorScheduler := (environment classWithRol: #ProcessorScheduler) name.
+	pcProcessorScheduler := (environment classWithRole: #ProcessorScheduler) name.
 	processSchedulerActiveProcessIndex := self lookup: #activeProcess in: pcProcessorScheduler.
 	
 	" Dictionary "
-	pcDictionary := (environment classWithRol: #Dictionary) name.
+	pcDictionary := (environment classWithRole: #Dictionary) name.
 	dictionaryArrayIndex := self lookup: #array in: pcDictionary.

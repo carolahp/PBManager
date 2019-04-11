@@ -27,4 +27,5 @@ classRoles
 		#LargePositiveInteger -> #PCLargePositiveInteger.
 		#LargeNegativeInteger -> #PCLargeNegativeInteger.
 		#Dictionary -> #PCDictionary.
+		#ClassVariable -> #PCAssociation.
 	} asDictionary
