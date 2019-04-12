@@ -1,7 +1,7 @@
 example methods
 newWithUI
 	| path packagesListBootstrap packagesListFull |
-	path := self bootstrapRepositoryPath ,'/src'.
+	path := self bootstrapRepositoryPath asFileReference / 'src'.
 	
 	packagesListBootstrap := nil ."PBBuilder kernelGroup."
 	packagesListFull := PBBuilder AllPackagesForHermes, PBBuilder TestsForBootstrap .

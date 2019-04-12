@@ -1,7 +1,7 @@
 example methods
 newWithUICandle
 	| path packagesListBootstrap packagesListFull |
-	path := self bootstrapRepositoryPath ,'/srcPharoCandle'.
+	path := self bootstrapRepositoryPath asFileReference  / 'srcPharoCandle'.
 	
 	packagesListBootstrap := nil .
 	packagesListFull := nil .
