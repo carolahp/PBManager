@@ -1,6 +1,6 @@
 initialization
 initializeIndexes
-	| pcClass pcContext pcProcess pcProcessorScheduler pcDictionary |
+	| pcClass pcContext pcProcess pcProcessorScheduler pcDictionary pcSmalltalk |
 	 
 	" Class "
 	pcClass := (environment classWithRole: #Class) name.
@@ -20,8 +20,8 @@ initializeIndexes
 	contextSenderIndex := self lookup: #sender in: pcContext.
 	contextStackpIndex := self lookup: #stackp in: pcContext.
 	contextMethodIndex := self lookup: #method in: pcContext.
-	"contextReceiverIndex := self lookup: #receiver in: #Context."
-	"contextClosureOrNilIndex := self lookup: #closureOrNil in: pcContext."
+	contextReceiverIndex := self lookup: #receiver in: pcContext.
+	contextClosureOrNilIndex := self lookup: #closureOrNil in: pcContext.
 		
 	" Process "
 	pcProcess := (environment classWithRole: #Process) name.
@@ -32,8 +32,9 @@ initializeIndexes
 	"processNameIndex := self lookup: #name in: #Process."
 	
 	" SmalltalkImage "
-	"smalltalkImageGlobalsIndex := self lookup: #globals in: #SmalltalkImage."
-	
+	"pcSmalltalk := (environment classWithRole: #Smalltalk) name.
+	smalltalkImageGlobalsIndex := self lookup: #globals in: pcSmalltalk.
+	"
 	" ProcessorScheduler "
 	pcProcessorScheduler := (environment classWithRole: #ProcessorScheduler) name.
 	processSchedulerActiveProcessIndex := self lookup: #activeProcess in: pcProcessorScheduler.

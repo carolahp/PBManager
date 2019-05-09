@@ -33,10 +33,10 @@ createVMStubs
 	objectSpace backend largeNegativeIntegerClass: (self createStubForClassNamed: #PCLargeNegativeInteger).
 	objectSpace backend largePositiveIntegerClass: (self createStubForClassNamed: #PCLargePositiveInteger).
 	objectSpace backend methodClass: (self createStubForClassNamed: #PCCompiledMethod).
-	"objectSpace backend floatClass: (self createStubForClassNamed: #PCBoxedFloat64)."
-	objectSpace backend contextClass: (self createStubForClassNamed: #PCContext).
+	objectSpace backend floatClass: (self createStubForClassNamed: #PCFloat).
+	objectSpace backend contextClass: (self createStubForClassNamed: #PCMethodContext).
 	objectSpace backend processClass: (self createStubForClassNamed: #PCProcess).
-	"objectSpace backend blockClass: (self createStubForClassNamed: #PCBlockClosure)."
+	objectSpace backend blockClass: (self createStubForClassNamed: #PCBlock).
 	"objectSpace backend fullBlockClass: (self createStubForClassNamed: #PCFullBlockClosure)."
 	objectSpace backend messageClass: (self createStubForClassNamed: #PCMessage).
 	objectSpace backend semaphoreClass: (self createStubForClassNamed: #PCSemaphore).

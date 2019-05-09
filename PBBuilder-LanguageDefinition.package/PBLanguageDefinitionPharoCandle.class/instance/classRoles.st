@@ -3,7 +3,7 @@ classRoles
 	^{
 		#ProtoObject -> #PCObject.
 		#ProcessorScheduler -> #PCProcessorScheduler.
-		#Context -> #PCContext.
+		#Context -> #PCMethodContext.
 		#Class -> #PCClass.
 		#Metaclass -> #PCMetaclass.
 		#Array -> #PCArray.
@@ -28,4 +28,6 @@ classRoles
 		#LargeNegativeInteger -> #PCLargeNegativeInteger.
 		#Dictionary -> #PCDictionary.
 		#ClassVariable -> #PCAssociation.
-	} asDictionary
+		#ClassInstaller -> #PCClassBuilder.
+		#Smalltalk -> #PCSmalltalk
+		} asDictionary

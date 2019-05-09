@@ -1,3 +1,5 @@
 initialization
 title
-	^ 'Pharo Bootstrap Manager'
+	| repPath |
+	repPath := pbmRepository repositoryPath path.
+	^ repPath at: (repPath size)  
