@@ -21,4 +21,4 @@ asRingEnvironmentWith: packageNames languageDefinition: aClass
 	
 	aRG2Environment behaviorsDo: [ :beh |
 		beh superclass == beh ifTrue: [ beh superclass: nil. ] ].			
-	^ aRG2Environment
+	^ aRG2Environment fixProtoObjectClassSuperclass; yourself 
