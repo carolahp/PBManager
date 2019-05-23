@@ -1,7 +1,7 @@
 accessing
 originRepository
 	| repositoryReference |
-	repositoryReference := self repositoryLocation / 'srcPharoCandle'.
+	repositoryReference := self repositoryLocation asFileReference.
 
 	^ originRepository
 		ifNil: [ originRepository := TonelRepository new
