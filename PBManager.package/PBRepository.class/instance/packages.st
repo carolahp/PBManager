@@ -1,7 +1,7 @@
 accessing
 packages
 "contains all the packages considered in the lists In and Out for the bootstrap UI"
-	| allPackagesInRepo packagesInRepo |
+	| allPackagesInRepo packagesInRepo classesList |
 	packages 
 		ifNil: [ 
 			"get all packages from the Tonel repository"
@@ -21,6 +21,12 @@ packages
 												    collect: [ :rPackage | 
 														self packagesDefaultListBootstrap anySatisfy: [ :bsPackage | bsPackage = rPackage ] ]). "set true only the packages considered in the BS list"
 			"initialize my ring environment for the selected full packages"
-			self checkDependecies ifTrue: [ringEnvironment := self tonelFullRepository asRingEnvironmentWith: self packagesDefaultListFull]
+			ringEnvironment := self tonelFullRepository asRingEnvironmentWith: self packagesNames.
+			"initialize my classes dictionary"	
+			classesList := ((ringEnvironment packages select: [ :pkg | packages keys includes: pkg name asSymbol ]) gather: #definedBehaviors ).
+			self halt.
+			classes := Dictionary 
+							newFromKeys: classesList
+							andValues: (classesList collect: [:class | packages at: class package name ]).
 			].
 	^ packages.

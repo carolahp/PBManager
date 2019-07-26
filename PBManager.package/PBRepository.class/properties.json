@@ -13,7 +13,8 @@
 		"packagesListFull",
 		"packagesListBootstrap",
 		"ringEnvironment",
-		"checkDependencies"
+		"checkDependencies",
+		"classes"
 	],
 	"name" : "PBRepository",
 	"type" : "normal"

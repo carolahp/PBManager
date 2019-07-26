@@ -8,6 +8,8 @@
 	"instvars" : [
 		"packagesListOut",
 		"packagesListIn",
+		"classesListOut",
+		"classesListIn",
 		"pbmRepository",
 		"labelIn",
 		"labelOut",
