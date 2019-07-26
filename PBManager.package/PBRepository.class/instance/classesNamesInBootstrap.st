@@ -1,3 +1,3 @@
 accessing
 classesNamesInBootstrap
-	^ ((classes select: [ :c | c ]) keys) collect: #name
+	^ (classes select: [ :c | c ]) keys 

@@ -13,7 +13,21 @@ initializePresenter
 		item := (packagesListIn listItems at: (event selectedRowIndex)) .
 		self togglePackage: item.
 		]. 
-
+	
+	classesListIn doubleClickAction: 
+	[:event | 
+		| item | 
+		item := (classesListIn listItems at: (event selectedRowIndex)) .
+		self toggleClass: item.
+		]. 
+	
+	classesListOut doubleClickAction: 
+	[:event | 
+		| item | 
+		item := (classesListOut listItems at: (event selectedRowIndex)) .
+		self toggleClass: item.
+		]. 
+	
 	buttonAddAll whenActionPerformedDo:  
 	[ :event |
 		(packagesListOut listItems) collect: [ :item | self togglePackage: item ].

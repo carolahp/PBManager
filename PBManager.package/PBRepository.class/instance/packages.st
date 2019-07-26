@@ -24,9 +24,9 @@ packages
 			ringEnvironment := self tonelFullRepository asRingEnvironmentWith: self packagesNames.
 			"initialize my classes dictionary"	
 			classesList := ((ringEnvironment packages select: [ :pkg | packages keys includes: pkg name asSymbol ]) gather: #definedBehaviors ).
-			self halt.
+			
 			classes := Dictionary 
-							newFromKeys: classesList
+							newFromKeys: (classesList collect: #name)
 							andValues: (classesList collect: [:class | packages at: class package name ]).
 			].
 	^ packages.

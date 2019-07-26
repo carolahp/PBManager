@@ -1,3 +1,3 @@
 accessing
 classesNamesOutBootstrap
-	^ ((classes reject: [ :c | c ]) keys) collect: #name
+	^ (classes reject: [ :c | c ]) keys
