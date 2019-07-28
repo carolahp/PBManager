@@ -1,3 +1,4 @@
 API
 ringEnvironmentForBootstrapWithLanguageDefinition: aLanguageDefinitionClass
-	^ self ringEnvironmentForBootstrapWithLanguageDefinition: aLanguageDefinitionClass packages: self packagesNamesInBootstrap 
+	
+	^ self ringEnvironmentForBootstrapWithLanguageDefinition: aLanguageDefinitionClass packages: self packagesNamesInBootstrap classes: self classesNamesInBootstrap 
