@@ -2,6 +2,9 @@ initialization
 initializeWidgets
 	packagesListOut := self newList displayBlock: [:item | item ].
 	packagesListIn  := self newList displayBlock: [:item | item ].
+	classesListOut := self newList displayBlock: [:item | item ].
+	classesListIn  := self newList displayBlock: [:item | item ].
+	
 	labelIn  := self newLabel.
 	labelOut := self newLabel.
 	buttonBootstrap := self newButton.
