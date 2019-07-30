@@ -24,8 +24,8 @@ newWithUISrcPath: aPath packagesListBootstrap: aPackagesListBootstrap packagesLi
 					 	(pbRepo ringEnvironmentForBootstrapWithLanguageDefinition: pbBManual languageDefinitionClass)
 											tonelFileReference: path asFileReference; browse 
 						 ]
-					;blockInspectImage: [ 
-						pbBManual bootstrapedImageInMemory inspect
+					;blockInspectImage: [ :imagePath |
+						(SpurImage onFile: imagePath) inspect
 						 ]
 					;initialize .
 	^ self new

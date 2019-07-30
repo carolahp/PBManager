@@ -40,7 +40,8 @@ initializePresenter
 
 	buttonBootstrap whenActionPerformedDo:  
 	[ :event |
-		self blockBootstrap value
+		self blockBootstrap value.
+		self updateImagesLists
 	 ].
 
 	buttonShowSourceCode whenActionPerformedDo:  
@@ -50,5 +51,5 @@ initializePresenter
 
 	buttonInspectImage whenActionPerformedDo:  
 	[ :event |
-		self blockInspectImage value
+		self blockInspectImage value: self imagesList selectedItem asFileReference
 	 ].

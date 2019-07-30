@@ -23,5 +23,5 @@ initializeWidgets
 	buttonShowSourceCode label: 'Show sources'.
 	
 	buttonInspectImage := self newButton.
-	buttonInspectImage label: 'Inspect generated Image'
+	buttonInspectImage label: 'Inspect image'
 	
