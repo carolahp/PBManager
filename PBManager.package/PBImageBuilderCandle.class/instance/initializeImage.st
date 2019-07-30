@@ -1,6 +1,6 @@
 running
 initializeImage
-	| process pcSystem association |
+	| process pcSystem association imageFileName |
 
 	self flag: 'should migrate this method'.
 	self checkpoint: 'image_initialization'.
@@ -52,5 +52,7 @@ initializeImage
 	self compactImage.
 	self reportSizes.
 
-	self writeSnapshot: ('bootstrap.image' asFileReference) fullName ofTransformedImage: espellBackend simulator objectMemory headerFlags: 0 screenSize: 0.
+	imageFileName := 'bootstrap-',Date today yyyymmdd, 'T',Time now hhmmss24,'.image'.
+	
+	self writeSnapshot: (imageFileName asFileReference) fullName ofTransformedImage: espellBackend simulator objectMemory headerFlags: 0 screenSize: 0.
 		PBStepFinishedSignal log: 'Installed extension methods'.

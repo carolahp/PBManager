@@ -1,6 +1,5 @@
 accessing
 createImage
-	| builder |
 
 	builder := PBImageBuilderCandle new.
 	builder versionInfo: versionInfo.
