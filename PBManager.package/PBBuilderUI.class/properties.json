@@ -20,7 +20,8 @@
 		"blockShowSourceCode",
 		"buttonShowSourceCode",
 		"blockInspectImage",
-		"buttonInspectImage"
+		"buttonInspectImage",
+		"imagesList"
 	],
 	"name" : "PBBuilderUI",
 	"type" : "normal"

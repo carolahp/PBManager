@@ -1,6 +1,6 @@
 example methods
 newWithUISrcPath: aPath packagesListBootstrap: aPackagesListBootstrap packagesListFull: aPackagesListFull pharoBootstraper: pharoBootstraper
-	| path packagesListBootstrap packagesListFull pbRepo pbUI pbBManual rgEnvFull |
+	| path packagesListBootstrap packagesListFull pbRepo pbUI pbBManual |
 	path := aPath.
 	self assert: path asFileReference exists description: 'Repository path does not exist: ''', path, ''''.
 	packagesListBootstrap := aPackagesListBootstrap  ."PBBuilder kernelGroup."
@@ -12,7 +12,7 @@ newWithUISrcPath: aPath packagesListBootstrap: aPackagesListBootstrap packagesLi
 					;packagesDefaultListFull: packagesListFull
 					;checkDependecies: true "set as true only to generate the default ring environment"
 					;yourself.
-	pbUI := PBBuilderUI new 
+	pbUI := PBBuilderUI basicNew 
 					pbmRepository: pbRepo
 					;blockBootstrap: [ 
 						[ pbBManual
@@ -26,8 +26,10 @@ newWithUISrcPath: aPath packagesListBootstrap: aPackagesListBootstrap packagesLi
 						 ]
 					;blockInspectImage: [ 
 						pbBManual bootstrapedImageInMemory inspect
-						 ] .
-	^ self new 
+						 ]
+					;initialize .
+	^ self new
 		pbBootstrapManual: pbBManual;
 		pbRepository: pbRepo;
-		pbBuilderUI: pbUI
+		pbBuilderUI: pbUI;
+		yourself

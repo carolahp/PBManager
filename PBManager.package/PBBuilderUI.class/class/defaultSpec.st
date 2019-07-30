@@ -27,8 +27,10 @@ defaultSpec
 															row1 
 																newColumn: [ :c1 | c1 add: #buttonInspectImage ]
 													] height: self toolbarHeight
-						]
+						];
+						newColumn: [ :c | c add: #imagesList.]
 					]  
 				];
+			
 		yourself
 	
