@@ -31,7 +31,9 @@ initializeImage
 	self bootstrapInterpreter
 		evaluateCode: 'PCSystem specialObjectsArray: newArray.'
 		withTemps: { 'newArray' -> objectSpace backend specialObjectsArray }.
-	
+
+	self halt.
+
 	self followForwardingPointers.
 
 "	espellBackend simulator stackPages pages do: [ :page | espellBackend simulator stackPages freeStackPage: page ].
@@ -46,7 +48,7 @@ initializeImage
 				((e signalerContext sender method selector == #assert:)
 					and: [ e signalerContext sender sender method selector = #mapStackPages ])
 						ifTrue: [ e resume ]
-						ifFalse: [ e pass ]] .
+						ifFalse: [ e pass ]].
 
 	self freeForwarders.
 	self compactImage.

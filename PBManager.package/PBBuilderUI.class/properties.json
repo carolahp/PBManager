@@ -21,7 +21,9 @@
 		"buttonShowSourceCode",
 		"blockInspectImage",
 		"buttonInspectImage",
-		"imagesList"
+		"imagesList",
+		"buttonExecInGenImage",
+		"blockExecInGenImage"
 	],
 	"name" : "PBBuilderUI",
 	"type" : "normal"

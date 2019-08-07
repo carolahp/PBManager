@@ -23,5 +23,8 @@ initializeWidgets
 	buttonShowSourceCode label: 'Show sources'.
 	
 	buttonInspectImage := self newButton.
-	buttonInspectImage label: 'Inspect image'
+	buttonInspectImage label: 'Inspect image'.
+	
+	buttonExecInGenImage := self newButton.
+	buttonExecInGenImage label: 'Execute in bootstrapped img'
 	

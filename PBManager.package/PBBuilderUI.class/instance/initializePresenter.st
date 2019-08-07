@@ -53,3 +53,8 @@ initializePresenter
 	[ :event |
 		self blockInspectImage value: self imagesList selectedItem asFileReference
 	 ].
+	
+	buttonExecInGenImage whenActionPerformedDo:  
+	[ :event |
+		self blockExecInGenImage value
+	 ].

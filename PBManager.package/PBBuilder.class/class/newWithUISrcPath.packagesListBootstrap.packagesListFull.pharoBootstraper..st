@@ -24,9 +24,8 @@ newWithUISrcPath: aPath packagesListBootstrap: aPackagesListBootstrap packagesLi
 					 	(pbRepo ringEnvironmentForBootstrapWithLanguageDefinition: pbBManual languageDefinitionClass)
 											tonelFileReference: path asFileReference; browse 
 						 ]
-					;blockInspectImage: [ :imagePath |
-						(SpurImage onFile: imagePath) inspect
-						 ]
+					;blockInspectImage: [ :imagePath | (SpurImage onFile: imagePath) inspect ]
+					;blockExecInGenImage: [ [pbBManual builder espellBackend "bootstrapedImageInMemory "inspect] on: Error do: [ self error: 'You must bootstrap a new image first!' ] ]
 					;initialize .
 	^ self new
 		pbBootstrapManual: pbBManual;
