@@ -26,5 +26,8 @@ initializeWidgets
 	buttonInspectImage label: 'Inspect image'.
 	
 	buttonExecInGenImage := self newButton.
-	buttonExecInGenImage label: 'Execute in bootstrapped img'
+	buttonExecInGenImage label: 'Execute in img'.
+	
+	buttonWriteGenImage := self newButton.
+	buttonWriteGenImage label: 'Write img'
 	

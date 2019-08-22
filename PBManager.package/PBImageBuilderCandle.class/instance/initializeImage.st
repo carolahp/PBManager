@@ -1,6 +1,6 @@
 running
 initializeImage
-	| process pcSystem association imageFileName |
+	| process association |
 
 	self flag: 'should migrate this method'.
 	self checkpoint: 'image_initialization'.
@@ -31,30 +31,10 @@ initializeImage
 	self bootstrapInterpreter
 		evaluateCode: 'PCSystem specialObjectsArray: newArray.'
 		withTemps: { 'newArray' -> objectSpace backend specialObjectsArray }.
-
-	self halt.
-
+	
 	self followForwardingPointers.
 
 "	espellBackend simulator stackPages pages do: [ :page | espellBackend simulator stackPages freeStackPage: page ].
 	espellBackend simulator freeUntracedStackPages.	
 "
-[[ espellBackend objectMemory flushNewSpace. ]
-		on: Halt
-		do: [:ex|
-			(#(#fullGC #compactImage  #doScavenge:) includes: ex signalerContext sender selector)
-				ifTrue: [ex resume]
-				ifFalse: [ex pass]]] on: AssertionFailure do: [ :e |
-				((e signalerContext sender method selector == #assert:)
-					and: [ e signalerContext sender sender method selector = #mapStackPages ])
-						ifTrue: [ e resume ]
-						ifFalse: [ e pass ]].
-
-	self freeForwarders.
-	self compactImage.
-	self reportSizes.
-
-	imageFileName := 'bootstrap-',Date today yyyymmdd, 'T',Time now hhmmss24,'.image'.
-	
-	self writeSnapshot: (imageFileName asFileReference) fullName ofTransformedImage: espellBackend simulator objectMemory headerFlags: 0 screenSize: 0.
-		PBStepFinishedSignal log: 'Installed extension methods'.
+	PBStepFinishedSignal log: 'image initialized'.

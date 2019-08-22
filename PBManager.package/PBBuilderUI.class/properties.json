@@ -23,7 +23,9 @@
 		"buttonInspectImage",
 		"imagesList",
 		"buttonExecInGenImage",
-		"blockExecInGenImage"
+		"blockExecInGenImage",
+		"buttonWriteGenImage",
+		"blockWriteGenImage"
 	],
 	"name" : "PBBuilderUI",
 	"type" : "normal"

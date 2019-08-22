@@ -58,3 +58,8 @@ initializePresenter
 	[ :event |
 		self blockExecInGenImage value
 	 ].
+
+	buttonWriteGenImage whenActionPerformedDo:  
+	[ :event |
+		self blockWriteGenImage value
+	 ]

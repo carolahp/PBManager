@@ -25,19 +25,21 @@ defaultSpec
 													newRow: [
 														 :row1 |
 																row1 
-																	newColumn: [ :c1 | c1 add: #buttonExecInGenImage ]
+																	newColumn: [ :c1 | c1 add: #buttonExecInGenImage ];
+																	newColumn: [ :c1 | c1 add: #buttonWriteGenImage ]
 														] height: self toolbarHeight
 													
 						];
 						newColumn: [ :c | 
-							c newRow: [ :row1 |
+							c 
+								newRow: [ :row1 |
 												row1 
 													newColumn: [ :c1 | c1 add: #imagesList ]
 								];
-							newRow: [ :row2 | 
+								newRow: [ :row2 | 
 												row2 
 													newColumn: [ :c1 | c1	 add: #buttonInspectImage ] 
-							] height: self toolbarHeight 
+							] height: self toolbarHeight * 2
 						]
 					]
 				];

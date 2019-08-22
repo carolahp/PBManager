@@ -26,6 +26,7 @@ newWithUISrcPath: aPath packagesListBootstrap: aPackagesListBootstrap packagesLi
 						 ]
 					;blockInspectImage: [ :imagePath | (SpurImage onFile: imagePath) inspect ]
 					;blockExecInGenImage: [ [pbBManual builder espellBackend "bootstrapedImageInMemory "inspect] on: Error do: [ self error: 'You must bootstrap a new image first!' ] ]
+					;blockWriteGenImage: [ pbBManual builder writeImage ] 
 					;initialize .
 	^ self new
 		pbBootstrapManual: pbBManual;

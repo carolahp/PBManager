@@ -18,5 +18,5 @@ createClasses
 	
 	objectSpace environment: ((EPSystemDictionary withSystemDictionary: objectSpace backend systemDictionary) objectSpace: objectSpace; yourself)."
 	
-	PBStepFinishedSignal log: 'Classes created'.
+	"PBStepFinishedSignal log: 'Classes created'."
 	self checkpoint: 'created_classes'.
