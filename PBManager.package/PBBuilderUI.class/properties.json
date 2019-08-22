@@ -25,7 +25,9 @@
 		"buttonExecInGenImage",
 		"blockExecInGenImage",
 		"buttonWriteGenImage",
-		"blockWriteGenImage"
+		"blockWriteGenImage",
+		"labelClassesIn",
+		"labelClassesOut"
 	],
 	"name" : "PBBuilderUI",
 	"type" : "normal"

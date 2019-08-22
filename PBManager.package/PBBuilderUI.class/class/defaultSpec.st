@@ -8,13 +8,15 @@ defaultSpec
 					
 					row 
 						newColumn: [ :c | c add: #labelOut  height: self toolbarHeight . 
-												c add: #buttonAddAll  height: self toolbarHeight . 
+												c add: #buttonAddAll height: self toolbarHeight . 
 												c add: #packagesOutList.	
+												c add: #labelClassesOut height: self toolbarHeight .
 												c add: #classesListOut.];
-						newColumn: [ :c | c add: #labelIn height: self toolbarHeight .
-												c add: #buttonRemoveAll  height: self toolbarHeight .  
+						newColumn: [ :c | c add: #labelIn height: self toolbarHeight.
+												c add: #buttonRemoveAll  height: self toolbarHeight.
 											   c add: #packagesInList.
-												c add: #classesListIn.				 
+												c add: #labelClassesIn height: self toolbarHeight.
+												c add: #classesListIn.
 												c 
 													newRow: [
 													 :row1 |

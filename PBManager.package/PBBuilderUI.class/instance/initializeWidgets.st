@@ -10,6 +10,9 @@ initializeWidgets
 	
 	labelIn  := self newLabel.
 	labelOut := self newLabel.
+	labelClassesIn  := self newLabel.
+	labelClassesOut := self newLabel.
+	
 	buttonBootstrap := self newButton.
 	buttonBootstrap label: 'Bootstrap'.
 	
@@ -27,7 +30,9 @@ initializeWidgets
 	
 	buttonExecInGenImage := self newButton.
 	buttonExecInGenImage label: 'Execute in img'.
+	buttonExecInGenImage disable.
 	
 	buttonWriteGenImage := self newButton.
-	buttonWriteGenImage label: 'Write img'
+	buttonWriteGenImage label: 'Write img'.
+	buttonWriteGenImage disable.
 	

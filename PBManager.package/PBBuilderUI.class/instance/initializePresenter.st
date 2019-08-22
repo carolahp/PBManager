@@ -40,8 +40,12 @@ initializePresenter
 
 	buttonBootstrap whenActionPerformedDo:  
 	[ :event |
+		self buttonExecInGenImage disable.
+		self buttonWriteGenImage disable.
 		self blockBootstrap value.
-		self updateImagesLists
+		self updateImagesLists.
+		self buttonExecInGenImage enable.
+		self buttonWriteGenImage enable.
 	 ].
 
 	buttonShowSourceCode whenActionPerformedDo:  
@@ -61,5 +65,6 @@ initializePresenter
 
 	buttonWriteGenImage whenActionPerformedDo:  
 	[ :event |
-		self blockWriteGenImage value
+		self blockWriteGenImage value.
+		self buttonExecInGenImage disable.
 	 ]
