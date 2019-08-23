@@ -43,7 +43,6 @@ initializePresenter
 		self buttonExecInGenImage disable.
 		self buttonWriteGenImage disable.
 		self blockBootstrap value.
-		self updateImagesLists.
 		self buttonExecInGenImage enable.
 		self buttonWriteGenImage enable.
 	 ].
@@ -67,4 +66,5 @@ initializePresenter
 	[ :event |
 		self blockWriteGenImage value.
 		self buttonExecInGenImage disable.
+		self updateImagesLists.
 	 ]

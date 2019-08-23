@@ -14,7 +14,7 @@ initializeWidgets
 	labelClassesOut := self newLabel.
 	
 	buttonBootstrap := self newButton.
-	buttonBootstrap label: 'Bootstrap'.
+	buttonBootstrap label: 'Generate img'.
 	
 	buttonRemoveAll := self newButton.
 	buttonRemoveAll label: 'remove all'.

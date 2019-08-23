@@ -38,3 +38,4 @@ initializeImage
 	espellBackend simulator freeUntracedStackPages.	
 "
 	PBStepFinishedSignal log: 'image initialized'.
+	self inform: 'Image Generated successfully'

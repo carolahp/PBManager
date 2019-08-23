@@ -15,8 +15,15 @@ initializeBootstrapEnvironment
 	classLoader systemDefinition: self systemDefinition.
 	classLoader builder: self.
 	
-	bootstrapInterpreter := DASTEvaluator new.
+	bootstrapInterpreter := EPASTEvaluator new.
 	bootstrapInterpreter codeProvider: self.
 	bootstrapInterpreter environment: self.
 	bootstrapInterpreter objectSpace: objectSpace.
+	 
+	debuggerInterpreter := DASTEvaluator new.
+	debuggerInterpreter codeProvider: self.
+	debuggerInterpreter environment: self.
+	debuggerInterpreter objectSpace: objectSpace.
+	
 	objectSpace interpreter: bootstrapInterpreter.
+	objectSpace debuggerInterpreter: debuggerInterpreter

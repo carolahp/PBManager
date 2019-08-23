@@ -6,7 +6,8 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"bootstrappedBindingCache"
+		"bootstrappedBindingCache",
+		"debuggerInterpreter"
 	],
 	"name" : "PBImageBuilderCandle",
 	"type" : "normal"
