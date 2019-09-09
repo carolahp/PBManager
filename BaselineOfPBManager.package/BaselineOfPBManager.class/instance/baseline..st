@@ -13,6 +13,10 @@ baseline: spec
  
 		spec baseline: 'DebuggableASTInterpreter'
 			with: [spec 	repository: 'github://carolahp/DebuggableASTInterpreter:BootstrapPharoCandleWithEspell' ].
+				
+		spec baseline: 'Espell'
+			with: [spec 	repository: 'github://carolahp/espell:BootstrapPharoCandleWithEspell' ].
+				
 		"Packages"
 		spec 
 			package: 'PBBuilder-LanguageDefinition';
