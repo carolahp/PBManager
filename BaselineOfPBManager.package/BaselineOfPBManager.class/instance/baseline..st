@@ -14,7 +14,7 @@ baseline: spec
 		spec baseline: 'DebuggableASTInterpreter'
 			with: [spec 	repository: 'github://carolahp/DebuggableASTInterpreter:BootstrapPharoCandleWithEspell' ].
 				
-		spec baseline: 'Espell'
+		spec baseline: 'default'
 			with: [spec 	repository: 'github://carolahp/espell:BootstrapPharoCandleWithEspell' ].
 				
 		"Packages"
