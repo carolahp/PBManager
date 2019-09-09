@@ -16,7 +16,7 @@ writeImage
 	"self compactImage."
 	"self reportSizes."
 
-	imageFileName := 'bootstrap-',Date today yyyymmdd, 'T',Time now hhmmss24,'.image'.
+	imageFileName := './bootstrapped/bootstrap-',Date today yyyymmdd, 'T',Time now hhmmss24,'.image'.
 	
 	self writeSnapshot: (imageFileName asFileReference) fullName ofTransformedImage: espellBackend simulator objectMemory headerFlags: 0 screenSize: 0.
 	self inform: 'Image written in: ', ((imageFileName asFileReference) fullName)
