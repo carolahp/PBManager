@@ -1,7 +1,7 @@
 {
 	"commentStamp" : "",
 	"super" : "PBImageBuilderSpur5032bit",
-	"category" : "PBManager",
+	"category" : "PBManager-PBBootstrapExtensions",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],

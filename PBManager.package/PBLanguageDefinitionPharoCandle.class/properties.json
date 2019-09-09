@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "CaroHernandez 3/15/2019 12:08",
+	"super" : "PBLanguageDefinition",
+	"category" : "PBManager-LanguageDefinition",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "PBLanguageDefinitionPharoCandle",
+	"type" : "normal"
+}

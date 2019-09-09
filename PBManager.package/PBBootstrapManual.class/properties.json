@@ -1,7 +1,7 @@
 {
 	"commentStamp" : "CaroHernandez 1/8/2019 14:00",
 	"super" : "PBBootstrap",
-	"category" : "PBManager",
+	"category" : "PBManager-PBBootstrapExtensions",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],

@@ -1,0 +1,15 @@
+{
+	"commentStamp" : "",
+	"super" : "RGEnvironment",
+	"category" : "PBManager-LanguageDefinition",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"definitionLoader",
+		"behaviorDefinitionMap",
+		"tonelFileReference"
+	],
+	"name" : "PBLanguageDefinition",
+	"type" : "normal"
+}

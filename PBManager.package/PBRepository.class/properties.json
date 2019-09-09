@@ -1,7 +1,7 @@
 {
 	"commentStamp" : "CaroHernandez 1/8/2019 12:59",
 	"super" : "Object",
-	"category" : "PBManager",
+	"category" : "PBManager-Repository",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
