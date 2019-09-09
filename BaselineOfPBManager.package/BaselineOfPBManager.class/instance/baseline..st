@@ -4,7 +4,10 @@ baseline: spec
 	spec for: #common do: [
 		"spec baseline: 'PharoBootstrapProcess'."
 		spec baseline: 'PBManager'
-			with: [spec repository: 'https://github.com/pharo-vcs/tonel:v1.0.11'].
+			with: [spec 
+						repository: 'https://github.com/pharo-vcs/tonel:v1.0.11';
+						repository: 'github://carolahp/Ring2/src:BootstrapPharoCandleWithEspell'
+						].
 		
 		spec 
 			package: 'PBBuilder-LanguageDefinition';
