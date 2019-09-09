@@ -6,7 +6,7 @@ baseline: spec
 		spec baseline: 'PBManager'
 			with: [spec 
 						repository: 'https://github.com/pharo-vcs/tonel:v1.0.11';
-						repository: 'github://carolahp/Ring2/src:BootstrapPharoCandleWithEspell'
+						repository: 'https://github.com/carolahp/Ring2/src:BootstrapPharoCandleWithEspell'
 						].
 		
 		spec 
