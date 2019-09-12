@@ -13,7 +13,10 @@ baseline: spec
  
 		spec baseline: 'DebuggableASTInterpreter'
 			with: [spec 	repository: 'github://carolahp/DebuggableASTInterpreter:BootstrapPharoCandleWithEspell' ].
-				
+		
+		spec baseline: 'SpurReader'
+			with: [ spec repository: 'github://carolahp/PharoImageInspector'  ].
+			
 		"spec baseline: 'Espell'
 			with: [spec 	repository: 'github://carolahp/espell:BootstrapPharoCandleWithEspell' ]."
 				
