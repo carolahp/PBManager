@@ -4,6 +4,7 @@ createInitialObjects
 	| smalltalk characterTable rsDictionary sDictionary |
 	"We add the main globals  in the bootstrap environment before a system dictionary exists. These globals are needed to create a system dictionary, and will be used by the AST interpreter"
 	self bootstrapEnvironment at: #Processor put: objectSpace nilObject.
+	self bootstrapEnvironment at: #Undeclared put: (self bootstrapInterpreter evaluateCode: 'PCDictionary new').
 	
 	classLoader initializeClassPools.
 	

@@ -1,8 +1,13 @@
 accessing
 bindingOf: aName
 
-	(self includesClassNamed: aName)
+	(self systemDefinition classNamed: aName) isNotNil
 		ifTrue: [ ^ "(objectSpace classNamed: aName) mirror asClassMirror" 
+			EPClassBinding new
+				name: aName objectSpace: self;
+				yourself ].
+	(((self systemDefinition globalVariableNamed: aName) isNotNil) or: [(bootstrapEnvironment at: aName ifAbsent: [nil]) isNotNil])
+		ifTrue: [ ^
 			EPGlobalBinding new
 				name: aName objectSpace: self;
 				yourself ].
