@@ -6,7 +6,7 @@ baseline: spec
 		
 		"Dependencies"
 		spec baseline: 'Ring2'
-			with: [ spec loads: #calypso; repository: 'github://carolahp/Ring2/src'].
+			with: [ spec loads: #calypso; repository: 'github://pavel-krivanek/Ring2:v1.2.0/src'].
 		
 		spec baseline: 'Tonel'
 			with: [spec 	repository: 'github://pharo-vcs/tonel:v1.0.11' ].
