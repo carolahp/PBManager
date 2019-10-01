@@ -6,7 +6,8 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"builder"
+		"builder",
+		"pbRepository"
 	],
 	"name" : "PBBootstrapCustom",
 	"type" : "normal"
