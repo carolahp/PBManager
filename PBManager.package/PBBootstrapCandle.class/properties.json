@@ -1,13 +1,11 @@
 {
 	"commentStamp" : "CaroHernandez 3/14/2019 11:32",
-	"super" : "PBBootstrap",
+	"super" : "PBBootstrapCustom",
 	"category" : "PBManager",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
-	"instvars" : [
-		"builder"
-	],
+	"instvars" : [ ],
 	"name" : "PBBootstrapCandle",
 	"type" : "normal"
 }

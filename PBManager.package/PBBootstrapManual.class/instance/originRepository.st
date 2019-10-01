@@ -1,7 +1,7 @@
-accessing
+as yet unclassified
 originRepository
 	| repositoryReference |
-	repositoryReference := self pbRepository repositoryPath."self repositoryLocation asFileReference."
+	repositoryReference := self pbRepository repositoryPath.
 
 	^ originRepository
 		ifNil: [ originRepository := TonelRepository new

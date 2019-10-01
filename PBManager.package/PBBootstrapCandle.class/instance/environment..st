@@ -1,3 +1,0 @@
-bootstrapping
-environment: aPharoCandleLanguageDefinition
-	ringEnvironment := aPharoCandleLanguageDefinition
