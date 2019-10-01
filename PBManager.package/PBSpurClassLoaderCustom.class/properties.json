@@ -1,11 +1,11 @@
 {
 	"commentStamp" : "",
-	"super" : "PBSpurClassLoaderCustom",
+	"super" : "PBSpurClassLoader",
 	"category" : "PBManager",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [ ],
-	"name" : "PBSpurClassLoaderCandle",
+	"name" : "PBSpurClassLoaderCustom",
 	"type" : "normal"
 }

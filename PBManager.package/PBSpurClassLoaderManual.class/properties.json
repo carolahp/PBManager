@@ -6,6 +6,6 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [ ],
-	"name" : "PBSpurClassLoaderCandle",
+	"name" : "PBSpurClassLoaderManual",
 	"type" : "normal"
 }
