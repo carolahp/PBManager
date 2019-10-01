@@ -5,6 +5,6 @@ createImage
 	builder versionInfo: versionInfo.
 	builder imageFileReference: imageReference.
 	builder systemDefinition: ringEnvironment.
-	builder espellBackend instanceVariableMapping: (PBInstanceVariableMapping onEnvironment: ringEnvironment ).
+	builder espellBackend instanceVariableMapping: (PBInstanceVariableMappingPharoManual  onEnvironment: ringEnvironment ).
 		
 	builder bootstrapManual

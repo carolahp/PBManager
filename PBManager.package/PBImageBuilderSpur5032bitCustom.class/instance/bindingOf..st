@@ -9,3 +9,4 @@ bindingOf: aName
 		ifTrue: [ ^ EPGlobalBinding new
 				name: aName objectSpace: self;
 				yourself ].
+	^ nil

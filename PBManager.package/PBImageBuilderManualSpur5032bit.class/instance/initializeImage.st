@@ -41,4 +41,4 @@ initializeImage
 
 	PBStepFinishedSignal log: 'image initialized'.
 	self inform: 'Image Generated Successfully'.
-	self halt.
+	
