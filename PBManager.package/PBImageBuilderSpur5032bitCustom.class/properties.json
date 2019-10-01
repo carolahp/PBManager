@@ -1,0 +1,14 @@
+{
+	"commentStamp" : "",
+	"super" : "PBImageBuilderSpur5032bit",
+	"category" : "PBManager",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"bootstrappedBindingCache",
+		"debuggerInterpreter"
+	],
+	"name" : "PBImageBuilderSpur5032bitCustom",
+	"type" : "normal"
+}
