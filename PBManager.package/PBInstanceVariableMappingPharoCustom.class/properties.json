@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "",
+	"super" : "PBInstanceVariableMapping",
+	"category" : "PBManager",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"metaclassThisClassIndex"
+	],
+	"name" : "PBInstanceVariableMappingPharoCustom",
+	"type" : "normal"
+}

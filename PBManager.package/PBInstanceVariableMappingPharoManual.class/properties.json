@@ -6,6 +6,6 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [ ],
-	"name" : "PBInstanceVariableMappingPharoCandle",
+	"name" : "PBInstanceVariableMappingPharoManual",
 	"type" : "normal"
 }
