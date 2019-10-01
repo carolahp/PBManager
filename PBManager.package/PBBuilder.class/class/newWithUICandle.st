@@ -1,4 +1,4 @@
-example methods
+instantiation
 newWithUICandle
 	
 	^ self newWithUICandleInDirectory: self bootstrapRepositoryPath asFileReference  / 'srcPharoCandle'.

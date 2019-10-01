@@ -1,7 +1,7 @@
 as yet unclassified
 createImage
 
-	builder := PBImageBuilderSpur50 forArchitecture: architecture.
+	builder := PBImageBuilderManualSpur5032bit new. "only available for 32 bits"
 	builder versionInfo: versionInfo.
 	builder imageFileReference: imageReference.
 	builder systemDefinition: ringEnvironment.

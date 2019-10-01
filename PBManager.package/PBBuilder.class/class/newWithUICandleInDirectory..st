@@ -1,4 +1,4 @@
-example methods
+instantiation
 newWithUICandleInDirectory: aFileReference
 	| path packagesListBootstrap packagesListFull |
 	path := aFileReference .

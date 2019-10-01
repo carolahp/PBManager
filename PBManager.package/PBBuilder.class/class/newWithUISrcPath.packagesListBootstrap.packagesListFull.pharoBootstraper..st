@@ -17,6 +17,7 @@ newWithUISrcPath: aPath packagesListBootstrap: aPackagesListBootstrap packagesLi
 					;blockBootstrap: [ 
 						[ pbBManual
 								environment: ( pbRepo ringEnvironmentForBootstrapWithLanguageDefinition: pbBManual languageDefinitionClass );
+								pbRepository: pbRepo;
 								setDefaultOptions;
 								bootstrap  
 						] on: Warning do:  [ :e | e resume ] ]

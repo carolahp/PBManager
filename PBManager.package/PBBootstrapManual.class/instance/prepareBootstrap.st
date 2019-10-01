@@ -1,6 +1,5 @@
 as yet unclassified
 prepareBootstrap
-	self halt.
 	"preparation steps for manual bootstrap"
 	self ensureBaselineOfPharoBootstrap.
 	"the next lines are from the original method 'PBBootstrap>>prepareEnvironmentForHermes"
