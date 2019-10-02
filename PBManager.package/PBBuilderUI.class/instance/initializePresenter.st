@@ -73,5 +73,6 @@ initializePresenter
 	[ :event |
 		self blockWriteGenImage value.
 		self buttonExecInGenImage disable.
+		self buttonEvalInGenImage disable.
 		self updateImagesLists.
 	 ]
