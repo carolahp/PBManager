@@ -12,7 +12,7 @@ baseline: spec
 			with: [spec 	repository: 'github://pharo-vcs/tonel:v1.0.11' ].
  
 		spec baseline: 'DebuggableASTInterpreter'
-			with: [spec 	repository: 'github://carolahp/DebuggableASTInterpreter:BootstrapPharoCandleWithEspell' ].
+			with: [spec loads: #Debugger; 	repository: 'github://carolahp/DebuggableASTInterpreter:BootstrapPharoCandleWithEspell' ].
 		
 		spec baseline: 'SpurReader'
 			with: [ spec repository: 'github://carolahp/PharoImageInspector'  ].
