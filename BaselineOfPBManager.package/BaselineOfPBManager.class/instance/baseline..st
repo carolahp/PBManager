@@ -17,8 +17,8 @@ baseline: spec
 		spec baseline: 'SpurReader'
 			with: [ spec repository: 'github://carolahp/PharoImageInspector'  ].
 		
-		spec baseline: 'PBHybridDebugger'
-			with: [ spec repository: 'github://carolahp/PBHybridDebugger'  ].
+		"spec baseline: 'PBHybridDebugger'
+			with: [ spec repository: 'github://carolahp/PBHybridDebugger'  ]."
 		
 		"Packages"
 		spec 
