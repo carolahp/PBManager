@@ -32,4 +32,4 @@ classRoles
 	#WideSymbol -> #WideSymbol.
 	"
 	
-	self subclassResponsibility
+	"self subclassResponsibility" self flag: 'migrate roles from PBBootstrapperManual'

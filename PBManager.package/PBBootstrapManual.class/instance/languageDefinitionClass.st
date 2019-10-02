@@ -1,3 +1,3 @@
 accessing
 languageDefinitionClass
-	^ RGEnvironment
+	^ PBLanguageDefinitionPharoManual

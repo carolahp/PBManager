@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "PBLanguageDefinition",
+	"category" : "PBBuilder-LanguageDefinition",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "PBLanguageDefinitionPharoManual",
+	"type" : "normal"
+}
