@@ -26,7 +26,8 @@ newWithUISrcPath: aPath packagesListBootstrap: aPackagesListBootstrap packagesLi
 											tonelFileReference: path asFileReference; browse 
 						 ]
 					;blockInspectImage: [ :imagePath | (SpurImage onFile: imagePath) inspect ]
-					;blockExecInGenImage: [ [ pbBManual builder debuggerInterpreter "bootstrapedImageInMemory "inspect] on: Error do: [ self error: 'You must bootstrap a new image first!' ] ]
+					;blockExecInGenImage: [:code | [ (PBHybridDebugger withCode: code interpreter: pbBManual builder debuggerInterpreter interpreter) openWithSpec ] on: Error do: [ self error: 'You must bootstrap a new image first!' ] ]
+					;blockEvalInGenImage: [ :code |  (pbBManual builder debuggerInterpreter evaluateCode: code) inspect ]
 					;blockWriteGenImage: [ pbBManual builder writeImage ] 
 					;initialize .
 	^ self new

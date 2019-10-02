@@ -29,10 +29,19 @@ initializeWidgets
 	buttonInspectImage label: 'Inspect image'.
 	
 	buttonExecInGenImage := self newButton.
-	buttonExecInGenImage label: 'Execute in img'.
+	buttonExecInGenImage label: 'Debug in Generated Image'.
 	buttonExecInGenImage disable.
 	
+	buttonEvalInGenImage := self newButton.
+	buttonEvalInGenImage label: 'Evaluate in Generated Image'.
+	buttonEvalInGenImage disable.
+	
+	
+	
 	buttonWriteGenImage := self newButton.
-	buttonWriteGenImage label: 'Write img'.
+	buttonWriteGenImage label: 'Write Image'.
 	buttonWriteGenImage disable.
+	
+	textCodeInput := self newTextInput.
+	textCodeInput autoAccept: true
 	

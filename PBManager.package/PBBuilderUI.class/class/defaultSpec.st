@@ -23,14 +23,7 @@ defaultSpec
 															row1 
 																newColumn: [ :c1 | c1 add: #buttonShowSourceCode ];
 																newColumn: [ :c1 | c1 add: #buttonBootstrap ]
-													] height: self toolbarHeight;
-													newRow: [
-														 :row1 |
-																row1 
-																	newColumn: [ :c1 | c1 add: #buttonExecInGenImage ];
-																	newColumn: [ :c1 | c1 add: #buttonWriteGenImage ]
-														] height: self toolbarHeight
-													
+													] height: self toolbarHeight
 						];
 						newColumn: [ :c | 
 							c 
@@ -41,9 +34,20 @@ defaultSpec
 								newRow: [ :row2 | 
 												row2 
 													newColumn: [ :c1 | c1	 add: #buttonInspectImage ] 
-							] height: self toolbarHeight * 2
+								] height: self toolbarHeight
 						]
-					]
+					];
+				newRow: [ :row1 |
+					row1 add: #textCodeInput
+				] height: self toolbarHeight * 4;
+				newRow: [ :row1 |
+					row1 add: #buttonExecInGenImage;
+						  add: #buttonEvalInGenImage
+				] height: self toolbarHeight;
+				newRow: [ :row1 |
+					row1 add: #buttonWriteGenImage
+				] height: self toolbarHeight
+				
 				];
 		yourself
 	
