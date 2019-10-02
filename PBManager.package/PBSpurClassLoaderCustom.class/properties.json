@@ -1,7 +1,7 @@
 {
 	"commentStamp" : "",
 	"super" : "PBSpurClassLoader",
-	"category" : "PBManager",
+	"category" : "PBManager-bootstrap-extensions",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],

@@ -1,7 +1,7 @@
 {
 	"commentStamp" : "",
 	"super" : "PBBootstrap",
-	"category" : "PBManager",
+	"category" : "PBManager-bootstrap-extensions",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
