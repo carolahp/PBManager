@@ -2,6 +2,8 @@ example methods
 newWithUISrcPath: aPath packagesListBootstrap: aPackagesListBootstrap packagesListFull: aPackagesListFull pharoBootstraper: pharoBootstraper
 	| path packagesListBootstrap packagesListFull pbRepo pbUI pbBManual |
 	"root directory in which the Tonel repositories must be contained"
+	
+	self deprecated.
 	path := aPath.
 	self assert: path asFileReference exists description: 'Repository path does not exist: ''', path, ''''.
 	
@@ -12,7 +14,7 @@ newWithUISrcPath: aPath packagesListBootstrap: aPackagesListBootstrap packagesLi
 	pbBManual := pharoBootstraper.
 
 	pbRepo := PBRepository new 
-					repositoryPath: path;
+					tonelPath: path;
 					packagesDefaultListBootstrap: packagesListBootstrap;
 					packagesDefaultListFull: packagesListFull;
 					checkDependecies: true "set as true only to generate the default ring environment";

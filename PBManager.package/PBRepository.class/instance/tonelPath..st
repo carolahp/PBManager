@@ -1,3 +1,4 @@
 accessing
 tonelPath: aString
-	tonelPath := aString
+	tonelPath := aString .
+	

@@ -7,14 +7,16 @@
 	"classvars" : [ ],
 	"instvars" : [
 		"tonelFullRepository",
-		"repositoryPath",
 		"ui",
 		"packages",
 		"packagesListFull",
 		"packagesListBootstrap",
 		"ringEnvironment",
 		"checkDependencies",
-		"classes"
+		"classes",
+		"languageName",
+		"tonelPath",
+		"bootstrapper"
 	],
 	"name" : "PBRepository",
 	"type" : "normal"

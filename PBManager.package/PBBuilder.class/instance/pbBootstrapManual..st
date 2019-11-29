@@ -1,3 +1,3 @@
 accessing
-pbBootstrapManual: aPBBootstrapManual
-	pbBootstrapManual := aPBBootstrapManual
+pbBootstrapManual: aPBBootstrapCandle 
+	pbBootstrapManual := aPBBootstrapCandle

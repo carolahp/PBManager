@@ -31,7 +31,8 @@
 		"textCodeInput",
 		"buttonEvalInGenImage",
 		"blockEvalInGenImage",
-		"pbBuilderRepositories"
+		"pbBuilderRepositories",
+		"pbBuilder"
 	],
 	"name" : "PBBuilderUI",
 	"type" : "normal"

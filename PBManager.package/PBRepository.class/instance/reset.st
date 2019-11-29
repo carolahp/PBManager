@@ -1,5 +1,5 @@
 accessing
 reset
-	repositoryPath := nil.
+	tonelPath := nil.
 	packages := nil.
 	tonelFullRepository := nil

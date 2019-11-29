@@ -2,4 +2,4 @@ accessing
 tonelFullRepository
 	^ tonelFullRepository
 		ifNil: [ tonelFullRepository := TonelRepository new
-												 	directory: repositoryPath asFileReference ]
+												 	directory: tonelPath asFileReference ]

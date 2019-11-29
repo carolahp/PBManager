@@ -1,7 +1,7 @@
 instantiation
 newWithUIInDirectory: aFileReference
 	| packagesListBootstrap packagesListFull |
-
+	
 	packagesListBootstrap := PBBuilder kernelGroup.
 	packagesListFull := PBBuilder AllPackagesForHermes, PBBuilder TestsForBootstrap .
 	^ self newWithUISrcPath: aFileReference  

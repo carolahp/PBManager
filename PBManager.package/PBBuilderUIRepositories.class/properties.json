@@ -10,7 +10,8 @@
 		"buttonAddRepo",
 		"buttonSaveRepo",
 		"listRepo",
-		"buttonLoadRepo"
+		"buttonLoadRepo",
+		"pbBuilder"
 	],
 	"name" : "PBBuilderUIRepositories",
 	"type" : "normal"

@@ -43,4 +43,4 @@ initializeWidgets
 	textCodeInput := self newTextInput.
 	textCodeInput autoAccept: true.
 	
-	pbBuilderRepositories := PBBuilderUIRepositories new.
+	pbBuilderRepositories := PBBuilderUIRepositories new pbBuilder: self pbBuilder.

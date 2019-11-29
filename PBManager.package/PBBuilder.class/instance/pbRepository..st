@@ -1,3 +1,3 @@
 accessing
-pbRepository: aPbRepository
-	pbRepository := aPbRepository 
+pbRepository: aPBRepository 
+	pbRepository := aPBRepository

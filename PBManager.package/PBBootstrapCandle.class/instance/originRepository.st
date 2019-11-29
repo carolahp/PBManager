@@ -1,7 +1,7 @@
 accessing
 originRepository
 	| repositoryReference |
-	repositoryReference := self pbRepository repositoryPath."self repositoryLocation asFileReference."
+	repositoryReference := self pbRepository languageName."self repositoryLocation asFileReference."
 
 	^ originRepository
 		ifNil: [ originRepository := TonelRepository new
