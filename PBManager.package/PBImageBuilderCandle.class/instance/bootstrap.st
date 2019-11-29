@@ -4,7 +4,8 @@ bootstrap
 	self
 		initializeBootstrapEnvironment;
 		createVMStubs;
-		flushNewSpace;
+		flushNewSpace.
+	self 
 		createInitialObjects;
 		createClasses;
 		installMethods;

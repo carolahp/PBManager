@@ -30,7 +30,10 @@
 		"labelClassesOut",
 		"textCodeInput",
 		"buttonEvalInGenImage",
-		"blockEvalInGenImage"
+		"blockEvalInGenImage",
+		"labelRepo",
+		"buttonAddRepo",
+		"buttonSaveRepo"
 	],
 	"name" : "PBBuilderUI",
 	"type" : "normal"

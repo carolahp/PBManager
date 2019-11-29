@@ -36,12 +36,19 @@ initializeWidgets
 	buttonEvalInGenImage label: 'Evaluate in Generated Image'.
 	buttonEvalInGenImage disable.
 	
-	
-	
 	buttonWriteGenImage := self newButton.
 	buttonWriteGenImage label: 'Write Image'.
 	buttonWriteGenImage disable.
 	
 	textCodeInput := self newTextInput.
-	textCodeInput autoAccept: true
+	textCodeInput autoAccept: true.
 	
+	
+	buttonAddRepo := self newButton.
+	buttonAddRepo icon: (Smalltalk iconNamed: #add).
+	
+	buttonSaveRepo := self newButton.
+	buttonSaveRepo icon: (Smalltalk iconNamed: #smallSave).
+	
+	labelRepo  := self newLabel.
+	labelRepo label: 'Language Definition Repositories'	
