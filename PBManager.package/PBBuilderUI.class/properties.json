@@ -33,7 +33,9 @@
 		"blockEvalInGenImage",
 		"labelRepo",
 		"buttonAddRepo",
-		"buttonSaveRepo"
+		"buttonSaveRepo",
+		"listRepo",
+		"buttonLoadRepo"
 	],
 	"name" : "PBBuilderUI",
 	"type" : "normal"

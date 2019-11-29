@@ -11,7 +11,9 @@ defaultSpec
 													r add: #labelRepo ] height: self toolbarHeight;
 												newRow: [ :r | 
 													r add: #buttonAddRepo.
-													r add: #buttonSaveRepo ] height: self toolbarHeight ]; 
+													r add: #buttonSaveRepo.
+													r add: #buttonLoadRepo ] height: self toolbarHeight;
+												add: #listRepo ]; 
 						newColumn: [ :c | c add: #labelOut  height: self toolbarHeight . 
 												c add: #buttonAddAll height: self toolbarHeight . 
 												c add: #packagesOutList.	

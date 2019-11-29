@@ -75,4 +75,15 @@ initializePresenter
 		self buttonExecInGenImage disable.
 		self buttonEvalInGenImage disable.
 		self updateImagesLists.
-	 ]
+	 ].
+
+	buttonAddRepo whenActionPerformedDo:  
+	[ :event | 
+		| repoFileRef |
+		repoFileRef := UIManager default 
+			chooseExistingFileReference: 'Open repo' 
+			extensions: #('st') 
+			path: Smalltalk imageFile nextVersion.
+		
+	]
+	
