@@ -1,3 +1,3 @@
 accessing
 tonelFileReference
-	^ tonelFileReference
+	^ self tonelPath asFileReference

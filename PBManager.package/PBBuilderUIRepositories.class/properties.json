@@ -1,0 +1,17 @@
+{
+	"commentStamp" : "",
+	"super" : "ComposablePresenter",
+	"category" : "PBManager-UI",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"labelRepo",
+		"buttonAddRepo",
+		"buttonSaveRepo",
+		"listRepo",
+		"buttonLoadRepo"
+	],
+	"name" : "PBBuilderUIRepositories",
+	"type" : "normal"
+}

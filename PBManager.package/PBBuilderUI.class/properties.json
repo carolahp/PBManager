@@ -31,11 +31,7 @@
 		"textCodeInput",
 		"buttonEvalInGenImage",
 		"blockEvalInGenImage",
-		"labelRepo",
-		"buttonAddRepo",
-		"buttonSaveRepo",
-		"listRepo",
-		"buttonLoadRepo"
+		"pbBuilderRepositories"
 	],
 	"name" : "PBBuilderUI",
 	"type" : "normal"

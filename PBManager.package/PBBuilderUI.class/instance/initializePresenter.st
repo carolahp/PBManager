@@ -77,13 +77,4 @@ initializePresenter
 		self updateImagesLists.
 	 ].
 
-	buttonAddRepo whenActionPerformedDo:  
-	[ :event | 
-		| repoFileRef |
-		repoFileRef := UIManager default 
-			chooseExistingFileReference: 'Open repo' 
-			extensions: #('st') 
-			path: Smalltalk imageFile nextVersion.
-		
-	]
 	
