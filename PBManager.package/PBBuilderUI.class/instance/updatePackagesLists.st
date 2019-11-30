@@ -1,10 +1,10 @@
 initialization
 updatePackagesLists
-	self pbmRepository ifNil: [ ^self ].
-	packagesListIn  items: (self pbmRepository packagesNamesInBootstrap  asOrderedCollection sort: [:a :b | a < b ]).
-	packagesListOut items: (self pbmRepository packagesNamesOutBootstrap asOrderedCollection sort: [:a :b | a < b ]).
-	classesListIn items: (self pbmRepository classesNamesInBootstrap asOrderedCollection sort: [:a :b | a < b ]).
-	classesListOut items: (self pbmRepository classesNamesOutBootstrap asOrderedCollection sort: [:a :b | a < b ]).
+	self pbRepository ifNil: [ ^self ].
+	packagesListIn  items: (self pbRepository packagesNamesInBootstrap  asOrderedCollection sort: [:a :b | a < b ]).
+	packagesListOut items: (self pbRepository packagesNamesOutBootstrap asOrderedCollection sort: [:a :b | a < b ]).
+	classesListIn items: (self pbRepository classesNamesInBootstrap asOrderedCollection sort: [:a :b | a < b ]).
+	classesListOut items: (self pbRepository classesNamesOutBootstrap asOrderedCollection sort: [:a :b | a < b ]).
 	
 	labelIn  label: 'Packages In: ' , (packagesListIn  listItems size) asString.
 	labelOut label: 'Packages Out: ', (packagesListOut listItems size) asString.

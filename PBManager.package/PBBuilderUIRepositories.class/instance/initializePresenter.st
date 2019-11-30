@@ -10,18 +10,15 @@ initializePresenter
 			path: Smalltalk imageFile nextVersion.
 			
 		
-		(repoFileRef isNotNil and: [repoFileRef isFile]) ifTrue: [ | aPBBuilder |
-			"read language definition from the file .lang, instantiate a PBLanguageDefinition"
-			aPBBuilder := STONJSON fromString: repoFileRef readStream upToEnd.
-			"tonelPath in the file must be relative to the location of the file"
-			aPBBuilder tonelPath: (repoFileRef containingDirectory asPath / aPBBuilder tonelPath) asPath.
+		(repoFileRef isNotNil and: [repoFileRef isFile]) ifTrue: [ 
 			"add the new language definition to the list of repositories"
-			listRepo items: listRepo listItems , { aPBBuilder } ]
+			listRepo items: listRepo listItems , 
+								{ PBRepository fromLangFile: repoFileRef } ]
 	].
 
 	buttonLoadRepo whenActionPerformedDo:  
 	[ :event | 
 		"hack to select the selected item"
-		pbBuilder pbRepository: (self listRepo listItems at: self listRepo selectedIndex).
+		self pbBuilderUI pbRepository: (self listRepo listItems at: self listRepo selectedIndex).
 		self update
 	]

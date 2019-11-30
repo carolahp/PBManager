@@ -14,3 +14,5 @@ initializeWidgets
 	labelRepo label: 'Language Definition Repositories'.
 
 	listRepo  := self newList displayBlock: [:item | item languageName ].
+	
+	listRepo items: self defaultRepositories

@@ -1,3 +1,3 @@
 refreshing
 update
-	pbBuilder pbBuilderUI update
+	self pbBuilderUI update

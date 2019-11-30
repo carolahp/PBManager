@@ -31,7 +31,9 @@
 		"buttonEvalInGenImage",
 		"blockEvalInGenImage",
 		"pbBuilder",
-		"pbBuilderRepositoriesUI"
+		"pbBuilderRepositoriesUI",
+		"defaultLocationOfRepositories",
+		"pbRepository"
 	],
 	"name" : "PBBuilderUI",
 	"type" : "normal"
