@@ -10,7 +10,7 @@ initializePresenter
 			path: Smalltalk imageFile nextVersion.
 			
 		
-		repoFileRef isFile ifTrue: [ | aPBBuilder |
+		(repoFileRef isNotNil and: [repoFileRef isFile]) ifTrue: [ | aPBBuilder |
 			"read language definition from the file .lang, instantiate a PBLanguageDefinition"
 			aPBBuilder := STONJSON fromString: repoFileRef readStream upToEnd.
 			"tonelPath in the file must be relative to the location of the file"
