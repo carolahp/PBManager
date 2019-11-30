@@ -1,4 +1,4 @@
 toggling
 toggleClass: aString 
-	pbmRepository toggleClass: aString.
+	self pbmRepository toggleClass: aString.
 	self updatePackagesLists

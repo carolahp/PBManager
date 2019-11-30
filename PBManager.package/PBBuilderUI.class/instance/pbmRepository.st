@@ -1,3 +1,3 @@
 accessing
 pbmRepository 
-	^ self pbBuilder selectedRepository
+	^ pbBuilder pbRepository 

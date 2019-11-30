@@ -7,7 +7,7 @@ defaultSpec
 				newRow: [ :row |
 					
 					row 
-						add: #pbBuilderRepositories; 
+						add: #pbBuilderRepositoriesUI; 
 						newColumn: [ :c | c add: #labelOut  height: self toolbarHeight . 
 												c add: #buttonAddAll height: self toolbarHeight . 
 												c add: #packagesOutList.	

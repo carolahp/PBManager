@@ -8,8 +8,7 @@
 	"instvars" : [
 		"pbRepository",
 		"pbBuilderUI",
-		"pbBootstrapManual",
-		"selectedRepository"
+		"pbBootstrapManual"
 	],
 	"name" : "PBBuilder",
 	"type" : "normal"

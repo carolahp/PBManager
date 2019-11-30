@@ -10,7 +10,6 @@
 		"packagesListIn",
 		"classesListOut",
 		"classesListIn",
-		"pbmRepository",
 		"labelIn",
 		"labelOut",
 		"buttonBootstrap",
@@ -31,8 +30,8 @@
 		"textCodeInput",
 		"buttonEvalInGenImage",
 		"blockEvalInGenImage",
-		"pbBuilderRepositories",
-		"pbBuilder"
+		"pbBuilder",
+		"pbBuilderRepositoriesUI"
 	],
 	"name" : "PBBuilderUI",
 	"type" : "normal"
