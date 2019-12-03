@@ -9,8 +9,10 @@ asRingEnvironmentWith: packageNames classes: classesNames languageDefinition: aC
 			package := aRG2Environment ensurePackageNamed: pn asSymbol.
 			version := self versionWithInfo: (self versionInfoFromVersionNamed: pn).
 			snap := version snapshot.
-
-			defs := snap definitions select: [:def | classesNames includes: def className ].
+			
+			defs := classesNames 
+				ifNil: [ snap definitions ]
+				ifNotNil: [ snap definitions select: [:def | classesNames includes: def className ] ].
 			defs do: [ :each |		
 				each ensureRingDefinitionIn: aRG2Environment package: package ]
 			displayingProgress: 'snap'.] 

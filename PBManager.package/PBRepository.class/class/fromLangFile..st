@@ -5,4 +5,5 @@ fromLangFile: aFileReference
 	aPBRepository := STONJSON fromString: aFileReference readStream upToEnd.
 	"tonelPath in the file must be relative to the location of the file"
 	aPBRepository tonelPath: (aFileReference containingDirectory asPath / aPBRepository tonelPath) asPath.
+	aPBRepository languageDefinitionClass: (Smalltalk classNamed: aPBRepository languageDefinitionClass).
 	^ aPBRepository 

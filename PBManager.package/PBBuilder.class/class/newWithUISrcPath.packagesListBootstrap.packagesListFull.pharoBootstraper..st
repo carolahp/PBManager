@@ -3,7 +3,7 @@ newWithUISrcPath: aPath packagesListBootstrap: aPackagesListBootstrap packagesLi
 	| path packagesListBootstrap packagesListFull pbRepo pbUI pbBManual |
 	"root directory in which the Tonel repositories must be contained"
 	
-	self deprecated.
+	self deprecated: 'initialize from PBBuilderUI instead'.
 	path := aPath.
 	self assert: path asFileReference exists description: 'Repository path does not exist: ''', path, ''''.
 	
@@ -29,10 +29,10 @@ newWithUISrcPath: aPath packagesListBootstrap: aPackagesListBootstrap packagesLi
 								setDefaultOptions;
 								bootstrap  
 						] on: Warning do:  [ :e | e resume ] ];
-					blockShowSourceCode: [
+					"blockShowSourceCode: [
 					 	(pbRepo ringEnvironmentForBootstrapWithLanguageDefinition: pbBManual languageDefinitionClass)
 											tonelFileReference: path asFileReference; browse 
-						 ];
+						 ];"
 					blockInspectImage: [ :imagePath | (SpurImage onFile: imagePath) inspect ];
 					blockExecInGenImage: [:code | [ (PBHybridDebugger withCode: code interpreter: pbBManual builder debuggerInterpreter interpreter) openWithSpec ] on: Error do: [ self error: 'You must bootstrap a new image first!' ] ];
 					blockEvalInGenImage: [ :code |  (pbBManual builder debuggerInterpreter evaluateCode: code) inspect ];

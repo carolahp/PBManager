@@ -16,7 +16,9 @@
 		"classes",
 		"languageName",
 		"tonelPath",
-		"bootstrapper"
+		"bootstrapper",
+		"languageDefinitionClass",
+		"packagesNamesFromTonelRepo"
 	],
 	"name" : "PBRepository",
 	"type" : "normal"

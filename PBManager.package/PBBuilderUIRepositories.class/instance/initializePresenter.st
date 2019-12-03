@@ -8,7 +8,6 @@ initializePresenter
 			chooseExistingFileReference: 'Open repo' 
 			extensions: #('lang') 
 			path: Smalltalk imageFile nextVersion.
-			
 		
 		(repoFileRef isNotNil and: [repoFileRef isFile]) ifTrue: [ 
 			"add the new language definition to the list of repositories"

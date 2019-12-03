@@ -1,5 +1,5 @@
 instantiation
-withRepositoriesLocation: aPath
+withRepositoriesIn: aPath
 	^ self basicNew 	
 		defaultLocationOfRepositories: aPath asFileReference;
 		initialize
