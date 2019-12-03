@@ -8,7 +8,8 @@
 	"instvars" : [
 		"definitionLoader",
 		"behaviorDefinitionMap",
-		"tonelFileReference"
+		"tonelFileReference",
+		"pbRepository"
 	],
 	"name" : "PBLanguageDefinition",
 	"type" : "normal"

@@ -18,7 +18,8 @@
 		"tonelPath",
 		"bootstrapper",
 		"languageDefinitionClass",
-		"packagesNamesFromTonelRepo"
+		"packagesNamesFromTonelRepo",
+		"unsavedChanges"
 	],
 	"name" : "PBRepository",
 	"type" : "normal"

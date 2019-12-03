@@ -1,6 +1,5 @@
 initialization
 initializePresenter 
-	
 	buttonAddRepo whenActionPerformedDo:  
 	[ :event | 
 		| repoFileRef |
@@ -20,4 +19,4 @@ initializePresenter
 		"hack to select the selected item"
 		self pbBuilderUI pbRepository: (self listRepo listItems at: self listRepo selectedIndex).
 		self update
-	]
+	].

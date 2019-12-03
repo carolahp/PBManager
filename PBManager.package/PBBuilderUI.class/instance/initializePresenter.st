@@ -51,10 +51,15 @@ initializePresenter
 
 	buttonShowSourceCode whenActionPerformedDo:  
 	[ :event |
-		self halt.
-		pbRepository ringEnvironment browse.
-		"(pbRepo ringEnvironmentForBootstrapWithLanguageDefinition: pbBManual languageDefinitionClass)
-											tonelFileReference: path asFileReference; browse "
+		
+		pbRepository classesNamesInBootstrap 
+			ifEmpty: [ self inform: 'no classes selected' ]
+			ifNotEmpty: [
+				pbRepository ringEnvironment announcer 
+					when: ClyRing2EnvironmentChanged 
+					send: #markRepositoryAsModified 
+					to: self. 
+				pbRepository ringEnvironment browse. ]
 	 ].
 
 	buttonInspectImage whenActionPerformedDo:  

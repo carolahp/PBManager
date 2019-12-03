@@ -16,7 +16,8 @@ packages
 														self packagesDefaultListBootstrap anySatisfy: [ :bsPackage | bsPackage = rPackage ] ]). "set true only the packages considered in the BS list"
 			"initialize my ring environment for the selected full packages"
 			
-			ringEnvironment := self tonelFullRepository asRingEnvironmentWith: packagesInRepo classes: nil languageDefinition: self languageDefinitionClass .
+			ringEnvironment := self tonelFullRepository asLanguageDefinitionWith: packagesInRepo classes: nil languageDefinition: self languageDefinitionClass pbRepository: self .
+			
 			"initialize my classes dictionary"	
 			classesList := ((ringEnvironment packages select: [ :pkg | packages keys includes: pkg name asSymbol ]) gather: #definedBehaviors ).
 			classes := Dictionary 
