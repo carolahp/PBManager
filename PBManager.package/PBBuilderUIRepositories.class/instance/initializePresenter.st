@@ -17,6 +17,13 @@ initializePresenter
 	buttonLoadRepo whenActionPerformedDo:  
 	[ :event | 
 		"hack to select the selected item"
-		self pbBuilderUI pbRepository: (self listRepo listItems at: self listRepo selectedIndex).
+		self pbBuilderUI pbRepository: self selectedRepository.
 		self update
 	].
+
+	buttonSaveRepo whenActionPerformedDo: 
+	[ :event | 
+		self selectedRepository writeToDisk. 
+		self inform: 'Exported to: ', self selectedRepository tonelPath.
+		self refresh
+	 ]
