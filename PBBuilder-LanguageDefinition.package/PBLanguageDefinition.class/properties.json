@@ -9,7 +9,8 @@
 		"definitionLoader",
 		"behaviorDefinitionMap",
 		"tonelFileReference",
-		"pbRepository"
+		"pbRepository",
+		"pbBootstrapper"
 	],
 	"name" : "PBLanguageDefinition",
 	"type" : "normal"

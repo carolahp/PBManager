@@ -30,12 +30,12 @@ initializePresenter
 	
 	buttonAddAll whenActionPerformedDo:  
 	[ :event |
-		(packagesListOut listItems) collect: [ :item | self togglePackage: item ].
+		packagesListOut listItems collect: [ :item | self togglePackage: item ].
 	 ].
 
 	buttonRemoveAll whenActionPerformedDo:  
 	[ :event |
-		(packagesListIn listItems) collect: [ :item | self togglePackage: item ].
+		packagesListIn listItems collect: [ :item | self togglePackage: item ].
 	 ].
 
 	buttonBootstrap whenActionPerformedDo:  
@@ -43,6 +43,7 @@ initializePresenter
 		self buttonExecInGenImage disable.
 		self buttonWriteGenImage disable.
 		self buttonEvalInGenImage disable.
+		[ pbRepository pbBootstrapper bootstrap ] on: Warning do: [:e | e resume ].
 		self blockBootstrap value.
 		self buttonExecInGenImage enable.
 		self buttonWriteGenImage enable.
