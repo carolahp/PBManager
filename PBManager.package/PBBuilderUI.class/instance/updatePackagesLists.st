@@ -1,4 +1,4 @@
-initialization
+refreshing
 updatePackagesLists
 	self pbRepository ifNil: [ ^self ].
 	packagesListIn  items: (self pbRepository packagesNamesInBootstrap  asOrderedCollection sort: [:a :b | a < b ]).
