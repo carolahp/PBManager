@@ -43,8 +43,7 @@ initializePresenter
 		self buttonExecInGenImage disable.
 		self buttonWriteGenImage disable.
 		self buttonEvalInGenImage disable.
-		[ pbRepository pbBootstrapper bootstrap ] on: Warning do: [:e | e resume ].
-		self blockBootstrap value.
+		[ self pbRepository pbBootstrapper bootstrap ] on: Warning do: [:e | e resume ].
 		self buttonExecInGenImage enable.
 		self buttonWriteGenImage enable.
 		self buttonEvalInGenImage enable
@@ -53,14 +52,14 @@ initializePresenter
 	buttonShowSourceCode whenActionPerformedDo:  
 	[ :event |
 		
-		pbRepository classesNamesInBootstrap 
+		self pbRepository classesNamesInBootstrap 
 			ifEmpty: [ self inform: 'no classes selected' ]
 			ifNotEmpty: [
-				pbRepository ringEnvironment announcer 
+				self pbRepository ringEnvironment announcer 
 					when: ClyRing2EnvironmentChanged 
 					send: #markRepositoryAsModified 
 					to: self. 
-				pbRepository ringEnvironment browse. ]
+				self pbRepository ringEnvironment browse. ]
 	 ].
 
 	buttonInspectImage whenActionPerformedDo:  
@@ -80,10 +79,8 @@ initializePresenter
  
 	buttonWriteGenImage whenActionPerformedDo:  
 	[ :event |
-		self blockWriteGenImage value.
+		self pbRepository pbBootstrapper builder writeImage.
 		self buttonExecInGenImage disable.
 		self buttonEvalInGenImage disable.
 		self updateImagesLists.
-	 ].
-
-	
+	 ]

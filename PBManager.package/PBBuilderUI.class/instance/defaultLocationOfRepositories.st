@@ -1,3 +1,3 @@
 accessing
 defaultLocationOfRepositories
-	^ defaultLocationOfRepositories ifNil: [ ^ Smalltalk imageDirectory ]
+	^ self pbBuilder defaultLocationOfRepositories

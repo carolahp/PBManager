@@ -47,8 +47,8 @@ defaultSpec
 				] height: self toolbarHeight;
 				newRow: [ :row1 |
 					row1 add: #buttonWriteGenImage
-				] height: self toolbarHeight
-				
+				] height: self toolbarHeight";
+				add: #pbBuilderUIBashScripter" 
 				];
 		yourself
 	

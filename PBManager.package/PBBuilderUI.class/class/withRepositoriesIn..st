@@ -1,5 +1,5 @@
 instantiation
 withRepositoriesIn: aPath
 	^ self basicNew 	
-		defaultLocationOfRepositories: aPath asFileReference;
+		pbBuilder: (PBBuilder new defaultLocationOfRepositories: aPath asFileReference);
 		initialize

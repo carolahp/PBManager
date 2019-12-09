@@ -6,13 +6,11 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"labelRepo",
-		"buttonAddRepo",
-		"buttonSaveRepo",
-		"listRepo",
-		"buttonLoadRepo",
+		"labelTitle",
+		"buttonRun",
+		"textBashInput",
 		"pbBuilder"
 	],
-	"name" : "PBBuilderUIRepositories",
+	"name" : "PBBuilderUIBashScripter",
 	"type" : "normal"
 }

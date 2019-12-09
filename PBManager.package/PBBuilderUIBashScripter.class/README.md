@@ -1,0 +1,1 @@
+I provide a UI to define a bash script that will be executed after the image generation

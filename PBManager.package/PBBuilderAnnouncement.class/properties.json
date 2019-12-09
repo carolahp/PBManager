@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "Announcement",
+	"category" : "PBManager-announcements",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "PBBuilderAnnouncement",
+	"type" : "normal"
+}

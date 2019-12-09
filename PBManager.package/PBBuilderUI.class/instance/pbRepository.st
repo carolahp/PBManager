@@ -1,3 +1,3 @@
 accessing
-pbRepository 
-	^ pbRepository 
+pbRepository
+	^ self pbBuilder pbRepository 

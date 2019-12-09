@@ -32,7 +32,8 @@
 		"pbBuilder",
 		"pbBuilderRepositoriesUI",
 		"defaultLocationOfRepositories",
-		"pbRepository"
+		"pbRepository",
+		"pbBuilderUIBashScripter"
 	],
 	"name" : "PBBuilderUI",
 	"type" : "normal"
