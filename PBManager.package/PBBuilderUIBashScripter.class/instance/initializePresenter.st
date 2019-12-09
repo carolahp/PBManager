@@ -1,7 +1,8 @@
 initialization
 initializePresenter
-	buttonRun whenActionPerformedDo:  
-	[ :event | 
-		self pbBuilder runBashScript: './..pharo ./', self selectedImage name arguments: #()
-	]
 	
+	buttonRun whenActionPerformedDo:  
+	[ :event | | imagePath |
+		imagePath := 'bootstrapped/', self pbBuilder selectedImage basename.
+		self pbBuilder runBashScript: './pharo' arguments: { imagePath }
+	]

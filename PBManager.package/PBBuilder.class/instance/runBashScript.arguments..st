@@ -1,10 +1,8 @@
 image-functions
 runBashScript: aCommand arguments: aCollection
-	| pathToImage |
-	pathToImage := 'bootstrapped/', self selectedImage basename.
 	^ OSSUnixSubprocess new
-			command: './pharo';
-			arguments: { pathToImage };
+			command: aCommand;
+			arguments: aCollection;
 			workingDirectory: self defaultLocationOfRepositories absolutePath parent pathString;
 			redirectStdout;
 			runAndWaitWithTimeout: 2 seconds 
