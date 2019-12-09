@@ -1,11 +1,11 @@
 image-functions
-runBashScript: aCommand arguments: aCollection
+runBashScript: aCommand arguments: aCollection withTimeout: aDuration
 	^ OSSUnixSubprocess new
 			command: aCommand;
 			arguments: aCollection;
 			workingDirectory: self defaultLocationOfRepositories absolutePath parent pathString;
 			redirectStdout;
-			runAndWaitWithTimeout: 2 seconds 
+			runAndWaitWithTimeout: aDuration
 				onTimeoutDo: [ 
 					'Timeout!' inspect
 					]

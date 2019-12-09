@@ -2,7 +2,6 @@ initialization
 initializePresenter
 	
 	buttonRun whenActionPerformedDo:  
-	[ :event | | imagePath |
-		imagePath := 'bootstrapped/', self pbBuilder selectedImage basename.
-		self pbBuilder runBashScript: './pharo' arguments: { imagePath }
+	[ :event | 
+		self pbBuilder runBashScript: self command arguments: self arguments withTimeout: 5 seconds
 	]
