@@ -43,7 +43,7 @@ initializePresenter
 		self buttonExecInGenImage disable.
 		self buttonWriteGenImage disable.
 		self buttonEvalInGenImage disable.
-		[ self pbRepository pbBootstrapper bootstrap ] on: Warning do: [:e | e resume ].
+		self pbBuilder bootstrapLoadedRepository.
 		self buttonExecInGenImage enable.
 		self buttonWriteGenImage enable.
 		self buttonEvalInGenImage enable
@@ -61,10 +61,14 @@ initializePresenter
 					to: self. 
 				self pbRepository ringEnvironment browse. ]
 	 ].
+	
+	
+	imagesList whenSelectionChanged: [
+		self pbBuilder selectedImage: (imagesList listElementAt: imagesList selectedIndex).].
 
 	buttonInspectImage whenActionPerformedDo:  
 	[ :event |
-		self blockInspectImage value: self imagesList selectedItem asFileReference
+		self pbBuilder inspectSelectedImage
 	 ].
 	
 	buttonExecInGenImage whenActionPerformedDo:  

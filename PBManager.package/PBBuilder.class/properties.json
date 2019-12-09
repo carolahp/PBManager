@@ -10,7 +10,8 @@
 		"pbBuilderUI",
 		"pbBootstrapManual",
 		"defaultLocationOfRepositories",
-		"announcer"
+		"announcer",
+		"bootstrappedImage"
 	],
 	"name" : "PBBuilder",
 	"type" : "normal"
