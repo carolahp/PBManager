@@ -44,5 +44,5 @@ initializeWidgets
 	textCodeInput autoAccept: true.
 	
 	pbBuilderRepositoriesUI := PBBuilderUIRepositories withPBBuilder: self pbBuilder.
-	"pbBuilderUIBashScripter := PBBuilderUIBashScripter withPBBuilder: self pbBuilder."
+	pbBuilderUIBashScripter := PBBuilderUIBashScripter withPBBuilder: self pbBuilder.
 	self update
