@@ -31,9 +31,9 @@
 		"blockEvalInGenImage",
 		"pbBuilder",
 		"pbBuilderRepositoriesUI",
-		"defaultLocationOfRepositories",
 		"pbRepository",
-		"pbBuilderUIBashScripter"
+		"pbBuilderUIBashScripter",
+		"textImageName"
 	],
 	"name" : "PBBuilderUI",
 	"type" : "normal"

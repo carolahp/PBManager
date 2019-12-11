@@ -19,7 +19,8 @@
 		"bootstrapper",
 		"languageDefinitionClass",
 		"packagesNamesFromTonelRepo",
-		"unsavedChanges"
+		"unsavedChanges",
+		"imageFileName"
 	],
 	"name" : "PBRepository",
 	"type" : "normal"

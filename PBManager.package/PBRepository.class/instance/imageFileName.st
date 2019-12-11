@@ -1,3 +1,3 @@
 accessing
 imageFileName
-	^ self languageName copyReplaceAll: ' ' with: '_'
+	^ imageFileName ifNil: [ imageFileName := self languageName copyReplaceAll: ' ' with: '_' ] 

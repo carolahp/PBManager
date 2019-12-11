@@ -40,6 +40,9 @@ initializeWidgets
 	buttonWriteGenImage label: 'Write Image'.
 	buttonWriteGenImage disable.
 	
+	textImageName := self newText.
+	textImageName autoAccept: true.
+	
 	textCodeInput := self newTextInput.
 	textCodeInput autoAccept: true.
 	

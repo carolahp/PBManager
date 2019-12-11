@@ -1,0 +1,3 @@
+accessing
+imageFileName
+	^ systemDefinition pbRepository imageFileName

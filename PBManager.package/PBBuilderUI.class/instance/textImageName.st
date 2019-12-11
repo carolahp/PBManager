@@ -1,0 +1,3 @@
+accessing
+textImageName
+	^ textImageName

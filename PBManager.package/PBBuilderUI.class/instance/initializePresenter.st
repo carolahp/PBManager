@@ -46,7 +46,8 @@ initializePresenter
 		self pbBuilder bootstrapLoadedRepository.
 		self buttonExecInGenImage enable.
 		self buttonWriteGenImage enable.
-		self buttonEvalInGenImage enable
+		self buttonEvalInGenImage enable.
+		self textImageName text: pbBuilder pbRepository imageFileName
 	 ].
 
 	buttonShowSourceCode whenActionPerformedDo:  
@@ -83,8 +84,10 @@ initializePresenter
  
 	buttonWriteGenImage whenActionPerformedDo:  
 	[ :event |
+		self pbRepository imageFileName: self textImageName text.
 		self pbRepository pbBootstrapper builder writeImage.
 		self buttonExecInGenImage disable.
 		self buttonEvalInGenImage disable.
 		self updateImagesLists.
-	 ]
+	 ].
+	

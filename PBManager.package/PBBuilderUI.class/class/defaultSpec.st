@@ -46,8 +46,10 @@ defaultSpec
 						  add: #buttonEvalInGenImage
 				] height: self toolbarHeight;
 				newRow: [ :row1 |
-					row1 add: #buttonWriteGenImage
-				] height: self toolbarHeight;
+					row1
+						add: #textImageName; 
+						add: #buttonWriteGenImage
+				] height: self toolbarHeight * 1.5;
 				add: #pbBuilderUIBashScripter 
 				];
 		yourself
