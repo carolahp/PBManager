@@ -33,7 +33,8 @@
 		"pbBuilderRepositoriesUI",
 		"pbRepository",
 		"pbBuilderUIBashScripter",
-		"textImageName"
+		"textImageName",
+		"labelImageName"
 	],
 	"name" : "PBBuilderUI",
 	"type" : "normal"

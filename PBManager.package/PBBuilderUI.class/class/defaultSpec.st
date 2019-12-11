@@ -47,6 +47,7 @@ defaultSpec
 				] height: self toolbarHeight;
 				newRow: [ :row1 |
 					row1
+						add: #labelImageName;
 						add: #textImageName; 
 						add: #buttonWriteGenImage
 				] height: self toolbarHeight * 1.5;

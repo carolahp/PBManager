@@ -89,5 +89,6 @@ initializePresenter
 		self buttonExecInGenImage disable.
 		self buttonEvalInGenImage disable.
 		self updateImagesLists.
+		self buttonWriteGenImage disable.
 	 ].
 	

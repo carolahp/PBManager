@@ -36,8 +36,11 @@ initializeWidgets
 	buttonEvalInGenImage label: 'Evaluate in Generated Image'.
 	buttonEvalInGenImage disable.
 	
+	labelImageName := self newLabel.
+	labelImageName label: 'Generated image name:'.
+	
 	buttonWriteGenImage := self newButton.
-	buttonWriteGenImage label: 'Write Image'.
+	buttonWriteGenImage label: 'Write to Disk'.
 	buttonWriteGenImage disable.
 	
 	textImageName := self newText.
