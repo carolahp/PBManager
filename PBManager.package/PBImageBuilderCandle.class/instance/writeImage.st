@@ -1,6 +1,6 @@
 running
 writeImage
-	| imageFolder metadataFileReference timestamp|
+	| metadataFileReference |
 	[[ espellBackend objectMemory flushNewSpace. ]
 		on: Halt
 		do: [:ex|
@@ -12,9 +12,9 @@ writeImage
 						ifTrue: [ e resume ]
 						ifFalse: [ e pass ]].
 
-	"self freeForwarders."
-	"self compactImage."
-	"self reportSizes."
+	self freeForwarders.
+	self compactImage.
+	self reportSizes.
 
 	imageFileReference := self imageFileReference.	
 	self writeSnapshot: imageFileReference fullName ofTransformedImage: espellBackend simulator objectMemory headerFlags: 0 screenSize: 0.

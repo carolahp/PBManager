@@ -1,5 +1,6 @@
 image-functions
 runBashScript: aCommand arguments: aCollection withTimeout: aDuration
+	
 	^ OSSUnixSubprocess new
 			command: aCommand;
 			arguments: aCollection;
@@ -10,6 +11,5 @@ runBashScript: aCommand arguments: aCollection withTimeout: aDuration
 					'Timeout!' inspect
 					]
 				onExitDo: [ :process :outString  |
-					process inspect.
-					outString inspect
+					process inspect
 			]

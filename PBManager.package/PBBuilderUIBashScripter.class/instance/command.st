@@ -1,4 +1,4 @@
 accessing
 command
-	^ './pharo'
+	^ command
 		

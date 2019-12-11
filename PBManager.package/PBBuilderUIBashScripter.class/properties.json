@@ -9,7 +9,9 @@
 		"labelTitle",
 		"buttonRun",
 		"textBashInput",
-		"pbBuilder"
+		"pbBuilder",
+		"command",
+		"arguments"
 	],
 	"name" : "PBBuilderUIBashScripter",
 	"type" : "normal"
