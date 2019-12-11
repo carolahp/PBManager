@@ -1,6 +1,6 @@
 running
 writeImage
-	| imageFileName |
+	| imageFolder metadataFileReference timestamp|
 	[[ espellBackend objectMemory flushNewSpace. ]
 		on: Halt
 		do: [:ex|
@@ -16,7 +16,12 @@ writeImage
 	"self compactImage."
 	"self reportSizes."
 
-	imageFileName := './bootstrapped/bootstrap-',Date today yyyymmdd, 'T',Time now hhmmss24,'C.image'.
+	imageFileReference := self imageFileReference.	
+	self writeSnapshot: imageFileReference fullName ofTransformedImage: espellBackend simulator objectMemory headerFlags: 0 screenSize: 0.
 	
-	self writeSnapshot: (imageFileName asFileReference) fullName ofTransformedImage: espellBackend simulator objectMemory headerFlags: 0 screenSize: 0.
-	self inform: 'Image written in: ', ((imageFileName asFileReference) fullName)
+	" write .bimage file, which contains metadata about the image "
+	metadataFileReference := self metadataFileReferenceForImage: imageFileReference.
+	metadataFileReference writeStreamDo: [ :fs |
+		STONJSON put: { #name -> imageFileReference basenameWithoutExtension . #bootstrapper -> #Candle . #script -> '' . #timestamp -> DateAndTime now asString } asDictionary onStream: fs
+	].	
+	self inform: 'Image written in: ', imageFileReference fullName

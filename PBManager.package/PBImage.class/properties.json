@@ -1,0 +1,17 @@
+{
+	"commentStamp" : "",
+	"super" : "Object",
+	"category" : "PBManager-image",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"name",
+		"imageFileReference",
+		"metadataFileReference",
+		"bootstrapper",
+		"script"
+	],
+	"name" : "PBImage",
+	"type" : "normal"
+}
