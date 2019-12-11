@@ -6,8 +6,6 @@ initializeWidgets
 	classesListOut  := self newList displayBlock: [:item | item ].
 	classesListIn   := self newList displayBlock: [:item | item ].
 	
-	imagesList := self newList displayBlock: [:item | item basename ].
-	
 	labelIn  := self newLabel.
 	labelOut := self newLabel.
 	labelClassesIn  := self newLabel.
@@ -24,10 +22,7 @@ initializeWidgets
 	
 	buttonShowSourceCode := self newButton.
 	buttonShowSourceCode label: 'Show sources'.
-	
-	buttonInspectImage := self newButton.
-	buttonInspectImage label: 'Inspect image'.
-	
+
 	buttonExecInGenImage := self newButton.
 	buttonExecInGenImage label: 'Debug in Generated Image'.
 	buttonExecInGenImage disable.
@@ -36,19 +31,10 @@ initializeWidgets
 	buttonEvalInGenImage label: 'Evaluate in Generated Image'.
 	buttonEvalInGenImage disable.
 	
-	labelImageName := self newLabel.
-	labelImageName label: 'Generated image name:'.
-	
-	buttonWriteGenImage := self newButton.
-	buttonWriteGenImage label: 'Write to Disk'.
-	buttonWriteGenImage disable.
-	
-	textImageName := self newText.
-	textImageName autoAccept: true.
-	
 	textCodeInput := self newTextInput.
 	textCodeInput autoAccept: true.
 	
 	pbBuilderRepositoriesUI := PBBuilderUIRepositories withPBBuilder: self pbBuilder.
 	pbBuilderUIBashScripter := PBBuilderUIBashScripter withPBBuilder: self pbBuilder.
+	pbBuilderUIImages := PBBuilderUIImages withPBBuilder: self pbBuilder.
 	self update

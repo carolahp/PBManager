@@ -1,4 +1,4 @@
 refreshing
 update
-	self updateImagesLists.
+	self pbBuilderUIImages updateImagesLists.
 	self updatePackagesLists

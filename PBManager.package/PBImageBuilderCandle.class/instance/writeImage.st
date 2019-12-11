@@ -22,6 +22,6 @@ writeImage
 	" write .bimage file, which contains metadata about the image "
 	metadataFileReference := self metadataFileReferenceForImage: imageFileReference.
 	metadataFileReference writeStreamDo: [ :fs |
-		STONJSON put: { #name -> imageFileReference basenameWithoutExtension . #bootstrapper -> #Candle . #script -> '' . #timestamp -> DateAndTime now asString } asDictionary onStream: fs
+		STONJSON put: { #name -> imageFileReference basenameWithoutExtension . #bootstrapper -> #Candle . #script -> ('./pharo ./bootstrapped/', imageFileReference basename) . #timestamp -> DateAndTime now asString } asDictionary onStream: fs
 	].	
 	self inform: 'Image written in: ', imageFileReference fullName

@@ -1,0 +1,18 @@
+{
+	"commentStamp" : "",
+	"super" : "ComposablePresenter",
+	"category" : "PBManager-UI",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"buttonInspectImage",
+		"imagesList",
+		"pbBuilder",
+		"labelImageName",
+		"textImageName",
+		"buttonWriteGenImage"
+	],
+	"name" : "PBBuilderUIImages",
+	"type" : "normal"
+}

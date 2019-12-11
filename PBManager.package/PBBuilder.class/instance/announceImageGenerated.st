@@ -1,0 +1,3 @@
+announcements
+announceImageGenerated
+	self announcer announce: PBImageGeneratedAnnouncement new

@@ -18,8 +18,6 @@
 		"bootstrapBlock",
 		"buttonShowSourceCode",
 		"blockInspectImage",
-		"buttonInspectImage",
-		"imagesList",
 		"buttonExecInGenImage",
 		"blockExecInGenImage",
 		"buttonWriteGenImage",
@@ -33,8 +31,7 @@
 		"pbBuilderRepositoriesUI",
 		"pbRepository",
 		"pbBuilderUIBashScripter",
-		"textImageName",
-		"labelImageName"
+		"pbBuilderUIImages"
 	],
 	"name" : "PBBuilderUI",
 	"type" : "normal"

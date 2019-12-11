@@ -25,17 +25,6 @@ defaultSpec
 																newColumn: [ :c1 | c1 add: #buttonShowSourceCode ];
 																newColumn: [ :c1 | c1 add: #buttonBootstrap ]
 													] height: self toolbarHeight
-						];
-						newColumn: [ :c | 
-							c 
-								newRow: [ :row1 |
-												row1 
-													newColumn: [ :c1 | c1 add: #imagesList ]
-								];
-								newRow: [ :row2 | 
-												row2 
-													newColumn: [ :c1 | c1	 add: #buttonInspectImage ] 
-								] height: self toolbarHeight
 						]
 					];
 				newRow: [ :row1 |
@@ -46,12 +35,11 @@ defaultSpec
 						  add: #buttonEvalInGenImage
 				] height: self toolbarHeight;
 				newRow: [ :row1 |
-					row1
-						add: #labelImageName;
-						add: #textImageName; 
-						add: #buttonWriteGenImage
-				] height: self toolbarHeight * 1.5;
-				add: #pbBuilderUIBashScripter 
-				];
+					row1 
+						add: #pbBuilderUIImages;
+						add: #pbBuilderUIBashScripter
+						
+				] height: 300 
+			];
 		yourself
 	
