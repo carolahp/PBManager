@@ -10,6 +10,9 @@ initializeWidgets
 	buttonLoadRepo := self newButton.
 	buttonLoadRepo icon: (Smalltalk iconNamed: #glamorousOpenFromUrl).
 	
+	buttonOpenFolderContainingRepos := self newButton.
+	buttonOpenFolderContainingRepos icon: (Smalltalk iconNamed: #glamorousOpen).
+	
 	labelRepo  := self newLabel.
 	labelRepo label: 'Language Definition Repositories'.
 

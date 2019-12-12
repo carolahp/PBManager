@@ -11,7 +11,8 @@
 		"buttonSaveRepo",
 		"listRepo",
 		"buttonLoadRepo",
-		"pbBuilder"
+		"pbBuilder",
+		"buttonOpenFolderContainingRepos"
 	],
 	"name" : "PBBuilderUIRepositories",
 	"type" : "normal"

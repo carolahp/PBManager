@@ -25,4 +25,8 @@ initializePresenter
 		self selectedRepository writeToDisk. 
 		self inform: 'Exported to: ', self selectedRepository tonelPath.
 		self pbBuilder announce
+	 ].
+	buttonOpenFolderContainingRepos whenActionPerformedDo: [ 
+		:event |
+		self pbBuilder runBashScript: 'open' arguments: { self pbBuilder defaultLocationOfRepositories pathString }.
 	 ]

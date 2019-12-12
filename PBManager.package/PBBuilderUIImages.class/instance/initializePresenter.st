@@ -16,3 +16,8 @@ initializePresenter
 		self updateImagesLists.
 		self buttonWriteGenImage disable.
 	 ].
+	
+	buttonOpenContainingFolder whenActionPerformedDo:
+	[ :event |
+		self pbBuilder runBashScript: 'open' arguments: { self pbBuilder defaultLocationOfBootstrappedImages pathString }.
+	 ]

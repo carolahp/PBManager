@@ -6,9 +6,10 @@ defaultSpec
 			col newRow: [ :r | 
 								r add: #labelRepo ] height: self toolbarHeight;
 				newRow: [ :r | 
-								r add: #buttonAddRepo.
-								r add: #buttonSaveRepo.
-								r add: #buttonLoadRepo ] height: self toolbarHeight;
+								r add: #buttonAddRepo;
+								  add: #buttonSaveRepo;
+								  add: #buttonLoadRepo;
+								  add: #buttonOpenFolderContainingRepos ] height: self toolbarHeight;
 				add: #listRepo ];	
 		yourself
 	
