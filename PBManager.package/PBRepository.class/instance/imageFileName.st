@@ -1,3 +1,3 @@
-accessing
+default-values
 imageFileName
-	^ imageFileName ifNil: [ imageFileName := self languageName copyReplaceAll: ' ' with: '_' ] 
+	^ self languageName copyReplaceAll: ' ' with: '_'

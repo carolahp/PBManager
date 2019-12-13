@@ -12,5 +12,6 @@ defaultSpec
 						newColumn: [ : col | col add: #buttonOpenContainingFolder ] width: self buttonWidth 
 				] height: self toolbarHeight * 1.3;
 				newRow: [ :row1 | row1 newColumn: [ :c1 | c1 add: #imagesList ] ];
-				newRow: [ :row2 | row2 newColumn: [ :c1 | c1	 add: #buttonInspectImage ] ] height: self toolbarHeight
+				newRow: [ :row2 | row2 add: #buttonInspectImage;
+											  add: #buttonDeleteImage ] height: self toolbarHeight
 		]

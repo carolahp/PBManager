@@ -10,7 +10,10 @@
 		"imageFileReference",
 		"metadataFileReference",
 		"bootstrapper",
-		"script"
+		"script",
+		"scriptCommand",
+		"scriptArguments",
+		"timestamp"
 	],
 	"name" : "PBImage",
 	"type" : "normal"

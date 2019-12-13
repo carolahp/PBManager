@@ -1,3 +1,3 @@
-accessing
+instance creation
 imageExtension
 	^'image'

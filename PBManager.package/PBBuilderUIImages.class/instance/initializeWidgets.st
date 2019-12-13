@@ -1,10 +1,15 @@
 initialization
 initializeWidgets
 			
-	imagesList := self newList displayBlock: [:item | item basename ].	
+	imagesList := self newList displayBlock: [:item | item imageFileReference basename ].	
 	
 	buttonInspectImage := self newButton.
-	buttonInspectImage label: 'Inspect image'.
+	buttonInspectImage label: 'Inspect'.
+	buttonInspectImage icon: (Smalltalk iconNamed: #glamorousInspect)..
+	
+	buttonDeleteImage := self newButton.
+	buttonDeleteImage icon: (Smalltalk iconNamed: #glamorousTrash).
+	buttonDeleteImage label: 'Delete'.
 	
 	labelImageName := self newLabel.
 	labelImageName label: 'Generated image name:'.

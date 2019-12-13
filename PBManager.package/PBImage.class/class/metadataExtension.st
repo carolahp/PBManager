@@ -1,3 +1,3 @@
-PBManager
+instance creation
 metadataExtension
 	^ 'bmeta'

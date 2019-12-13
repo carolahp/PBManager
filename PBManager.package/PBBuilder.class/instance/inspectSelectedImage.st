@@ -1,3 +1,3 @@
 image-functions
 inspectSelectedImage
-	^ (SpurImage onFile: self selectedImage asFileReference) inspect
+	^ (SpurImage onFile: self selectedImage imageFileReference) inspect

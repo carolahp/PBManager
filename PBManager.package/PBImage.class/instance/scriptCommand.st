@@ -1,0 +1,3 @@
+accessing
+scriptCommand
+	^ scriptCommand

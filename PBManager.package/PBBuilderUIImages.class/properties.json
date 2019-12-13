@@ -12,7 +12,8 @@
 		"labelImageName",
 		"textImageName",
 		"buttonWriteGenImage",
-		"buttonOpenContainingFolder"
+		"buttonOpenContainingFolder",
+		"buttonDeleteImage"
 	],
 	"name" : "PBBuilderUIImages",
 	"type" : "normal"
