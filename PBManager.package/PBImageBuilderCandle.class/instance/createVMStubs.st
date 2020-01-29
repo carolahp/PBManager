@@ -3,8 +3,6 @@ createVMStubs
 
 	| specialObjectsArray |
 	super log: 'creating initial Objects needed by the VM'.
-	self halt.
-	PBLanguageVisualization new visualizeClassHyerarchyAndInstSpec: self systemDefinition. 
 	
 	self createNil.	
 	self createFalse.
