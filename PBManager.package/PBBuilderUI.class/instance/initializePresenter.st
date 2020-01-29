@@ -80,5 +80,5 @@ initializePresenter
 	
 	buttonEvalInGenImage whenActionPerformedDo:  
 	[ :event |
-		self blockEvalInGenImage value: self textCodeInput text
+		(self interpreter evaluateCode: self textCodeInput text withTemps: #()) inspect
 	 ].
