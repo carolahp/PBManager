@@ -21,8 +21,11 @@ initializeWidgets
 	buttonAddAll label: 'add all'.
 	
 	buttonShowSourceCode := self newButton.
-	buttonShowSourceCode label: 'Show sources'.
-
+	buttonShowSourceCode label: 'Explore'.
+	
+	buttonShowVisualization := self newButton.
+	buttonShowVisualization label: 'Visualize'.
+	
 	buttonExecInGenImage := self newButton.
 	buttonExecInGenImage label: 'Debug in Generated Image'.
 	buttonExecInGenImage disable.

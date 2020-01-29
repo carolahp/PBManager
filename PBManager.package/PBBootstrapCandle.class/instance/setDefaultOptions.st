@@ -1,4 +1,4 @@
-accessing
+bootstrapping
 setDefaultOptions
 	| options |
 	options := CommandLineArguments new.

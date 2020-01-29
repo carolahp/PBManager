@@ -1,4 +1,4 @@
-as yet unclassified
+bootstrapping
 bootstrap
 	"I should be excecuted only if my environment was set beforehand"
 	ringEnvironment ifNil: [ Error signal: 'Ring environment must be set before bootstraping' ].

@@ -5,6 +5,7 @@ classDefinitionFor: aClass
 	| type classInstallerName |
 
 	type := self typeFor: aClass.
+	Transcript show: aClass name, ',', type, Character cr.
 	
 	classInstallerName := (systemDefinition classWithRole: #ClassInstaller).
 	

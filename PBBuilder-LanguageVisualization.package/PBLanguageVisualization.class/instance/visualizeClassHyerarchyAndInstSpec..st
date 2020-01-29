@@ -1,17 +1,22 @@
 as yet unclassified
-visualize: aLanguageDefinition
+visualizeClassHyerarchyAndInstSpec: aLanguageDefinition
 
-| classesToAnalyze c b b1 b2 b3 b4 es ds |
+| colors builder classesToAnalyze c b b1 b2 b3 b4 es ds |
 
 classesToAnalyze := (aLanguageDefinition allClasses).
-
+builder := aLanguageDefinition pbBootstrapper builderClass new.
 c := RTComposer new.
 c gap: 35.
+colors := { 0 -> Color red. "0 sized"
+				1 -> Color blue. "non-indexable (Point)"
+				2 -> Color green. "indexable WOIV (Array)"
+				3 -> Color orange. "indexable WIV (MethodContext)"
+				10 -> Color lightCyan. "32-bit indexable"
+				16 -> Color lightMagenta } asDictionary. "8-bit indexable"
 "-------"
 b := RTMondrian new.
 b view: c view.
-"b shape circle if: [ :cls | cls numberOfMethods > 10 ] fillColor: Color red."
-b shape circle if: [ :cls | cls numberOfMethods > 10 ] fillColor: Color red.
+b shape circle if: true color: [ :cls | colors at: (builder instSpecOfClass: cls) ].
 b nodes: classesToAnalyze.
 b edges connectFrom: #superclass.
 b normalizer

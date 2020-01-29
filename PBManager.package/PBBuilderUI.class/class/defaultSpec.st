@@ -23,6 +23,7 @@ defaultSpec
 													 :row1 |
 															row1 
 																newColumn: [ :c1 | c1 add: #buttonShowSourceCode ];
+																newColumn: [ :c1 | c1 add: #buttonShowVisualization ];
 																newColumn: [ :c1 | c1 add: #buttonBootstrap ]
 													] height: self toolbarHeight
 						]

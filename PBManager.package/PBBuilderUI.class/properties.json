@@ -13,6 +13,7 @@
 		"labelIn",
 		"labelOut",
 		"buttonBootstrap",
+		"buttonShowVisualization",
 		"buttonAddAll",
 		"buttonRemoveAll",
 		"bootstrapBlock",

@@ -60,6 +60,15 @@ initializePresenter
 					to: self. 
 				self pbRepository ringEnvironment browse. ]
 	 ].
+
+	buttonShowVisualization whenActionPerformedDo:  
+	[ :event |
+		
+		self pbRepository classesNamesInBootstrap 
+			ifEmpty: [ self inform: 'no classes selected' ]
+			ifNotEmpty: [
+				[(PBLanguageVisualization new visualizeClassHyerarchyAndInstSpec: self pbRepository ringEnvironment) inspect] on: Warning do: [:e | e resume ]]
+	 ].
 	
 	buttonExecInGenImage whenActionPerformedDo:  
 	[ :event |
