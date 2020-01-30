@@ -1,0 +1,3 @@
+accessing
+modificationTime
+	^ self imageFileReference modificationTime

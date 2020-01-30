@@ -1,9 +1,8 @@
 initialization
 initializePresenter
-		
 	imagesList whenSelectionChanged: [
 		self pbBuilder selectedImage: (imagesList listElementAt: imagesList selectedIndex).].
-
+	
 	buttonInspectImage whenActionPerformedDo:  
 	[ :event |
 		self pbBuilder inspectSelectedImage

@@ -1,7 +1,9 @@
 initialization
 initializeWidgets
 			
-	imagesList := self newList displayBlock: [:item | item imageFileReference basename ].	
+	imagesList := self newMultiColumnList.
+	imagesList displayBlock: [ :img | self wrapImageItem: img].
+	imagesList sortingBlock: [ :a :b | a modificationTime > b modificationTime ].
 	
 	buttonInspectImage := self newButton.
 	buttonInspectImage label: 'Inspect'.
