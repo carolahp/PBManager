@@ -18,7 +18,8 @@ initializePresenter
 	[ :event | 
 		"hack to select the selected item"
 		self pbBuilder pbRepository: self selectedRepository.
-		loadedRepository := self selectedRepository 
+		loadedRepository := self selectedRepository.
+		self refresh
 	].
 
 	buttonSaveRepo whenActionPerformedDo: 
