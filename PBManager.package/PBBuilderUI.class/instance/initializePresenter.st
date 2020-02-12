@@ -71,12 +71,9 @@ initializePresenter
 	 ].
 	
 	buttonExecInGenImage whenActionPerformedDo:  
-	[ :event | 
-		[ (PBHybridDebugger 
+	[ :event |  (PBHybridDebugger 
 				withCode: self textCodeInput text 
-				interpreter: self debuggerInterpreter) openWithSpec ] 
-			on: Error do: [ self error: 'You must bootstrap a new image first!' ] 
-	 ].
+				interpreter: self debuggerInterpreter) openWithSpec ].
 	
 	buttonEvalInGenImage whenActionPerformedDo:  
 	[ :event |

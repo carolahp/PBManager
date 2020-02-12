@@ -19,6 +19,12 @@ initializeWidgets
 	listRepo := self newList.
 	listRepo items: self defaultRepositories.
 	
-	listRepo displayBlock: [ :item | (item unsavedChanges) 
-			ifTrue: [ '* ', item languageName ] 
-			ifFalse: [ item languageName ] ]
+	listRepo displayBlock: [ :item | | prefix suffix |
+		prefix := ''.
+		suffix := ''. 
+		(item unsavedChanges) 
+			ifTrue: [ prefix := '* ' ].
+		(item = self loadedRepository)
+			ifTrue: [ suffix := '(loaded)' ].	 
+		prefix, item languageName, suffix
+			]
