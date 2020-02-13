@@ -4,7 +4,7 @@ initialize
 	super initialize.
 	
 	metadataFileBasename := imageFileReference basenameWithoutExtension, '.', self class metadataExtension.
-	metadataFileReference := (imageFileReference containingDirectory pathString,'/', metadataFileBasename) asFileReference.
+	metadataFileReference := (imageFileReference parent pathString,'/', metadataFileBasename) asFileReference.
 	metadataFileReference exists 
 		ifTrue: [  ]
 		ifFalse: [ "create metadata file using the attributes already set for the object"

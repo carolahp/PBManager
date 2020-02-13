@@ -5,12 +5,10 @@ setDefaultOptions
 	architecture := options optionAt: 'ARCH' ifAbsent: [ '32' ].
 	buildNumber := '-1'.
 	versionInfo := '-1'.
-	
-	('Architecture: ' , architecture) logCr.
-	('BuildNumber: ' , buildNumber) logCr.
-	('VersionInfo: ' , versionInfo) logCr. 
-	
+	('Architecture: ' , architecture) traceCr.
+	('BuildNumber: ' , buildNumber) traceCr.
+	('VersionInfo: ' , versionInfo) traceCr
+
 	"versionInfo := (PBVersionInfo fromLongGitDescribe: versionInfo)
 		buildNumber: buildNumber;
-		yourself".
-	
+		yourself"

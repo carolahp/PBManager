@@ -1,3 +1,4 @@
 accessing-constants
 defaultLocationOfBootstrappedImages
-	^ (FileDirectory  default directoryNamed: 'bootstrapped') createDirectory
+
+	^ 'bootstrappedWorkspace' asFileReference ensureCreateDirectory
