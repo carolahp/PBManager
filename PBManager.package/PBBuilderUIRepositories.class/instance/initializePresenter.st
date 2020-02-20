@@ -23,7 +23,7 @@ initializePresenter
 	buttonSaveRepo whenActionPerformedDo: 
 	[ :event |
 		self selectedRepository writeToDisk. 
-		self inform: 'Exported to: ', self selectedRepository tonelPath.
+		self inform: 'Exported to: ', self selectedRepository tonelPath pathString.
 		self pbBuilder announce
 	 ].
 	buttonOpenFolderContainingRepos whenActionPerformedDo: [ 
