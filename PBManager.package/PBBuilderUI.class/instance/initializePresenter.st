@@ -55,7 +55,7 @@ initializePresenter
 			ifEmpty: [ self inform: 'no classes selected' ]
 			ifNotEmpty: [
 				self pbRepository ringEnvironment announcer 
-					when: ClyRing2EnvironmentChanged 
+					when: ClassAdded , ClassCommented , ClassRecategorized , ClassModifiedClassDefinition , ClassRemoved , ClassRenamed	, ClassReorganized , MethodAdded , MethodModified , MethodRecategorized , MethodRemoved , ProtocolAdded , ProtocolRemoved  
 					send: #markRepositoryAsModified 
 					to: self. 
 				self pbRepository ringEnvironment browse. ]
