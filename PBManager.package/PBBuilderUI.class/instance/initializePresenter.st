@@ -40,12 +40,12 @@ initializePresenter
 
 	buttonBootstrap whenActionPerformedDo:  
 	[ :event |
-		self buttonExecInGenImage disable.
+		"self buttonExecInGenImage disable."
 		"self buttonWriteGenImage disable."
-		self buttonEvalInGenImage disable.
+		"self buttonEvalInGenImage disable."
 		self pbBuilder bootstrapLoadedRepository.
-		self buttonExecInGenImage enable.
-		self buttonEvalInGenImage enable.
+		"self buttonExecInGenImage enable."
+		"self buttonEvalInGenImage enable."
 	 ].
 
 	buttonShowSourceCode whenActionPerformedDo:  
