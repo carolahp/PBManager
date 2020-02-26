@@ -1,3 +1,3 @@
 accessing-constants
 defaultLocationOfBootstrappedImages
-	^ (FileDirectory  default directoryNamed: 'bootstrapped') assureExistence  
+	^ (FileSystem workingDirectory / 'bootstrapped') ensureCreateDirectory  
