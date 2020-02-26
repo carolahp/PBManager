@@ -18,7 +18,7 @@ baseline: spec
 			with: [ spec repository: 'github://carolahp/PharoImageInspector'  ].
 		
 		spec baseline: 'OSSubprocess'
-			with: [ spec repository: 'github://pharo-contributions/OSSubprocess:master/repository'  ].
+			with: [ spec repository: 'github://pharo-contributions/OSSubprocess:v1.1.1/repository'  ].
 		
 		"spec baseline: 'PBHybridDebugger'
 			with: [ spec repository: 'github://carolahp/PBHybridDebugger'  ]."
