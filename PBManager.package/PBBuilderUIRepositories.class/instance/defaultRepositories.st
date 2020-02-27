@@ -1,7 +1,7 @@
 loading
 defaultRepositories
 	| langFilesReferences pbBuilders |
-	langFilesReferences := (self pbBuilder defaultLocationOfRepositories directories 
+	langFilesReferences := (self pbBuilder locationOfRepositories directories 
 		collect: [ :dir | | langFiles | langFiles := (dir files select: [ :file | file extension = 'lang']). 
 									langFiles isEmpty 
 										ifTrue: [ nil ]

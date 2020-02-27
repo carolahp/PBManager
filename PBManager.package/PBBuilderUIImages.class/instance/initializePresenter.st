@@ -16,7 +16,7 @@ initializePresenter
 	
 	buttonOpenContainingFolder whenActionPerformedDo:
 	[ :event |
-		self pbBuilder runBashScript: 'open' arguments: { self pbBuilder defaultLocationOfBootstrappedImages pathString }.
+		self pbBuilder runBashScript: 'open' arguments: { self pbBuilder locationOfBootstrappedImages pathString }.
 	 ].
 	buttonDeleteImage  whenActionPerformedDo:
 	[ :event | | selectedImage |

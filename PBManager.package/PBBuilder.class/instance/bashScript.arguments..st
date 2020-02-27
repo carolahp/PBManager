@@ -1,8 +1,8 @@
 image-functions
 bashScript: aCommand arguments: aCollection
-	
+	self halt.
 	^ OSSUnixSubprocess new
 			command: aCommand;
 			arguments: aCollection;
-			workingDirectory: self defaultLocationOfRepositories absolutePath parent pathString;
+			workingDirectory: FileSystem workingDirectory pathString;
 			redirectStdout
