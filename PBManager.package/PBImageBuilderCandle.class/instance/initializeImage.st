@@ -24,7 +24,6 @@ initializeImage
 	association instanceVariableAtIndex: 2 put: (self bootstrapEnvironment at: #Processor).
 	
 	objectSpace backend processorAssociation: association .
-	
 	process := objectSpace createProcessWithPriority: 3 doing: 'PCSystem start' withTemps: #().
  	objectSpace installAsActiveProcess: process withProcessor: (self bootstrapEnvironment at: #Processor).
 	
