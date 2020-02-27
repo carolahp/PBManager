@@ -21,6 +21,6 @@ initializePresenter
 	buttonDeleteImage  whenActionPerformedDo:
 	[ :event | | selectedImage |
 		selectedImage := self pbBuilder selectedImage.
-		self pbBuilder runAndWaitBashScript: 'rm' arguments: (selectedImage allFileReferences collect: [ :fr | fr pathString ]).
+		self pbBuilder runAndWaitBashScript: 'rm' arguments: (selectedImage allFileReferences collect: [ :fr | fr pathString ] ).
 		self updateImagesLists
 	 ].
