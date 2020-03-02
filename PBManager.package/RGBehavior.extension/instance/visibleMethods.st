@@ -1,0 +1,3 @@
+*PBManager
+visibleMethods
+	^ self methods
