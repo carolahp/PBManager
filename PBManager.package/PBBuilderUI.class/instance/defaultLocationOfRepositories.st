@@ -1,3 +1,0 @@
-accessing
-defaultLocationOfRepositories
-	^ self pbBuilder defaultLocationOfRepositories

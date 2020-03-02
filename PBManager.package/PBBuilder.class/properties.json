@@ -1,5 +1,5 @@
 {
-	"commentStamp" : "CaroHernandez 1/8/2019 13:02",
+	"commentStamp" : "CaroHernandez 2/27/2020 15:37",
 	"super" : "Object",
 	"category" : "PBManager-core",
 	"classinstvars" : [ ],
@@ -9,9 +9,10 @@
 		"pbRepository",
 		"pbBuilderUI",
 		"pbBootstrapManual",
-		"defaultLocationOfRepositories",
 		"announcer",
-		"bootstrappedImage"
+		"bootstrappedImage",
+		"locationOfBootstrappedImages",
+		"locationOfRepositories"
 	],
 	"name" : "PBBuilder",
 	"type" : "normal"

@@ -1,4 +1,0 @@
-accessing-constants
-defaultLocationOfBootstrappedImages
-
-	^ 'bootstrappedWorkspace' asFileReference ensureCreateDirectory

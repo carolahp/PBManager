@@ -8,9 +8,9 @@ builder := aLanguageDefinition pbBootstrapper builderClass new.
 c := RTComposer new.
 c gap: 35.
 colors := { 0 -> Color red. "0 sized"
-				1 -> Color lightOrange. "non-indexable (Point)"
+				1 -> Color orange. "non-indexable (Point)"
 				2 -> Color green. "indexable WOIV (Array)"
-				3 -> Color orange. "indexable WIV (MethodContext)"
+				3 -> Color pink. "indexable WIV (MethodContext)"
 				10 -> Color lightCyan. "32-bit indexable"
 				16 -> Color lightMagenta } asDictionary. "8-bit indexable"
 "-------"

@@ -55,7 +55,7 @@ initializePresenter
 			ifEmpty: [ self inform: 'no classes selected' ]
 			ifNotEmpty: [
 				self pbRepository ringEnvironment announcer 
-					when: ClassAdded , ClassCommented , ClassRecategorized , ClassModifiedClassDefinition , ClassRemoved , ClassRenamed	, ClassReorganized , MethodAdded , MethodModified , MethodRecategorized , MethodRemoved , ProtocolAdded , ProtocolRemoved  
+					when: ClassAdded , ClassCommented , ClassRecategorized , ClassModifiedClassDefinition , ClassRemoved , ClassRenamed	, ClassReorganized , MethodAdded , MethodModified , MethodRecategorized , MethodRemoved , ProtocolAdded , ProtocolRemoved 
 					send: #markRepositoryAsModified 
 					to: self. 
 				self pbRepository ringEnvironment browse. ]
@@ -71,12 +71,9 @@ initializePresenter
 	 ].
 	
 	buttonExecInGenImage whenActionPerformedDo:  
-	[ :event | 
-		[ (PBHybridDebugger 
+	[ :event |  (PBHybridDebugger 
 				withCode: self textCodeInput text 
-				interpreter: self debuggerInterpreter) openWithSpec ] 
-			on: Error do: [ self error: 'You must bootstrap a new image first!' ] 
-	 ].
+				interpreter: self debuggerInterpreter) openWithSpec ].
 	
 	buttonEvalInGenImage whenActionPerformedDo:  
 	[ :event |

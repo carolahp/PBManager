@@ -1,7 +1,7 @@
 accessing
 bindingOf: aName
 
-	(self systemDefinition classNamed: aName) isNotNil
+	([ self systemDefinition classNamed: aName ] on: Error do: [ nil ]) isNotNil
 		ifTrue: [ ^ "(objectSpace classNamed: aName) mirror asClassMirror" 
 			EPClassBinding new
 				name: aName objectSpace: self;

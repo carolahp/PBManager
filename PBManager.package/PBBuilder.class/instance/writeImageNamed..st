@@ -2,7 +2,7 @@ image-functions
 writeImageNamed: aString
 	| imageFileReference metadataFileReference aDictionary |
 	
-	imageFileReference := (self defaultLocationOfBootstrappedImages pathString, '/', aString, '.', PBImage imageExtension) asFileReference.
+	imageFileReference := (self locationOfBootstrappedImages pathString, '/', aString, '.', PBImage imageExtension) asFileReference.
 	self pbRepository pbBootstrapper builder writeImageIn: imageFileReference . 
 	
 	aDictionary := { 
