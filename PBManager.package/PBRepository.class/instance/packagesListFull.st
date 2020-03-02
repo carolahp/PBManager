@@ -1,3 +1,3 @@
 accessing
 packagesListFull
-	^ packagesListFull ifNil: [ ^ packagesListFull := languageDefinitionClass defaultPackagesListFull ]
+	^ packagesListFull ifNil: [ ^ packagesListFull := self languageDefinitionClass defaultPackagesListFull ]
