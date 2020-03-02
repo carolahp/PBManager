@@ -5,7 +5,7 @@ packagesDefaultListFull
 	"get names of all packages from the Tonel repository"
 	allPackagesNamesFromTonel := self getPackagesNamesFromTonelRepo .
 	
-	^ packagesListFull 
+	^ self packagesListFull 
 					ifNil: [ allPackagesNamesFromTonel ]
-					ifNotNil: [ allPackagesNamesFromTonel intersection: packagesListFull ].	
+					ifNotNil: [ allPackagesNamesFromTonel intersection: self packagesListFull ].	
 	

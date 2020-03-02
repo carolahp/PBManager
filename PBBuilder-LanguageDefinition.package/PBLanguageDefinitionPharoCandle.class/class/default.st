@@ -5,7 +5,7 @@ default
 	
 	tonel := TonelRepository new directory: tonelFileReference .
 	
-	langDefinition := (tonel asRingEnvironmentWith: #('Kernel-Optional-Graphics' 'Kernel-Collections-Unordered' 'Kernel-Objects' 'Kernel-Classes' 'Kernel-Streams' 'Kernel-System' 'Kernel-Numeric' 'Kernel-Collections-Abstract' 'Kernel-Optional' 'Kernel-Processes' 'Kernel-Collections-Ordered' 'Kernel-Methods') 
+	langDefinition := (tonel asRingEnvironmentWith: self defaultPackagesListFull 
 		languageDefinition: PBLanguageDefinitionPharoCandle) 
 		tonelFileReference: tonelFileReference;
 		yourself .
