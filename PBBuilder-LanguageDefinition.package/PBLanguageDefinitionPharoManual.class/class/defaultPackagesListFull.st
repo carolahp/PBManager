@@ -1,3 +1,43 @@
 accessing
 defaultPackagesListFull 
-	^ #BaselineOfPharoBootstrap asClass allPackageNames , #BaselineOfTraits asClass allPackageNames
+	"return the kernel group"
+	^{
+	'FFI-Kernel'.
+	'FFI-Pools'.
+	'Announcements-Core'.
+	'Colors'.
+	'Collections-Abstract'.
+	'Collections-Native'.
+	'Collections-Sequenceable'.
+	'Collections-Stack'.
+	'Collections-Streams'.
+	'Collections-Strings'.
+	'Collections-Support'.
+	'Collections-Unordered'.
+	'Collections-Weak'.
+	'Files'.
+	'FileSystem-Path'.
+	'Hermes'.
+	'Kernel'.
+	'Kernel-BytecodeEncoders'.
+	'Network-UUID'.
+	'Transcript-NonInteractive'.
+	'PharoBootstrap-Initialization'.
+	'RPackage-Core'.
+	'Random-Core'.
+	'Shift-Changes'.
+	'Shift-ClassBuilder'.
+	'Shift-ClassInstaller'.
+	'Slot-Core'.
+	'System-Announcements'.
+	'System-BasicCommandLineHandler'.
+	'System-CommandLine'.
+	'System-Finalization'.
+	'System-Hashing'.
+	'System-Platforms'.
+	'System-SessionManager'.
+	'System-Sources'.
+	'System-Support'.
+	'UIManager'.
+	'Zinc-Character-Encoding-Core'
+	} 
