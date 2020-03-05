@@ -1,5 +1,4 @@
-running
-writeImageIn: aFileReference
-	
+writing-image
+writeImageIn: aFileReference 
 	imageFileReference := aFileReference.	
 	self writeImage
