@@ -33,9 +33,9 @@ initializeIndexes
 	"processNameIndex := self lookup: #name in: #Process."
 	
 	" SmalltalkImage "
-	"pcSmalltalk := (environment classWithRole: #Smalltalk) name.
+	pcSmalltalk := (environment classWithRole: #Smalltalk) name.
 	smalltalkImageGlobalsIndex := self lookup: #globals in: pcSmalltalk.
-	"
+	
 	" ProcessorScheduler "
 	pcProcessorScheduler := (environment classWithRole: #ProcessorScheduler) name.
 	processSchedulerActiveProcessIndex := self lookup: #activeProcess in: pcProcessorScheduler.

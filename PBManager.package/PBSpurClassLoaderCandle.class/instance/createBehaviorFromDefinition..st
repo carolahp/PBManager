@@ -22,4 +22,9 @@ createBehaviorFromDefinition: aRFiDefinition
 		self registerClass: newBehavior asClassMirror named: aRFiDefinition name fullyLoaded: true.
 	] ifFalse: [
 		self registerTrait: newBehavior asTraitMirror named: aRFiDefinition name fullyLoaded: true.
-	]
+	].
+	"we register the class by hand in the Smalltalk globals"
+	builder bootstrapInterpreter 
+		evaluateCode: 'Smalltalk globals at: aClassName put: aNewClass'
+		withTemps: { 'aClassName' -> (aRFiDefinition name asSymbol asLiteralInObjectSpace: builder objectSpace) .
+						 'aNewClass'  -> newBehavior }
