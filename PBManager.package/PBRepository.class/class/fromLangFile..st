@@ -9,6 +9,7 @@ fromLangFile: aFileReference
 	
 	aPBRepository 
 			tonelPath: aPath; "tonelPath in the file must be relative to the location of the file"
-			languageDefinitionClass: aLangDefClass.
+			languageDefinitionClass: aLangDefClass;
+			languageFile: aFileReference. 
 	
 	^ aPBRepository 

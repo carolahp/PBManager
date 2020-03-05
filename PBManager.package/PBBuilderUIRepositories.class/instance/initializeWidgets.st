@@ -10,6 +10,9 @@ initializeWidgets
 	buttonLoadRepo := self newButton.
 	buttonLoadRepo icon: (Smalltalk iconNamed: #glamorousOpenFromUrl).
 	
+	buttonRefresh := self newButton.
+	buttonRefresh icon: (Smalltalk ui icons iconNamed: #glamorousRefresh).
+	
 	buttonOpenFolderContainingRepos := self newButton.
 	buttonOpenFolderContainingRepos icon: (Smalltalk iconNamed: #glamorousOpen).
 	
