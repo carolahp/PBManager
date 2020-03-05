@@ -1,6 +1,6 @@
 accessing
 createImage
-
+self halt.
 	builder := self builderClass new.
 	builder versionInfo: versionInfo.
 	builder imageFileReference: imageReference.

@@ -12,6 +12,8 @@ initializePresenter
 	[ :event | self pbBuilder writeImageNamed: self textImageName text asString.
 		self updateImagesLists.
 		self buttonWriteGenImage disable.
+		self pbBuilder pbBuilderUI setEnabledStatusOfDebuggingButtons: false
+		
 	 ].
 	
 	buttonOpenContainingFolder whenActionPerformedDo:

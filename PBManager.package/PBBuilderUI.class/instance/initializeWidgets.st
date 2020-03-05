@@ -28,11 +28,9 @@ initializeWidgets
 	
 	buttonExecInGenImage := self newButton.
 	buttonExecInGenImage label: 'Debug in Generated Image'.
-	buttonExecInGenImage disable.
 	
 	buttonEvalInGenImage := self newButton.
 	buttonEvalInGenImage label: 'Evaluate in Generated Image'.
-	buttonEvalInGenImage disable.
 	
 	textCodeInput := self newTextInput.
 	textCodeInput autoAccept: true.
@@ -40,4 +38,7 @@ initializeWidgets
 	pbBuilderRepositoriesUI := PBBuilderUIRepositories withPBBuilder: self pbBuilder.
 	pbBuilderUIBashScripter := PBBuilderUIBashScripter withPBBuilder: self pbBuilder.
 	pbBuilderUIImages := PBBuilderUIImages withPBBuilder: self pbBuilder.
+	
+	self setEnabledStatusOfDebuggingButtons: false.
+	
 	self update
