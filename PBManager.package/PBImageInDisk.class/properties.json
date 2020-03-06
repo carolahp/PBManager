@@ -15,6 +15,6 @@
 		"scriptArguments",
 		"timestamp"
 	],
-	"name" : "PBImage",
+	"name" : "PBImageInDisk",
 	"type" : "normal"
 }
