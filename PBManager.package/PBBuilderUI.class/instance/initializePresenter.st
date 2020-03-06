@@ -50,11 +50,8 @@ initializePresenter
 		self pbRepository classesNamesInBootstrap 
 			ifEmpty: [ self inform: 'no classes selected' ]
 			ifNotEmpty: [
-				self pbRepository ringEnvironment announcer 
-					when: ClassAdded , ClassCommented , ClassRecategorized , ClassModifiedClassDefinition , ClassRemoved , ClassRenamed	, ClassReorganized , MethodAdded , MethodModified , MethodRecategorized , MethodRemoved , ProtocolAdded , ProtocolRemoved 
-					send: #markRepositoryAsModified 
-					to: self. 
-				self pbRepository ringEnvironment browse. ]
+				self pbRepository subscribeToAnnouncementsSendingMessage: #markRepositoryAsModified to: self.
+				self pbRepository browseCode ]
 	 ].
 
 	buttonShowVisualization whenActionPerformedDo:  
@@ -63,11 +60,14 @@ initializePresenter
 		self pbRepository classesNamesInBootstrap 
 			ifEmpty: [ self inform: 'no classes selected' ]
 			ifNotEmpty: [
-				[(PBLanguageVisualization new visualizeClassHyerarchyAndInstSpec: self pbRepository ringEnvironment) inspect] on: Warning do: [:e | e resume ]]
+				[(PBLanguageVisualization new 
+					visualizeClassHyerarchyAndInstSpec: self pbRepository ringEnvironment) inspect] 
+				on: Warning do: [:e | e resume ]]
 	 ].
 	
 	buttonExecInGenImage whenActionPerformedDo:  
-	[ :event |  (PBHybridDebugger 
+	[ :event |  
+		(PBHybridDebugger 
 				withCode: self textCodeInput text 
 				interpreter: self debuggerInterpreter) openWithSpec ].
 	

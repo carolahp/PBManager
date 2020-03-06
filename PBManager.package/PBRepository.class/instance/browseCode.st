@@ -1,3 +1,3 @@
 browsing
 browseCode
-	self shouldBeImplemented.
+	self ringEnvironment browse
