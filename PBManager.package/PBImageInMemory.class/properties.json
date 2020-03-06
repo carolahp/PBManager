@@ -6,7 +6,8 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"imageBuilder"
+		"imageBuilder",
+		"systemDefinition"
 	],
 	"name" : "PBImageInMemory",
 	"type" : "normal"

@@ -16,6 +16,6 @@ defaultSpec
 								newRow: [ :row1 |
 									row1 add: #buttonDebugInImage;
 						  				  add: #buttonEvaluateInImage
-				] height: self toolbarHeight ]
+								] height: self toolbarHeight ]
 				] 
 		]
