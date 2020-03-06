@@ -15,6 +15,6 @@
 		"buttonOpenContainingFolder",
 		"buttonDeleteImage"
 	],
-	"name" : "PBBuilderUIImages",
+	"name" : "PBBuilderUIImagesInDisk",
 	"type" : "normal"
 }

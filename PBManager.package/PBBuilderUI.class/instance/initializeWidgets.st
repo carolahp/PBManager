@@ -28,8 +28,8 @@ initializeWidgets
 	
 	pbBuilderRepositoriesUI := PBBuilderUIRepositories withPBBuilder: self pbBuilder.
 	pbBuilderUIBashScripter := PBBuilderUIBashScripter withPBBuilder: self pbBuilder.
-	pbBuilderUIImages := PBBuilderUIImages withPBBuilder: self pbBuilder.
-	pbBuilderUIGeneratedImages := PBBuilderUIGeneratedImages withPBBuilder: self pbBuilder.
+	pbBuilderUIImages := PBBuilderUIImagesInDisk withPBBuilder: self pbBuilder.
+	pbBuilderUIGeneratedImages := PBBuilderUIImagesInMemory withPBBuilder: self pbBuilder.
 	
 	
 	self update

@@ -1,0 +1,3 @@
+updating
+update
+	self setEnabledStatusOfButtons: self listGeneratedImages selectedItem isNotNil
