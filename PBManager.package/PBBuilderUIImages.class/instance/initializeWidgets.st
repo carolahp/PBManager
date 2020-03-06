@@ -27,4 +27,3 @@ initializeWidgets
 	textImageName := self newText.
 	textImageName autoAccept: true.
 	
-	self registerSubscriptions

@@ -28,13 +28,9 @@ defaultSpec
 													] height: self toolbarHeight
 						]
 					];
-				newRow: [ :row1 |
-					row1 add: #textCodeInput
-				] height: self toolbarHeight * 4;
-				newRow: [ :row1 |
-					row1 add: #buttonExecInGenImage;
-						  add: #buttonEvalInGenImage
-				] height: self toolbarHeight;
+				newRow: [ :row1 | 
+					row1 
+						add: #pbBuilderUIGeneratedImages ];
 				newRow: [ :row1 |
 					row1 
 						add: #pbBuilderUIImages;

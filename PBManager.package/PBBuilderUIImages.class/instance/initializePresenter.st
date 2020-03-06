@@ -9,10 +9,11 @@ initializePresenter
 	 ].
 
 	buttonWriteGenImage whenActionPerformedDo:  
-	[ :event | self pbBuilder writeImageNamed: self textImageName text asString.
+	[ :event | 
+		self pbBuilder writeImageNamed: self textImageName text asString.
 		self updateImagesLists.
 		self buttonWriteGenImage disable.
-		self pbBuilder pbBuilderUI setEnabledStatusOfDebuggingButtons: false
+		self halt: 'remove image from images in memory list'
 		
 	 ].
 	

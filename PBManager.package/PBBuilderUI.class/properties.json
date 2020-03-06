@@ -19,20 +19,16 @@
 		"bootstrapBlock",
 		"buttonShowSourceCode",
 		"blockInspectImage",
-		"buttonExecInGenImage",
-		"blockExecInGenImage",
 		"buttonWriteGenImage",
 		"blockWriteGenImage",
 		"labelClassesIn",
 		"labelClassesOut",
-		"textCodeInput",
-		"buttonEvalInGenImage",
-		"blockEvalInGenImage",
 		"pbBuilder",
 		"pbBuilderRepositoriesUI",
 		"pbRepository",
 		"pbBuilderUIBashScripter",
-		"pbBuilderUIImages"
+		"pbBuilderUIImages",
+		"pbBuilderUIGeneratedImages"
 	],
 	"name" : "PBBuilderUI",
 	"type" : "normal"

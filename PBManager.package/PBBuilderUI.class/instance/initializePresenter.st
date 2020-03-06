@@ -40,7 +40,6 @@ initializePresenter
 
 	buttonBootstrap whenActionPerformedDo:  
 	[ :event |
-		self setEnabledStatusOfDebuggingButtons: true.
 		self pbBuilder bootstrapLoadedRepository.
 	 ].
 
@@ -63,15 +62,4 @@ initializePresenter
 				[(PBLanguageVisualization new 
 					visualizeClassHyerarchyAndInstSpec: self pbRepository ringEnvironment) inspect] 
 				on: Warning do: [:e | e resume ]]
-	 ].
-	
-	buttonExecInGenImage whenActionPerformedDo:  
-	[ :event |  
-		(PBHybridDebugger 
-				withCode: self textCodeInput text 
-				interpreter: self debuggerInterpreter) openWithSpec ].
-	
-	buttonEvalInGenImage whenActionPerformedDo:  
-	[ :event |
-		(self interpreter evaluateCode: self textCodeInput text withTemps: #()) inspect
-	 ].
+	 ]

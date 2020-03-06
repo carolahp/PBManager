@@ -1,0 +1,3 @@
+accessing
+generationTime
+	^ DateAndTime now

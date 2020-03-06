@@ -1,0 +1,14 @@
+{
+	"commentStamp" : "",
+	"super" : "Object",
+	"category" : "PBManager-image",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"builder",
+		"imageBuilder"
+	],
+	"name" : "PBImageInMemory",
+	"type" : "normal"
+}

@@ -26,19 +26,10 @@ initializeWidgets
 	buttonShowVisualization := self newButton.
 	buttonShowVisualization label: 'Visualize'.
 	
-	buttonExecInGenImage := self newButton.
-	buttonExecInGenImage label: 'Debug in Generated Image'.
-	
-	buttonEvalInGenImage := self newButton.
-	buttonEvalInGenImage label: 'Evaluate in Generated Image'.
-	
-	textCodeInput := self newTextInput.
-	textCodeInput autoAccept: true.
-	
 	pbBuilderRepositoriesUI := PBBuilderUIRepositories withPBBuilder: self pbBuilder.
 	pbBuilderUIBashScripter := PBBuilderUIBashScripter withPBBuilder: self pbBuilder.
 	pbBuilderUIImages := PBBuilderUIImages withPBBuilder: self pbBuilder.
+	pbBuilderUIGeneratedImages := PBBuilderUIGeneratedImages withPBBuilder: self pbBuilder.
 	
-	self setEnabledStatusOfDebuggingButtons: false.
 	
 	self update
