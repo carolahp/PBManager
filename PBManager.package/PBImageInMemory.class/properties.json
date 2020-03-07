@@ -7,7 +7,9 @@
 	"classvars" : [ ],
 	"instvars" : [
 		"imageBuilder",
-		"systemDefinition"
+		"systemDefinition",
+		"generationTime",
+		"size"
 	],
 	"name" : "PBImageInMemory",
 	"type" : "normal"

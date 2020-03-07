@@ -7,7 +7,7 @@ initializeWidgets
 			
 	listGeneratedImages := self newMultiColumnList.
 	listGeneratedImages displayBlock: [ :img | self wrapImageInMemoryItem: img].
-	listGeneratedImages sortingBlock: [ :a :b | a generationTime > b generationTime ].
+	listGeneratedImages sortingBlock: [ :a :b | a generationTime < b generationTime ].
 	
 	buttonEvaluateInImage := self newButton.
 	buttonEvaluateInImage label: 'Evaluate in Image'.
@@ -17,3 +17,4 @@ initializeWidgets
 	
 	textCodeInput := self newTextInput.
 	textCodeInput autoAccept: true.
+	textCodeInput text: self defaultCode.

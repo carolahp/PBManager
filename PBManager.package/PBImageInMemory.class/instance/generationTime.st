@@ -1,3 +1,3 @@
 accessing
 generationTime
-	^ DateAndTime now
+	^ generationTime

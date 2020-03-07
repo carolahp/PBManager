@@ -1,3 +1,3 @@
 accessing
 size 
-	^ 100000
+	^ size
