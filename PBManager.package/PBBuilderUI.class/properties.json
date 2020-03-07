@@ -28,7 +28,8 @@
 		"pbRepository",
 		"pbBuilderUIBashScripter",
 		"pbBuilderUIImages",
-		"pbBuilderUIGeneratedImages"
+		"pbBuilderUIGeneratedImages",
+		"textImageName"
 	],
 	"name" : "PBBuilderUI",
 	"type" : "normal"

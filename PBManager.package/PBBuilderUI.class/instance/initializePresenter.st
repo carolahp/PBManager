@@ -40,7 +40,7 @@ initializePresenter
 
 	buttonBootstrap whenActionPerformedDo:  
 	[ :event |
-		self pbBuilder bootstrapLoadedRepository.
+		self pbBuilder bootstrapLoadedRepositoryNamed: self textImageName text.
 	 ].
 
 	buttonShowSourceCode whenActionPerformedDo:  

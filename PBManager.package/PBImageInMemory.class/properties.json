@@ -9,7 +9,8 @@
 		"imageBuilder",
 		"systemDefinition",
 		"generationTime",
-		"size"
+		"size",
+		"imageName"
 	],
 	"name" : "PBImageInMemory",
 	"type" : "normal"

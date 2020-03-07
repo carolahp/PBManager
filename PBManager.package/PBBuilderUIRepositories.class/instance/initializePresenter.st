@@ -25,7 +25,7 @@ initializePresenter
 	[ :event |
 		self selectedRepository writeToDisk. 
 		self inform: 'Exported to: ', self selectedRepository tonelPath pathString.
-		self pbBuilder announce
+		self pbBuilder announceRepositoryLoaded
 	 ].
 	buttonRefresh whenActionPerformedDo: [ :event | | newListItems |
 		newListItems := self listRepo listItems collect: [ :item | PBRepository fromLangFile: item languageFile].

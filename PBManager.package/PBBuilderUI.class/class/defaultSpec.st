@@ -19,12 +19,17 @@ defaultSpec
 												c add: #labelClassesIn height: self toolbarHeight.
 												c add: #classesListIn.
 												c 
-													newRow: [
-													 :row1 |
-															row1 
+													newRow: [ 
+														:row1 |
+															row1
 																newColumn: [ :c1 | c1 add: #buttonShowSourceCode ];
-																newColumn: [ :c1 | c1 add: #buttonShowVisualization ];
-																newColumn: [ :c1 | c1 add: #buttonBootstrap ]
+																newColumn: [ :c1 | c1 add: #buttonShowVisualization ]
+															] height: self toolbarHeight;
+													newRow: [
+													 	:row1 |
+															row1 
+																newColumn: [ :c1 | c1 add: #textImageName ] ;
+																newColumn: [ :c1 | c1 add: #buttonBootstrap ] width: self buttonWidth 
 													] height: self toolbarHeight
 						]
 					];

@@ -1,3 +1,3 @@
 announcements-subscriptions
 registerSubscriptions
-	self pbBuilder announcer when: PBBuilderAnnouncement send: #update to: self
+	self pbBuilder announcer when: PBBuilderRepositoryLoadedAnnouncement send: #update to: self

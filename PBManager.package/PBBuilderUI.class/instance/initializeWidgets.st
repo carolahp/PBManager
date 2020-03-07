@@ -31,5 +31,7 @@ initializeWidgets
 	pbBuilderUIImages := PBBuilderUIImagesInDisk withPBBuilder: self pbBuilder.
 	pbBuilderUIGeneratedImages := PBBuilderUIImagesInMemory withPBBuilder: self pbBuilder.
 	
-	
+	textImageName := self newTextInput.
+	textImageName autoAccept: true.
+		
 	self update

@@ -6,6 +6,6 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [ ],
-	"name" : "PBBuilderAnnouncement",
+	"name" : "PBBuilderRepositoryLoadedAnnouncement",
 	"type" : "normal"
 }
