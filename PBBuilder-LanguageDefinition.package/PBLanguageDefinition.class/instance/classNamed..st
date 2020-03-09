@@ -1,3 +1,5 @@
 accessing
 classNamed: aString 
-	^ [ super classNamed: aString ] on: Error do: [ nil ] 
+	^ ([self classWithRole: aString] on: Error do: [nil]) 
+		ifNil: [ [super classNamed: aString] on: Error do: [ nil ]  ] 
+		ifNotNil: [ :class | class ]
