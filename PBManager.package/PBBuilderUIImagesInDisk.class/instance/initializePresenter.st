@@ -1,7 +1,9 @@
 initialization
 initializePresenter
 	imagesList whenSelectionChanged: [
-		self pbBuilder selectedImage: imagesList selectedItem ].
+		self pbBuilder selectedImage: imagesList selectedItem.
+		self update ].
+		
 	
 	buttonInspectImage whenActionPerformedDo:  
 	[ :event |
@@ -16,7 +18,7 @@ initializePresenter
 	[ :event | | selectedImage |
 		selectedImage := self pbBuilder selectedImage.
 		self pbBuilder runAndWaitBashScript: 'rm' arguments: (selectedImage allFileReferences collect: [ :fr | fr pathString ] ).
-		self updateImagesLists
+		self update
 	 ].
 	labelTitle := self newLabel.
 	labelTitle label: 'Images saved to disk'

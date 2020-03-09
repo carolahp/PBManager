@@ -1,3 +1,6 @@
 updating
 update
-	self textInputImageName text: (self pbBuilder pbRepository ifNotNil: [ :repo | repo imageFileName ] ifNil: [''] )
+	| repository |
+	repository := self pbBuilder pbRepository.
+	self textInputImageName text: (repository ifNotNil: [ :repo | repo imageFileName ] ifNil: [''] ).
+	self setEnabledStatusOfButtons: repository isNotNil

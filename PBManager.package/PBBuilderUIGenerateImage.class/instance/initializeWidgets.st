@@ -20,4 +20,5 @@ initializeWidgets
 	checkboxInstallProcess := self newCheckBox. 
 	checkboxInstallProcess label: 'app entry point'.
 	
-	self setDefaultCheckboxState 
+	self setDefaultCheckboxState.
+	self update

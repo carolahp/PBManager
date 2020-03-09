@@ -13,12 +13,15 @@ initializePresenter
 			self update ].
 	
 	buttonWriteGenImage whenActionPerformedDo:  
-	[ :event | 
-		self pbBuilder writeImageNamed: self textInputImageName text asString. 
+	[ :event | | image |
+		image := self pbBuilder writeImageNamed: self textInputImageName text asString. 
 		"remove the written image from the list of images in memory"
-		self listGeneratedImages items: (self listGeneratedImages listItems select: [ :item | item ~= self listGeneratedImages selectedItem ]).
+		image ifNotNil: [ 
+			self listGeneratedImages 
+				items: (self listGeneratedImages listItems 
+							select: [ :item | item ~= self listGeneratedImages selectedItem ]).
 		"unselect"
-		self listGeneratedImages setIndex: 0 .
-		self update
-
+			self listGeneratedImages setIndex: 0 .
+			self update ]
+		ifNil: [ self inform: 'Can''t write, existent file with the same name!' ]
 	 ].
