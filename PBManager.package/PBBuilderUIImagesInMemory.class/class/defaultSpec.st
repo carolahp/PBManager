@@ -12,10 +12,16 @@ defaultSpec
 							col 
 								newRow: [ :row1 |
 									row1 add: #textCodeInput
-								] height: self toolbarHeight * 4;
+								];
 								newRow: [ :row1 |
 									row1 add: #buttonDebugInImage;
-						  				  add: #buttonEvaluateInImage
-								] height: self toolbarHeight ]
+						  				  add: #buttonEvaluateInImage										  
+								] height: self toolbarHeight;
+								newRow: [ :row1 |
+									row1 
+										add: #textInputImageName;
+										add: #buttonWriteGenImage width: self buttonWidth*2  
+								] height: self toolbarHeight 
+							]
 				] 
 		]

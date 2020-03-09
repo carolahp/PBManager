@@ -11,7 +11,9 @@
 		"listGeneratedImages",
 		"buttonEvaluateInImage",
 		"buttonDebugInImage",
-		"textCodeInput"
+		"textCodeInput",
+		"buttonWriteGenImage",
+		"textInputImageName"
 	],
 	"name" : "PBBuilderUIImagesInMemory",
 	"type" : "normal"

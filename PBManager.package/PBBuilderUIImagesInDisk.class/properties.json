@@ -10,8 +10,6 @@
 		"imagesList",
 		"pbBuilder",
 		"labelImageName",
-		"textImageName",
-		"buttonWriteGenImage",
 		"buttonOpenContainingFolder",
 		"buttonDeleteImage"
 	],

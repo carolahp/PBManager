@@ -15,6 +15,14 @@ initializeWidgets
 	buttonDebugInImage := self newButton.
 	buttonDebugInImage label: 'Debug in Generated Image'.
 	
+	buttonWriteGenImage := self newButton.
+	buttonWriteGenImage icon: (Smalltalk iconNamed: #glamorousSave).
+	buttonWriteGenImage label: 'Write to Disk'.
+	
 	textCodeInput := self newTextInput.
 	textCodeInput autoAccept: true.
 	textCodeInput text: self defaultCode.
+	
+	textInputImageName := self newTextInput.
+	textInputImageName autoAccept: true
+	

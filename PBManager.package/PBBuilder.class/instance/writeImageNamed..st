@@ -1,6 +1,6 @@
 image-functions
 writeImageNamed: aString
-	| imageFileReference metadataFileReference aDictionary |
+	| imageFileReference aDictionary pbImage |
 	
 	imageFileReference := (self locationOfBootstrappedImages pathString, '/', aString, '.', PBImageInDisk imageExtension) asFileReference.
 	self pbRepository pbBootstrapper builder writeImageIn: imageFileReference . 
@@ -12,4 +12,6 @@ writeImageNamed: aString
 		#scriptArguments -> { imageFileReference pathString }. 
 		#timestamp -> DateAndTime now asString } asDictionary.
 	
-	^ PBImageInDisk fromImageFile: imageFileReference metadata: aDictionary
+	pbImage := PBImageInDisk fromImageFile: imageFileReference metadata: aDictionary.
+	self announceImageWritten: aString.
+	^ pbImage
