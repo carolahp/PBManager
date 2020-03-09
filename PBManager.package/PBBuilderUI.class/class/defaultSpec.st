@@ -24,14 +24,9 @@ defaultSpec
 															row1
 																newColumn: [ :c1 | c1 add: #buttonShowSourceCode ];
 																newColumn: [ :c1 | c1 add: #buttonShowVisualization ]
-															] height: self toolbarHeight;
-													newRow: [
-													 	:row1 |
-															row1 
-																newColumn: [ :c1 | c1 add: #textImageName ] ;
-																newColumn: [ :c1 | c1 add: #buttonBootstrap ] width: self buttonWidth 
-													] height: self toolbarHeight
-						]
+															] height: self toolbarHeight
+						];
+						newColumn: [ :col1 | col1 add: #pbBuilderUIGenerateImage ]
 					];
 				newRow: [ :row1 | 
 					row1 

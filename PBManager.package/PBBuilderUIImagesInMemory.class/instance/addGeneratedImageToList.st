@@ -1,10 +1,16 @@
 updating
 addGeneratedImageToList
+	| newImage pbRepo |
+	pbRepo := self pbBuilder pbRepository.
+	newImage := PBImageInMemory 
+					withImageBuilder: pbRepo pbBootstrapper builder
+					 imageName: pbRepo imageFileName.
+	newImage classesAreInstalled: pbRepo classesAreInstalled;
+				methodsAreInstalled: pbRepo methodsAreInstalled;
+				processIsInstalled: pbRepo processIsInstalled.				
 	self listGeneratedImages 
 		items: self listGeneratedImages listItems , 
-				{PBImageInMemory 
-					withImageBuilder: self pbBuilder pbRepository pbBootstrapper builder
-					 imageName: self pbBuilder pbRepository imageFileName }.
+				{ newImage }.
 				
 	self textInputImageName text: self pbBuilder pbRepository imageFileName. 
 	

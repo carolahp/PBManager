@@ -12,15 +12,12 @@
 		"classesListIn",
 		"labelIn",
 		"labelOut",
-		"buttonBootstrap",
 		"buttonShowVisualization",
 		"buttonAddAll",
 		"buttonRemoveAll",
 		"bootstrapBlock",
 		"buttonShowSourceCode",
-		"blockInspectImage",
 		"buttonWriteGenImage",
-		"blockWriteGenImage",
 		"labelClassesIn",
 		"labelClassesOut",
 		"pbBuilder",
@@ -29,7 +26,7 @@
 		"pbBuilderUIBashScripter",
 		"pbBuilderUIImages",
 		"pbBuilderUIGeneratedImages",
-		"textImageName"
+		"pbBuilderUIGenerateImage"
 	],
 	"name" : "PBBuilderUI",
 	"type" : "normal"

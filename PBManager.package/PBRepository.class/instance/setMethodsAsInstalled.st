@@ -1,0 +1,3 @@
+accessing
+setMethodsAsInstalled
+	methodsAreInstalled := true

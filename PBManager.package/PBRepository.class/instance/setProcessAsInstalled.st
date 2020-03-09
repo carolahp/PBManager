@@ -1,0 +1,3 @@
+accessing
+setProcessAsInstalled
+	processIsInstalled := true
