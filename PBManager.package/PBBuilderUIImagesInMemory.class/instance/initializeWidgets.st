@@ -24,5 +24,7 @@ initializeWidgets
 	textCodeInput text: self defaultCode.
 	
 	textInputImageName := self newTextInput.
-	textInputImageName autoAccept: true
+	textInputImageName autoAccept: true.
+	
+	self setEnabledStatusOfButtons: false.
 	
