@@ -13,9 +13,6 @@ initializeWidgets
 	buttonDeleteImage icon: (Smalltalk iconNamed: #glamorousTrash).
 	buttonDeleteImage label: 'Delete'.
 	
-	labelImageName := self newLabel.
-	labelImageName label: 'Generated image name:'.
-	
 	buttonOpenContainingFolder := self newButton.
 	buttonOpenContainingFolder icon: (Smalltalk iconNamed: #glamorousOpen).
 	

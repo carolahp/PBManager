@@ -11,7 +11,8 @@
 		"pbBuilder",
 		"labelImageName",
 		"buttonOpenContainingFolder",
-		"buttonDeleteImage"
+		"buttonDeleteImage",
+		"labelTitle"
 	],
 	"name" : "PBBuilderUIImagesInDisk",
 	"type" : "normal"

@@ -18,3 +18,5 @@ initializePresenter
 		self pbBuilder runAndWaitBashScript: 'rm' arguments: (selectedImage allFileReferences collect: [ :fr | fr pathString ] ).
 		self updateImagesLists
 	 ].
+	labelTitle := self newLabel.
+	labelTitle label: 'Images saved to disk'

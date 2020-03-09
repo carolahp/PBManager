@@ -4,9 +4,9 @@ defaultSpec
 	^ SpecLayout composed 
 		newColumn: [ :c | 
 			c 
-				add: #labelImageName height: self toolbarHeight;
 				newRow: [ :row1 |
 					row1
+						newColumn: [ : col | col add: #labelTitle ];
 						newColumn: [ : col | col add: #buttonOpenContainingFolder ] width: self buttonWidth 
 				] height: self toolbarHeight * 1.3;
 				newRow: [ :row1 | row1 newColumn: [ :c1 | c1 add: #imagesList ] ];
