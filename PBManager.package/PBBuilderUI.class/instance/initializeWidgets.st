@@ -11,9 +11,6 @@ initializeWidgets
 	labelClassesIn  := self newLabel.
 	labelClassesOut := self newLabel.
 	
-	buttonBootstrap := self newButton.
-	buttonBootstrap label: 'Generate img'.
-	
 	buttonRemoveAll := self newButton.
 	buttonRemoveAll label: 'remove all'.
 	
@@ -30,8 +27,5 @@ initializeWidgets
 	pbBuilderUIBashScripter := PBBuilderUIBashScripter withPBBuilder: self pbBuilder.
 	pbBuilderUIImages := PBBuilderUIImagesInDisk withPBBuilder: self pbBuilder.
 	pbBuilderUIGeneratedImages := PBBuilderUIImagesInMemory withPBBuilder: self pbBuilder.
-	
-	textImageName := self newTextInput.
-	textImageName autoAccept: true.
-		
+	pbBuilderUIGenerateImage := PBBuilderUIGenerateImage withPBBuilder: self pbBuilder.
 	self update

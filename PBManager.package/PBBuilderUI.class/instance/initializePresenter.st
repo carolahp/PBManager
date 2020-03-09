@@ -38,11 +38,6 @@ initializePresenter
 		packagesListIn listItems collect: [ :item | self togglePackage: item ].
 	 ].
 
-	buttonBootstrap whenActionPerformedDo:  
-	[ :event |
-		self pbBuilder bootstrapLoadedRepositoryNamed: self textImageName text.
-	 ].
-
 	buttonShowSourceCode whenActionPerformedDo:  
 	[ :event |
 		

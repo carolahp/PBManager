@@ -10,7 +10,12 @@
 		"systemDefinition",
 		"generationTime",
 		"size",
-		"imageName"
+		"imageName",
+		"classesInstalled",
+		"methodsInstalled",
+		"processInstalled",
+		"classesAreInstalled",
+		"methodsAreInstalled"
 	],
 	"name" : "PBImageInMemory",
 	"type" : "normal"

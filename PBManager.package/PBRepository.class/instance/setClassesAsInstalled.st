@@ -1,0 +1,3 @@
+accessing
+setClassesAsInstalled
+	classesAreInstalled := true
