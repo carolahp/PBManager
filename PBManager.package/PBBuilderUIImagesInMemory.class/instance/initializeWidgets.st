@@ -18,7 +18,6 @@ initializeWidgets
 	buttonDebugInImage label: 'Debug'.
 	
 	buttonViewCode := self newButton.
-	
 	buttonViewCode label: 'View code'.
 	
 	
@@ -32,6 +31,15 @@ initializeWidgets
 	
 	textInputImageName := self newTextInput.
 	textInputImageName autoAccept: true.
+	
+	textExternalCodeInput := self newTextInput.
+	textExternalCodeInput autoAccept: true.
+	textExternalCodeInput text: self defaultExternalCode.
+	
+	textExternalResponse := self newText.
+	
+	buttonExternalEvaluate := self newButton.
+	buttonExternalEvaluate label: 'External evaluate'.
 	
 	self setEnabledStatusOfButtons: false.
 	
