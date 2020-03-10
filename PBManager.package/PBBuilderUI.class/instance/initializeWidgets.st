@@ -18,7 +18,7 @@ initializeWidgets
 	buttonAddAll label: 'add all'.
 	
 	buttonShowSourceCode := self newButton.
-	buttonShowSourceCode label: 'Explore'.
+	buttonShowSourceCode label: 'Edit code'.
 	
 	buttonShowVisualization := self newButton.
 	buttonShowVisualization label: 'Visualize'.

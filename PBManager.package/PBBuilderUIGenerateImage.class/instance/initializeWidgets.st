@@ -4,6 +4,7 @@ initializeWidgets
 	
 	buttonGenerateImage := self newButton.
 	buttonGenerateImage label: 'Generate img'.
+	buttonGenerateImage icon: (Smalltalk ui iconNamed: #smallExport).
 	
 	textInputImageName := self newTextInput.
 	textInputImageName autoAccept: true.
