@@ -10,10 +10,17 @@ initializeWidgets
 	listGeneratedImages sortingBlock: [ :a :b | a generationTime < b generationTime ].
 	
 	buttonEvaluateInImage := self newButton.
-	buttonEvaluateInImage label: 'Evaluate in Image'.
+	buttonEvaluateInImage icon: (Smalltalk iconNamed: #smallDoIt).
+	buttonEvaluateInImage label: 'Evaluate'.
 	
 	buttonDebugInImage := self newButton.
-	buttonDebugInImage label: 'Debug in Generated Image'.
+	buttonDebugInImage icon: (Smalltalk iconNamed: #glamorousBug).
+	buttonDebugInImage label: 'Debug'.
+	
+	buttonViewCode := self newButton.
+	
+	buttonViewCode label: 'View code'.
+	
 	
 	buttonWriteGenImage := self newButton.
 	buttonWriteGenImage icon: (Smalltalk iconNamed: #glamorousSave).

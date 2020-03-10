@@ -25,3 +25,6 @@ initializePresenter
 			self update ]
 		ifNil: [ self inform: 'Can''t write, existent file with the same name!' ]
 	 ].
+	buttonViewCode whenActionPerformedDo: 
+	[ :event | 
+		 self listGeneratedImages selectedItem browseCode ]

@@ -13,7 +13,8 @@
 		"buttonDebugInImage",
 		"textCodeInput",
 		"buttonWriteGenImage",
-		"textInputImageName"
+		"textInputImageName",
+		"buttonViewCode"
 	],
 	"name" : "PBBuilderUIImagesInMemory",
 	"type" : "normal"
