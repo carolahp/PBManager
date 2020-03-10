@@ -1,4 +1,5 @@
 initialization
 initialize
 	super initialize.	
-	self registerSubscriptions
+	self registerSubscriptions.
+	self update
