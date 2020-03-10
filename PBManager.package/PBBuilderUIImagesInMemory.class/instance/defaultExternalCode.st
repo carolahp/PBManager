@@ -1,0 +1,3 @@
+initialization
+defaultExternalCode
+	^ 'MyClass helloWorld'

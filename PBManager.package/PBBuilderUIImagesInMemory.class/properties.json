@@ -13,7 +13,11 @@
 		"buttonDebugInImage",
 		"textCodeInput",
 		"buttonWriteGenImage",
-		"textInputImageName"
+		"textInputImageName",
+		"buttonViewCode",
+		"buttonExternalEvaluate",
+		"textExternalCodeInput",
+		"textExternalResponse"
 	],
 	"name" : "PBBuilderUIImagesInMemory",
 	"type" : "normal"
