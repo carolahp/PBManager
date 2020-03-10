@@ -30,9 +30,11 @@ defaultSpec
 					];
 				newRow: [ :row1 | 
 					row1 
-						add: #pbBuilderUIGeneratedImages ] height: self toolbarHeight * 8;
+						add: #pbBuilderUIGeneratedImages 
+				] height: self toolbarHeight * 8;
 				newRow: [ :row1 |
 					row1 
+						
 						add: #pbBuilderUIImages;
 						add: #pbBuilderUIBashScripter
 				] height: self toolbarHeight * 4
