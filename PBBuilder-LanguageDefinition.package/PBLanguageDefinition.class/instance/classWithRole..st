@@ -1,4 +1,5 @@
 accessing
 classWithRole: aString 
-	^ (self classNamed: (self classRoles at: aString)) 
+	
+	^ (super classNamed: (self classRoles at: aString ifAbsent: [ aString ])) 
 		ifNil: [ self error: 'class ', aString, ' not found'  ]
