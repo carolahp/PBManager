@@ -17,8 +17,16 @@ initializePresenter
 	buttonDeleteImage  whenActionPerformedDo:
 	[ :event | | selectedImage |
 		selectedImage := self pbBuilder selectedImage.
-		self pbBuilder runAndWaitBashScript: 'rm' arguments: (selectedImage allFileReferences collect: [ :fr | fr pathString ] ).
+		self pbBuilder 
+			runAndWaitBashScript: 'rm' 
+			arguments: (selectedImage allFileReferences collect: [ :fr | fr pathString ] ).
 		self update
 	 ].
+
+	buttonRefresh whenActionPerformedDo: 
+	[ :event |
+		self update
+	 ].
+
 	labelTitle := self newLabel.
 	labelTitle label: 'Images saved to disk'

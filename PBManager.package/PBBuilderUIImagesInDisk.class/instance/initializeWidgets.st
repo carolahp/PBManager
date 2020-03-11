@@ -15,4 +15,7 @@ initializeWidgets
 	buttonOpenContainingFolder := self newButton.
 	buttonOpenContainingFolder icon: (Smalltalk iconNamed: #glamorousOpen).
 	
+	buttonRefresh := self newButton.
+	buttonRefresh icon: (Smalltalk iconNamed: #glamorousRefresh).
+	
 	
