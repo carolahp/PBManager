@@ -27,11 +27,14 @@ initializePresenter
 		self inform: 'Exported to: ', self selectedRepository tonelPath pathString.
 		self pbBuilder announceRepositoryLoaded
 	 ].
+
 	buttonRefresh whenActionPerformedDo: [ :event | | newListItems |
-		newListItems := self listRepo listItems collect: [ :item | PBRepository fromLangFile: item languageFile].
+		newListItems := self listRepo listItems 
+								collect: [ :item | PBRepository fromLangFile: item languageFile].
 		self listRepo items: newListItems.
-		
+		self pbBuilder pbRepository: nil	
 	].
+
 	buttonOpenFolderContainingRepos whenActionPerformedDo: [ 
 		:event |
 		self pbBuilder runBashScript: 'open' arguments: { self pbBuilder locationOfRepositories pathString }.

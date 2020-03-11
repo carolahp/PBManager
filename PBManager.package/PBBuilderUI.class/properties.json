@@ -24,9 +24,9 @@
 		"pbBuilderRepositoriesUI",
 		"pbRepository",
 		"pbBuilderUIBashScripter",
-		"pbBuilderUIImages",
-		"pbBuilderUIGeneratedImages",
-		"pbBuilderUIGenerateImage"
+		"pbBuilderUIGenerateImage",
+		"pbBuilderUIImagesInDisk",
+		"pbBuilderUIImagesInMemory"
 	],
 	"name" : "PBBuilderUI",
 	"type" : "normal"
