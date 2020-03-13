@@ -14,6 +14,7 @@ classRoles
 		#Association -> #PCAssociation.
 		#BlockClosure -> #PCBlock.
 		#MethodContext -> #PCMethodContext.
+		#Message -> #PCMessage.
 		#Point -> #PCPoint.
 		#Process -> #PCProcess.
 		#Semaphore -> #PCSemaphore.
@@ -29,5 +30,6 @@ classRoles
 		#Dictionary -> #PCDictionary.
 		#ClassVariable -> #PCAssociation.
 		#ClassInstaller -> #PCClassBuilder.
-		#Smalltalk -> #PCSmalltalk
+		#Smalltalk -> #PCSmalltalk.
+		#System -> #PCSystem
 		} asDictionary

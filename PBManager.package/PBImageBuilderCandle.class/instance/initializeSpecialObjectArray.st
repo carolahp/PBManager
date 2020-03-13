@@ -5,5 +5,7 @@ initializeSpecialObjectArray
 "	objectSpace specialObjectsArray: self newSpecialObjectsArray.
 
 	self bootstrapInterpreter
-		evaluateCode: 'PCSystem specialObjectsArray: newArray.'
-		withTemps: { 'newArray' -> objectSpace backend specialObjectsArray }.
+		evaluateCode: 'theSystem specialObjectsArray: newArray.'
+		withTemps: {
+			'theSystem' -> (self classWithRole: #System) mirror.
+			'newArray' -> objectSpace backend specialObjectsArray }.

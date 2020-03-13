@@ -6,8 +6,8 @@ formatOfClass: aRFiClass
 	| newHeap instSize newInstSpec |
 
 	newHeap := objectSpace backend simulator objectMemory.
-	((aRFiClass name = 'PCSmallInteger')
-	 or: [(aRFiClass name = 'PCCharacter')]) ifTrue:
+	((aRFiClass name = (self classNameWithRole: #SmallInteger))
+	 or: [(aRFiClass name = (self classNameWithRole: #Character))]) ifTrue:
 		[^ newHeap integerObjectOf: newHeap instSpecForImmediateClasses << 16].
 	instSize := aRFiClass instSize.
 	newInstSpec := self instSpecOfClass: aRFiClass.

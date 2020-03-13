@@ -1,19 +1,21 @@
 running
 initializeImage
-	| process association |
+	| processor process association |
 
 	self flag: 'should migrate this method'.
 	self checkpoint: 'image_initialization'.
 	
 	self initializeSpecialObjectArray.
 	
-	self bootstrapInterpreter
+	processor := self bootstrapInterpreter
 		evaluateCode:  '
-	Processor := PCProcessorScheduler basicNew.
-	Processor initProcessLists.'
-		withTemps: #().
+			Processor := theProcessorScheduler basicNew
+				initProcessLists ;
+				yourself'
+		withTemps: { 'theProcessorScheduler' -> (self classWithRole: #ProcessorScheduler) mirror }.
 
-	
+	self bootstrapEnvironment at: #Processor put: processor.
+	self bootstrapInterpreter evaluateCode: 'Smalltalk globals at: #Processor put: theProcessor' withTemps: { 'theProcessor' -> processor }.
 	
 "	objectSpace backend processorAssociation: (self bootstrapInterpreter evaluateCode: 'Smalltalk globals associationAt: #Processor.').
 	
@@ -24,12 +26,15 @@ initializeImage
 	association instanceVariableAtIndex: 2 put: (self bootstrapEnvironment at: #Processor).
 	
 	objectSpace backend processorAssociation: association .
-	process := objectSpace createProcessWithPriority: 3 doing: 'PCSystem start' withTemps: #().
+	process := objectSpace createProcessWithPriority: 3 doing: (self classNameWithRole: #System), ' start' withTemps: #().
  	objectSpace installAsActiveProcess: process withProcessor: (self bootstrapEnvironment at: #Processor).
 	
+"  The specialObjectsArray is already installed above 
 	self bootstrapInterpreter
-		evaluateCode: 'PCSystem specialObjectsArray: newArray.'
-		withTemps: { 'newArray' -> objectSpace backend specialObjectsArray }.
+		evaluateCode: 'theSystem specialObjectsArray: newArray.'
+		withTemps: {
+			'theSystem' -> (self classWithRole: #System) mirror.
+			'newArray' -> objectSpace backend specialObjectsArray }."
 	
 	self followForwardingPointers.
 

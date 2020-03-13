@@ -5,7 +5,7 @@ createInitialObjects
 	"We add the main globals  in the bootstrap environment before a system dictionary exists. These globals are needed to create a system dictionary, and will be used by the AST interpreter"
 	self bootstrapEnvironment at: #Processor put: objectSpace nilObject.
 	self bootstrapEnvironment at: #Smalltalk put: objectSpace nilObject.
-	self bootstrapEnvironment at: #Undeclared put: (self bootstrapInterpreter evaluateCode: 'PCDictionary new').
+	self bootstrapEnvironment at: #Undeclared put: (self bootstrapInterpreter evaluateCode: 'theDictionary new' withTemps: { 'theDictionary' -> (self classWithRole: #Dictionary) mirror }).
 	
 	classLoader initializeClassPools.
 	
@@ -25,13 +25,15 @@ createInitialObjects
 		rsDictionary at: assoc key put: assoc value ].
 	"
 	
-	smalltalk := self bootstrapInterpreter evaluateCode: 'Smalltalk := PCSmalltalk new instVarAt: 1 put: aSystemDictionary ; yourself.'
-		withTemps: { 'aSystemDictionary' -> rsDictionary }.
+	smalltalk := self bootstrapInterpreter evaluateCode: 'Smalltalk := theSmalltalk new instVarAt: 1 put: aSystemDictionary ; yourself.'
+		withTemps: {
+			'theSmalltalk' -> (self classWithRole: #Smalltalk) mirror.
+			'aSystemDictionary' -> rsDictionary }.
 	self bootstrapEnvironment at: #Smalltalk put: smalltalk.
 	self bootstrapInterpreter evaluateCode: 'Smalltalk globals at: #Smalltalk put: Smalltalk'.
 	espellBackend systemDictionary: (smalltalk instanceVariableAtIndex: 1).
 	
 	
-	self bootstrapInterpreter evaluateCode: 'PCString initialize.'.
+	self bootstrapInterpreter evaluateCode: 'theString initialize.' withTemps: { 'theString' -> (self classWithRole: #ByteString) mirror }.
 	
 	self checkpoint: 'created_initial_objects'.

@@ -2,14 +2,14 @@ stubs
 classDefinitionFor: aClass
 	"Answer a String that defines the receiver."
 
-	| type classInstallerName |
+	| type classInstaller |
 
 	type := self typeFor: aClass.
 	
-	classInstallerName := (systemDefinition classWithRole: #ClassInstaller).
+	classInstaller := (systemDefinition classWithRole: #ClassInstaller).
 	
 	^ '| newClass |
-	newClass := (PCClassBuilder new
+	newClass := ({classInstaller} new
 			superclass: {superClass};
 			name: ''{name}'';
 			instVarNames: {instanceVariablesString};
@@ -19,6 +19,7 @@ classDefinitionFor: aClass
 		build.		
 	newClass'
 	format: {
+			'classInstaller' -> classInstaller.
 			'superClass' -> (aClass superclass ifNil: ['nil'] ifNotNil: [ :superclass | superclass name ]).
 			'name' -> aClass name.
 			'type' -> type.

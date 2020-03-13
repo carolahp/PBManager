@@ -5,8 +5,8 @@ metaclassClass
 	Ok, so here we really go down and create the metaclass from nothing. We will use this metaclass to create all the others"
 	| aClassMapping theNewMetaclass theNewMetaclassClass classFormat metaclassFormat metaclassIndex classIndex |
 	
-	environment at: #PCMetaclass ifPresent: [ :aClass | ^ aClass ].
-	aClassMapping := systemDefinition classNamed: #PCMetaclass.
+	aClassMapping := systemDefinition classWithRole: #Metaclass.
+	environment at: aClassMapping name asSymbol ifPresent: [ :aClass | ^ aClass ].
 	classFormat := self formatOfClass: aClassMapping.	
 	metaclassFormat := self formatOfClass: aClassMapping metaclass.
 	

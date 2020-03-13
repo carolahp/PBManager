@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "PBLanguageDefinitionPharoCandle",
+	"category" : "PBBuilder-LanguageDefinition",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "PBLanguageDefinitionPharoCodeParadise",
+	"type" : "normal"
+}
