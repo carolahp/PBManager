@@ -7,7 +7,7 @@ initializeWidgets
 			
 	listGeneratedImages := self newMultiColumnList.
 	listGeneratedImages displayBlock: [ :img | self wrapImageInMemoryItem: img].
-	listGeneratedImages sortingBlock: [ :a :b | a generationTime < b generationTime ].
+	listGeneratedImages sortingBlock: [ :a :b | a generationTime > b generationTime ].
 	
 	buttonEvaluateInImage := self newButton.
 	buttonEvaluateInImage icon: (Smalltalk iconNamed: #smallDoIt).
