@@ -1,11 +1,9 @@
 bootstrapping
-initializeImageNamed: aString 
-	self pbRepository languageName: aString.
+initializeImage 
 	self pbRepository classesAreInstalled: false.
 	self pbRepository methodsAreInstalled: false.
 	self pbRepository processIsInstalled: false.
-	self halt.
-	self bootstrapper 
+	^ self bootstrapper 
 		prepareBootstrap;
 		initializeBuilder;
 		installStubs

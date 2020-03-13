@@ -4,7 +4,8 @@ initializePresenter
 	buttonGenerateImage whenActionPerformedDo:  
 	[ :event | | builder |
 		builder := self pbBuilder.
-		builder initializeImageNamed: self textInputImageName text.
+		builder imageName: self textInputImageName text.
+		builder initializeImage.
 		self checkboxInstallClasses state ifTrue: [ 
 			builder installClasses.
 			self checkboxInstallMethods state ifTrue: [ 
