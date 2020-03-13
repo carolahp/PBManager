@@ -20,7 +20,6 @@ initializeBootstrapEnvironment
 	bootstrapInterpreter codeProvider: self.
 	bootstrapInterpreter environment: self.
 	bootstrapInterpreter objectSpace: objectSpace.
-	objectSpace interpreter: bootstrapInterpreter.
 	 
 	debuggerInterpreter := DASTEvaluator new.
 	debuggerInterpreter codeProvider: self.
