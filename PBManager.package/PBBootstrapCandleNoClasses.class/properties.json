@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "PBBootstrapCandle",
+	"category" : "PBManager-bootstrap-extensions",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "PBBootstrapCandleNoClasses",
+	"type" : "normal"
+}
