@@ -6,10 +6,10 @@ Pharo Bootstrap manager with UI
 Fist load Espell as a prerequisite
 
 ```Smalltalk
-Metacello new 
+[ Metacello new 
 	repository: 'github://carolahp/espell:v2.2';
 	baseline: 'Espell';
-	load 
+	load ] on: Warning do: #resume
 ```
 
 
