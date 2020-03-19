@@ -1,4 +1,4 @@
 accessing
 locationOfRepositories
 	^ (locationOfRepositories 
-		ifNil: [ locationOfRepositories := self class defaultLocationOfRepositories ])
+		ifNil: [ locationOfRepositories := self class defaultLocationOfRepositories ensureCreateDirectory; yourself ])

@@ -1,4 +1,4 @@
 accessing-constants
 locationOfBootstrappedImages
 	^ (locationOfBootstrappedImages 
-		ifNil: [ locationOfBootstrappedImages := self class defaultLocationOfBootstrappedImages ])
+		ifNil: [ locationOfBootstrappedImages := self class defaultLocationOfBootstrappedImages ensureCreateDirectory; yourself]) 
