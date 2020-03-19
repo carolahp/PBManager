@@ -7,7 +7,7 @@ Fist load Espell as a prerequisite
 
 ```Smalltalk
 Metacello new 
-	repository: 'github://carolahp/espell';
+	repository: 'github://carolahp/espell:v2.2';
 	baseline: 'Espell';
 	load 
 ```
