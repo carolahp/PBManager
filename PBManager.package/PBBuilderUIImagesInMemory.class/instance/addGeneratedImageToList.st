@@ -14,4 +14,5 @@ addGeneratedImageToList
 				
 	self textInputImageName text: self pbBuilder pbRepository imageFileName. 
 	
+	self listGeneratedImages setSelectedIndex: 0.
 	self update
