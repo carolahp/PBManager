@@ -9,7 +9,7 @@ addGeneratedImageToList
 				methodsAreInstalled: pbRepo methodsAreInstalled;
 				processIsInstalled: pbRepo processIsInstalled.				
 	self listGeneratedImages 
-		items: self listGeneratedImages listItems , 
+		items:" self listGeneratedImages listItems , " "commented until multiple evaluation of images in memory is possible"
 				{ newImage }.
 				
 	self textInputImageName text: self pbBuilder pbRepository imageFileName. 
