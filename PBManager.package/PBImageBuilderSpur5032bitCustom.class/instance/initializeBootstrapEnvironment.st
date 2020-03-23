@@ -13,7 +13,6 @@ initializeBootstrapEnvironment
 	
 	classLoader createJustStubs.
 	classLoader environment: bootstrapEnvironment.
-	classLoader systemDefinition: self systemDefinition.
 	classLoader builder: self.
 	
 	bootstrapInterpreter := EPASTEvaluator new.

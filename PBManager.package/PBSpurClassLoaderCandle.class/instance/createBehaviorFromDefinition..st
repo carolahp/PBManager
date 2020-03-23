@@ -8,7 +8,7 @@ createBehaviorFromDefinition: aRFiDefinition
 		environment at: aRFiDefinition name ifAbsent: [ self createStubForClassNamed: aRFiDefinition name ]].
 	
 	newBehavior := self executeDefinitionFor: aRFiDefinition.
-	code := 	'theBehavior methodDictionary: ({classMethodDictionary} new: capacity)' format: {'classMethodDictionary'-> (systemDefinition classWithRole: #MethodDictionary) name } asDictionary.
+	code := 	'theBehavior methodDictionary: ({classMethodDictionary} new: capacity)' format: {'classMethodDictionary'-> (self systemDefinition classWithRole: #MethodDictionary) name } asDictionary.
 		
 	"Once the class is created we set a new method dictionary with a size that will make it grow less afterwards"
 

@@ -24,12 +24,12 @@ defaultSpec
 						  				add: #buttonEvaluateInImage								  
 								] height: self toolbarHeight;
 								add: #textCodeInput
-							];
+							]";
 						newColumn: [ :col | 
 							col 
 								add: #buttonExternalEvaluate height: self toolbarHeight;
 								add: #textExternalCodeInput;
 								add: #textExternalResponse
-							]
+							]"
 				] 
 		]; yourself

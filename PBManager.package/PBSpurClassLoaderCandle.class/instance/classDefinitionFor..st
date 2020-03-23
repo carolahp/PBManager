@@ -6,7 +6,7 @@ classDefinitionFor: aClass
 
 	type := self typeFor: aClass.
 	
-	classInstallerName := (systemDefinition classWithRole: #ClassInstaller).
+	classInstallerName := (self systemDefinition classWithRole: #ClassInstaller).
 	
 	^ '| newClass |
 	newClass := (PCClassBuilder new

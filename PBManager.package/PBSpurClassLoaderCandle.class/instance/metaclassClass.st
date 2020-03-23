@@ -6,7 +6,7 @@ metaclassClass
 	| aClassMapping theNewMetaclass theNewMetaclassClass classFormat metaclassFormat metaclassIndex classIndex |
 	
 	environment at: #PCMetaclass ifPresent: [ :aClass | ^ aClass ].
-	aClassMapping := systemDefinition classNamed: #PCMetaclass.
+	aClassMapping := self systemDefinition classNamed: #PCMetaclass.
 	classFormat := self formatOfClass: aClassMapping.	
 	metaclassFormat := self formatOfClass: aClassMapping metaclass.
 	

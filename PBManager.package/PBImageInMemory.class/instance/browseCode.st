@@ -1,3 +1,3 @@
 browse-code
 browseCode
-	systemDefinition browse
+	self systemDefinition browse

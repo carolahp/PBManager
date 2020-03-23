@@ -1,8 +1,8 @@
 initializing
 initialize
 	
-	systemDefinition := self imageBuilder systemDefinition fullCopy.
+	"systemDefinition := self imageBuilder systemDefinition fullCopy."
 	size := 0.
 	generationTime := DateAndTime now.
-	self imageBuilder systemDefinition: systemDefinition
+	"self imageBuilder systemDefinition: systemDefinition"
 	

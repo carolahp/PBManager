@@ -7,7 +7,7 @@ metaclassClass
 	
 	environment at: #Metaclass ifPresent: [ :aClass | ^ aClass ].
 
-	aClassMapping := systemDefinition classNamed: #Metaclass.
+	aClassMapping := self systemDefinition classNamed: #Metaclass.
 	classFormat := self formatOfClass: aClassMapping.	
 	metaclassFormat := self formatOfClass: aClassMapping classSide.
 	
