@@ -6,7 +6,8 @@ initializePresenter
 	
 	buttonEvaluateInImage whenActionPerformedDo:  
 	[ :event |
-		(self selectedImage evaluate: self textCodeInput text) inspect ].
+		(self selectedImage evaluate: self textCodeInput text) inspect.
+		self pbBuilder announcer announce: PBSimulatedEvaluationDone new ].
 	
 	listGeneratedImages whenSelectionChanged: [ 
 		:event |

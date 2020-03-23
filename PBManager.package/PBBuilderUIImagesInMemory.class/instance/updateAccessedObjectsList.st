@@ -1,0 +1,3 @@
+updating
+updateAccessedObjectsList
+	self listAccessedObjects items: self selectedImage getAccessedObjectsBySimulatedExecution

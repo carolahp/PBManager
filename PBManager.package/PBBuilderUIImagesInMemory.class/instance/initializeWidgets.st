@@ -41,5 +41,10 @@ initializeWidgets
 	buttonExternalEvaluate := self newButton.
 	buttonExternalEvaluate label: 'External evaluate'.
 	
+	labelAccessedObjects := self newLabel.
+	labelAccessedObjects label: 'Elements accessed during execution'.
+	
+	listAccessedObjects := self newList.
+	
 	self setEnabledStatusOfButtons: false.
 	

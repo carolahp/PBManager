@@ -17,7 +17,9 @@
 		"buttonViewCode",
 		"buttonExternalEvaluate",
 		"textExternalCodeInput",
-		"textExternalResponse"
+		"textExternalResponse",
+		"labelAccessedObjects",
+		"listAccessedObjects"
 	],
 	"name" : "PBBuilderUIImagesInMemory",
 	"type" : "normal"

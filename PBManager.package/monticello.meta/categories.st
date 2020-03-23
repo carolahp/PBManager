@@ -1,4 +1,5 @@
 SystemOrganization addCategory: #PBManager!
+SystemOrganization addCategory: #'PBManager-Announcements'!
 SystemOrganization addCategory: #'PBManager-UI'!
 SystemOrganization addCategory: #'PBManager-announcements'!
 SystemOrganization addCategory: #'PBManager-bootstrap-extensions'!
