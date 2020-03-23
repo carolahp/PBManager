@@ -33,7 +33,10 @@ defaultSpec
 							]"
 						newColumn: [ :col | 
 							col 
-								add: #labelAccessedObjects height: self toolbarHeight;
+								newRow: [:row1 | 
+									row1 
+										add: #labelAccessedObjects;
+										add: #buttonGenerateImageMinimal ]height: self toolbarHeight;
 								add: #listAccessedObjects
 							]
 				] 

@@ -20,7 +20,6 @@ initializeWidgets
 	buttonViewCode := self newButton.
 	buttonViewCode label: 'View code'.
 	
-	
 	buttonWriteGenImage := self newButton.
 	buttonWriteGenImage icon: (Smalltalk iconNamed: #glamorousSave).
 	buttonWriteGenImage label: 'Write to Disk'.
@@ -45,6 +44,10 @@ initializeWidgets
 	labelAccessedObjects label: 'Elements accessed during execution'.
 	
 	listAccessedObjects := self newList.
+	
+	buttonGenerateImageMinimal := self newButton.
+	buttonGenerateImageMinimal icon: (Smalltalk iconNamed: #glamorousSave).
+	buttonGenerateImageMinimal label: 'Write Min to Disk'.
 	
 	self setEnabledStatusOfButtons: false.
 	

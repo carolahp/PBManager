@@ -7,3 +7,4 @@ setEnabledStatusOfButtons: aBoolean
 	self buttonExternalEvaluate enabled: aBoolean.
 	self textInputImageName enabled: aBoolean.
 	self textExternalCodeInput enabled: aBoolean.
+	self buttonGenerateImageMinimal enabled: aBoolean

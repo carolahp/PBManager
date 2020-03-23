@@ -19,7 +19,8 @@
 		"textExternalCodeInput",
 		"textExternalResponse",
 		"labelAccessedObjects",
-		"listAccessedObjects"
+		"listAccessedObjects",
+		"buttonGenerateImageMinimal"
 	],
 	"name" : "PBBuilderUIImagesInMemory",
 	"type" : "normal"
