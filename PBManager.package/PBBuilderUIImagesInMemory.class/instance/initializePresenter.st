@@ -15,6 +15,7 @@ initializePresenter
 	
 	buttonWriteGenImage whenActionPerformedDo:  
 	[ :event | 
+		self pbBuilder bootstrapper installOnlyMarkedMethods: false.
 		self writeSelectedImage
 	 ].
 	buttonViewCode whenActionPerformedDo: 
@@ -28,7 +29,8 @@ initializePresenter
 	
 	buttonGenerateImageMinimal whenActionPerformedDo: 
 	[ :event | 
-		self pbBuilder installMethodsMarked.
+		self pbBuilder bootstrapper installOnlyMarkedMethods: true.
+		self pbBuilder installMethods.
 		self pbBuilder installProcess.
 		self writeSelectedImage 
 	 ]
