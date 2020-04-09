@@ -8,7 +8,7 @@ createBehaviorFromDefinition: aRFiDefinition
 		environment at: aRFiDefinition name ifAbsent: [ self createStubForClassNamed: aRFiDefinition name ]].
 	
 	newBehavior := self executeDefinitionFor: aRFiDefinition.
-	code := 	'theBehavior methodDictionary: ({classMethodDictionary} new: capacity)' format: {'classMethodDictionary'-> (systemDefinition classWithRole: #MethodDictionary) name } asDictionary.
+	code := 	'theBehavior methodDictionary: ({classMethodDictionary} new: capacity)' format: {'classMethodDictionary'-> (self systemDefinition classWithRole: #MethodDictionary) name } asDictionary.
 		
 	"Once the class is created we set a new method dictionary with a size that will make it grow less afterwards"
 
@@ -22,4 +22,9 @@ createBehaviorFromDefinition: aRFiDefinition
 		self registerClass: newBehavior asClassMirror named: aRFiDefinition name fullyLoaded: true.
 	] ifFalse: [
 		self registerTrait: newBehavior asTraitMirror named: aRFiDefinition name fullyLoaded: true.
-	]
+	].
+	"we register the class by hand in the Smalltalk globals"
+	builder bootstrapInterpreter 
+		evaluateCode: 'Smalltalk globals at: aClassName put: aNewClass'
+		withTemps: { 'aClassName' -> (aRFiDefinition name asSymbol asLiteralInObjectSpace: builder objectSpace) .
+						 'aNewClass'  -> newBehavior }

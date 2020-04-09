@@ -1,4 +1,4 @@
 binding
 classForClassMirror: anEPClassMirror 
 	
-	^ mirrorDefinitionMap at: anEPClassMirror ifAbsent: [ systemDefinition classWithRole: #Class ]
+	^ mirrorDefinitionMap at: anEPClassMirror ifAbsent: [ self systemDefinition classWithRole: #Class ]

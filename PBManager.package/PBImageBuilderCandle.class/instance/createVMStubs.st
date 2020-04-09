@@ -39,7 +39,6 @@ createVMStubs
 	objectSpace backend blockClass: (self createStubForClassNamed: #PCBlock).
 	"objectSpace backend fullBlockClass: (self createStubForClassNamed: #PCFullBlockClosure)."
 	objectSpace backend messageClass: (self createStubForClassNamed: #PCMessage).
-	objectSpace backend semaphoreClass: (self createStubForClassNamed: #PCSemaphore).
 	
 	"Point is required in the special objects array because it is used to instantiate point objects faster.
 	If we do not put it here, the VM will crash.

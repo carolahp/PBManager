@@ -1,0 +1,27 @@
+{
+	"commentStamp" : "",
+	"super" : "ComposablePresenter",
+	"category" : "PBManager-UI",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"pbBuilder",
+		"labelTitle",
+		"listGeneratedImages",
+		"buttonEvaluateInImage",
+		"buttonDebugInImage",
+		"textCodeInput",
+		"buttonWriteGenImage",
+		"textInputImageName",
+		"buttonViewCode",
+		"buttonExternalEvaluate",
+		"textExternalCodeInput",
+		"textExternalResponse",
+		"labelAccessedObjects",
+		"listAccessedObjects",
+		"buttonGenerateImageMinimal"
+	],
+	"name" : "PBBuilderUIImagesInMemory",
+	"type" : "normal"
+}

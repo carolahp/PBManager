@@ -1,0 +1,19 @@
+{
+	"commentStamp" : "",
+	"super" : "ComposablePresenter",
+	"category" : "PBManager-UI",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"labelTitle",
+		"buttonGenerateImage",
+		"textInputImageName",
+		"checkboxInstallClasses",
+		"checkboxInstallMethods",
+		"checkboxInstallProcess",
+		"pbBuilder"
+	],
+	"name" : "PBBuilderUIGenerateImage",
+	"type" : "normal"
+}

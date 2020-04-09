@@ -1,3 +1,3 @@
 default-values
 imageFileName
-	^ self languageName copyReplaceAll: ' ' with: '_'
+	^ self languageName copyReplaceAll: ' ' with: ''

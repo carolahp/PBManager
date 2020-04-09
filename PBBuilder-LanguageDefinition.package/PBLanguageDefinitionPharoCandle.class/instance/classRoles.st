@@ -29,5 +29,7 @@ classRoles
 		#Dictionary -> #PCDictionary.
 		#ClassVariable -> #PCAssociation.
 		#ClassInstaller -> #PCClassBuilder.
+		#Message -> #PCMessage.
+		#Block -> #PCBlock.
 		#Smalltalk -> #PCSmalltalk
 		} asDictionary

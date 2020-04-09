@@ -2,10 +2,10 @@ stubs
 initializeClassPool: aClassName
 
 	| definition class classPool classVariableBindings |
-	definition := systemDefinition classNamed: aClassName.
+	definition := self systemDefinition classNamed: aClassName.
 	
 	classVariableBindings := definition classVarNames collect: [ :each | | classVar |
-		classVar := (self classNamed: systemDefinition classClassVariable name) basicNew.
+		classVar := (self classNamed: self systemDefinition classClassVariable name) basicNew.
 		classVar instanceVariableAtIndex: 1 put: (each asLiteralInObjectSpace: builder objectSpace) ].
 	
 	class := environment at: aClassName.

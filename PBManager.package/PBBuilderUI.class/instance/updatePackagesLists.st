@@ -1,6 +1,6 @@
 refreshing
 updatePackagesLists
-	self pbRepository ifNil: [ ^self ].
+	self pbRepository ifNil: [ ^ self unloadRepository ].
 	packagesListIn  items: (self pbRepository packagesNamesInBootstrap  asOrderedCollection sort: [:a :b | a < b ]).
 	packagesListOut items: (self pbRepository packagesNamesOutBootstrap asOrderedCollection sort: [:a :b | a < b ]).
 	classesListIn items: (self pbRepository classesNamesInBootstrap asOrderedCollection sort: [:a :b | a < b ]).

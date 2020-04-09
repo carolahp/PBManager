@@ -19,28 +19,25 @@ defaultSpec
 												c add: #labelClassesIn height: self toolbarHeight.
 												c add: #classesListIn.
 												c 
-													newRow: [
-													 :row1 |
-															row1 
+													newRow: [ 
+														:row1 |
+															row1
 																newColumn: [ :c1 | c1 add: #buttonShowSourceCode ];
-																newColumn: [ :c1 | c1 add: #buttonShowVisualization ];
-																newColumn: [ :c1 | c1 add: #buttonBootstrap ]
-													] height: self toolbarHeight
-						]
+																newColumn: [ :c1 | c1 add: #buttonShowVisualization ]
+															] height: self toolbarHeight
+						];
+						newColumn: [ :col1 | col1 add: #pbBuilderUIGenerateImage ]
 					];
-				newRow: [ :row1 |
-					row1 add: #textCodeInput
-				] height: self toolbarHeight * 4;
-				newRow: [ :row1 |
-					row1 add: #buttonExecInGenImage;
-						  add: #buttonEvalInGenImage
-				] height: self toolbarHeight;
+				newRow: [ :row1 | 
+					row1 
+						add: #pbBuilderUIImagesInMemory 
+				] height: self toolbarHeight * 8;
 				newRow: [ :row1 |
 					row1 
-						add: #pbBuilderUIImages;
-						add: #pbBuilderUIBashScripter
 						
-				] height: 300 
+						add: #pbBuilderUIImagesInDisk;
+						add: #pbBuilderUIBashScripter
+				] height: self toolbarHeight * 4
 			];
 		yourself
 	

@@ -11,9 +11,6 @@ initializeWidgets
 	labelClassesIn  := self newLabel.
 	labelClassesOut := self newLabel.
 	
-	buttonBootstrap := self newButton.
-	buttonBootstrap label: 'Generate img'.
-	
 	buttonRemoveAll := self newButton.
 	buttonRemoveAll label: 'remove all'.
 	
@@ -21,24 +18,14 @@ initializeWidgets
 	buttonAddAll label: 'add all'.
 	
 	buttonShowSourceCode := self newButton.
-	buttonShowSourceCode label: 'Explore'.
+	buttonShowSourceCode label: 'Edit code'.
 	
 	buttonShowVisualization := self newButton.
 	buttonShowVisualization label: 'Visualize'.
 	
-	buttonExecInGenImage := self newButton.
-	buttonExecInGenImage label: 'Debug in Generated Image'.
-	
-	buttonEvalInGenImage := self newButton.
-	buttonEvalInGenImage label: 'Evaluate in Generated Image'.
-	
-	textCodeInput := self newTextInput.
-	textCodeInput autoAccept: true.
-	
 	pbBuilderRepositoriesUI := PBBuilderUIRepositories withPBBuilder: self pbBuilder.
 	pbBuilderUIBashScripter := PBBuilderUIBashScripter withPBBuilder: self pbBuilder.
-	pbBuilderUIImages := PBBuilderUIImages withPBBuilder: self pbBuilder.
-	
-	self setEnabledStatusOfDebuggingButtons: false.
-	
+	pbBuilderUIImagesInDisk := PBBuilderUIImagesInDisk withPBBuilder: self pbBuilder.
+	pbBuilderUIImagesInMemory := PBBuilderUIImagesInMemory withPBBuilder: self pbBuilder.
+	pbBuilderUIGenerateImage := PBBuilderUIGenerateImage withPBBuilder: self pbBuilder.
 	self update

@@ -19,7 +19,10 @@
 		"languageDefinitionClass",
 		"packagesNamesFromTonelRepo",
 		"unsavedChanges",
-		"languageFile"
+		"languageFile",
+		"classesAreInstalled",
+		"methodsAreInstalled",
+		"processIsInstalled"
 	],
 	"name" : "PBRepository",
 	"type" : "normal"

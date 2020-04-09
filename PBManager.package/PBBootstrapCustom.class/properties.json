@@ -7,7 +7,8 @@
 	"classvars" : [ ],
 	"instvars" : [
 		"builder",
-		"pbRepository"
+		"pbRepository",
+		"installOnlyMarkedMethods"
 	],
 	"name" : "PBBootstrapCustom",
 	"type" : "normal"

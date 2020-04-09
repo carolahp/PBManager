@@ -1,3 +1,0 @@
-announcements-subscriptions
-registerSubscriptions
-	self pbBuilder announcer when: PBImageGeneratedAnnouncement send: #enableImageNameTextAndWriteButton to: self

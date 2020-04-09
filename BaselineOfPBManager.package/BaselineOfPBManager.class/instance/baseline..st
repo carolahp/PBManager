@@ -21,8 +21,8 @@ baseline: spec
 		spec baseline: 'Roassal2'
 			with: [ spec repository: 'github://ObjectProfile/Roassal2/src'  ].
 		
-		"spec baseline: 'PBHybridDebugger'
-			with: [ spec repository: 'github://carolahp/PBHybridDebugger'  ]."
+		spec baseline: 'PBHybridDebugger'
+			with: [ spec repository: 'github://carolahp/PBHybridDebugger'  ].
 		
 		"Packages"
 		spec 

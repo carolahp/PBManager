@@ -1,10 +1,13 @@
 instance creation
 fromLangFile: aFileReference
-	| aLangDefClass aPBRepository aPath |
+	| aLangDefClass aPBRepository aPath langDefClassName |
 	"read language definition from the file .lang, instantiate a PBLanguageDefinition"
 	aPBRepository := STONJSON fromString: aFileReference readStream upToEnd.
-		
-	aLangDefClass := (Smalltalk classNamed: aPBRepository languageDefinitionClass).
+	
+	langDefClassName := aPBRepository languageDefinitionClass.
+	aLangDefClass := Smalltalk classNamed: langDefClassName. 
+	aLangDefClass ifNil: [self error: 'Language definition class "', langDefClassName, '" not found in the full Pharo image'].
+	
 	aPath := (aFileReference parent asPath / aPBRepository tonelPath) asPath.
 	
 	aPBRepository 

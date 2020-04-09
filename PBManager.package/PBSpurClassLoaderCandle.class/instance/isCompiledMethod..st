@@ -1,3 +1,3 @@
 stubs
 isCompiledMethod: aClass
-	^ aClass = (systemDefinition classWithRole: #CompiledMethod)
+	^ aClass = (self systemDefinition classWithRole: #CompiledMethod)

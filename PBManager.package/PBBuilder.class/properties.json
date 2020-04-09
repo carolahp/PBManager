@@ -12,7 +12,8 @@
 		"announcer",
 		"bootstrappedImage",
 		"locationOfBootstrappedImages",
-		"locationOfRepositories"
+		"locationOfRepositories",
+		"bootstrappedImages"
 	],
 	"name" : "PBBuilder",
 	"type" : "normal"

@@ -3,10 +3,11 @@ defaultSpec
 
 	^ SpecLayout composed
 		newColumn: [ :col |
-			col add: #labelTitle height: self toolbarHeight;
-				 newRow: [ :row |
+			col 
+				newRow: [ :row |
 					row 
-						add: #textBashInput;
-						add: #buttonRun width: self buttonWidth ] ];	
+						add: #labelTitle;
+						add: #buttonRun ] height: self toolbarHeight;
+				add: #textBashInput ];				 	
 		yourself
 	

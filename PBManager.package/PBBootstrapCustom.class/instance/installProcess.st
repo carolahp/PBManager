@@ -1,0 +1,4 @@
+bootstrapping
+installProcess
+	builder 
+		initializeImage
