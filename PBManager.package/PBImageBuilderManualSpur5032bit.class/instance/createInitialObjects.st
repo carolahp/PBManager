@@ -3,19 +3,19 @@ createInitialObjects
 	
 	| characterTable |
 	"We add the main globals  in the bootstrap environment before a system dictionary exists. These globals are needed to create a system dictionary, and will be used by the AST interpreter"
-	PBStepFinishedSignal log: 'initializing globals'.
+	PBStepFinishedSignal emit: 'initializing globals'.
 	self bootstrapEnvironment at: #Smalltalk put: objectSpace nilObject.
 	self bootstrapEnvironment at: #Undeclared put: objectSpace nilObject.
 	
 	"We initialize the hash table sizes by hand.
 	The AST interpreter is too slow to interpret HashTableSizes>>#initialize"
-	PBSubStepFinishedSignal log: 'initializing hash table sizes'.
+	PBSubStepFinishedSignal emit: 'initializing hash table sizes'.
 	
 	(self classNamed: #HashTableSizes) mirror
 		instanceVariableAtIndex: (self classInstanceVariableIndexAt: 1)
 		put: (objectSpace newArrayWithAll: (HashTableSizes sizes collect: [:each | objectSpace backend smallIntegerMirrorOn: each ])).
 	
-	PBSubStepFinishedSignal log: 'preparing class builder'.
+	PBSubStepFinishedSignal emit: 'preparing class builder'.
 	self bootstrapInterpreter evaluateCode: 'DangerousClassNotifier disable'.
 
 	self bootstrapInterpreter evaluateCode: 'Undeclared := Dictionary new.'.
@@ -32,42 +32,42 @@ createInitialObjects
 	self bootstrapInterpreter evaluateCode: 'Smalltalk globals at: #SourceFiles put: nil.'.
 
 	
-	PBSubStepFinishedSignal log: 'class loader now creates class pools'.
+	PBSubStepFinishedSignal emit: 'class loader now creates class pools'.
 	classLoader initializeClassPools.
 
-	PBSubStepFinishedSignal log: 'Initializing StartUp list'.
+	PBSubStepFinishedSignal emit: 'Initializing StartUp list'.
 	self bootstrapInterpreter evaluateCode: 'SmalltalkImage initialize.'.
 	
-	PBSubStepFinishedSignal log: 'Initializing Character Table'.
+	PBSubStepFinishedSignal emit: 'Initializing Character Table'.
 	self bootstrapInterpreter evaluateCode: 'Character initialize.'.
 	characterTable := (EPInternalCharacterTable new objectSpace: objectSpace).
 	objectSpace backend characterTable: ((self classNamed: #Character) classPool at: #CharacterTable).
 	objectSpace characterTable: characterTable.
 	
-	PBSubStepFinishedSignal log: 'Initializing String AsciiTable'.
+	PBSubStepFinishedSignal emit: 'Initializing String AsciiTable'.
 	self bootstrapInterpreter evaluateCode: 'String classPool at: #AsciiOrder put: ((0 to: 255) as: ByteArray).'.
 	
-	PBSubStepFinishedSignal log: 'Initializing SmallInteger constants'.
+	PBSubStepFinishedSignal emit: 'Initializing SmallInteger constants'.
 	self bootstrapInterpreter evaluateCode: 'SmallInteger instVarAt: ' , (self classInstanceVariableIndexAt: 1) asString ,' put: -16r40000000.' "minVal".
 	self bootstrapInterpreter evaluateCode: 'SmallInteger instVarAt: ' , (self classInstanceVariableIndexAt: 2) asString ,' put: 16r3FFFFFFF.' "maxVal".
 
-	PBSubStepFinishedSignal log: 'Initializing Date and Time constants'.
+	PBSubStepFinishedSignal emit: 'Initializing Date and Time constants'.
 	self bootstrapInterpreter evaluateCode: 'DateAndTime initialize.'.
 	self bootstrapInterpreter evaluateCode: 'ChronologyConstants initialize.'.
 	
-	PBSubStepFinishedSignal log: 'Initializing CompiledMethod constants'.
+	PBSubStepFinishedSignal emit: 'Initializing CompiledMethod constants'.
 	self bootstrapInterpreter evaluateCode: 'CompiledMethod initialize.'.
 	
-	PBSubStepFinishedSignal log: 'Initializing object dependent fields'.
+	PBSubStepFinishedSignal emit: 'Initializing object dependent fields'.
 	self bootstrapInterpreter evaluateCode: 'Object initialize.'.
 	
-	PBSubStepFinishedSignal log: 'Installing symbol table'.
+	PBSubStepFinishedSignal emit: 'Installing symbol table'.
 	self bootstrapInterpreter evaluateCode: 'Symbol initialize.
 	Symbol classPool at: #SymbolTable put: (WeakSet withAll: ByteSymbol allInstances)'.
 	objectSpace symbolTable: (EPInternalSymbolTable new objectSpace: objectSpace).
 
 	
-	PBSubStepFinishedSignal log: 'Bootstrapping class layouts'.
+	PBSubStepFinishedSignal emit: 'Bootstrapping class layouts'.
 	bootstrapInterpreter evaluateCode:
 		('| superLayout |
 		superLayout := EmptyLayout instance.
@@ -82,7 +82,7 @@ createInitialObjects
 			instVarAt: 4
 			put: (ImmediateLayout new).' format: {self espellBackend instanceVariableMapping listOfClassSlots}).
 			
-	PBStepFinishedSignal log: 'Class builder ready to create classes'.
+	PBStepFinishedSignal emit: 'Class builder ready to create classes'.
 	classLoader useClassBuilder.
 	
 	self checkpoint: 'created_initial_objects'.
