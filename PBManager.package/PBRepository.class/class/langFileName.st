@@ -1,0 +1,3 @@
+constants
+langFileName
+	^ 'definition'

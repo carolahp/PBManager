@@ -25,6 +25,7 @@ initializePresenter
 	buttonSaveRepo whenActionPerformedDo: 
 	[ :event |
 		self selectedRepository writeToDisk. 
+		self selectedRepository markAsNotModified. 
 		self inform: 'Exported to: ', self selectedRepository tonelPath pathString.
 		self pbBuilder announceRepositoryLoaded
 	 ].
