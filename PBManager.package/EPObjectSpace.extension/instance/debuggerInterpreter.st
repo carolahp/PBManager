@@ -1,3 +1,0 @@
-*PBManager
-debuggerInterpreter
-	^debuggerInterpreter
