@@ -1,4 +1,0 @@
-accessing
-builderClass
-
-	self subclassResponsibility 

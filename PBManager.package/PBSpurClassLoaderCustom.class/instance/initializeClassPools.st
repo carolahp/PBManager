@@ -1,7 +1,0 @@
-as yet unclassified
-initializeClassPools
-
-	shouldInitializeClassPool := true.
-	(environment reject: [ :assoc | (assoc isClassMirror not) or: [assoc classNameFromAnyOrigin reverse beginsWith: 'ssalc '] ]) keysDo: [ :name |
-		(self systemDefinition classNamed: name) isBehavior
-			ifTrue: [ self initializeClassPool: name ] ].

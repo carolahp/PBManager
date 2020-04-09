@@ -1,1 +1,0 @@
-I perform the Bootstrap process generating an image that contains only a specific list of packages. I use the code from PharoCandle

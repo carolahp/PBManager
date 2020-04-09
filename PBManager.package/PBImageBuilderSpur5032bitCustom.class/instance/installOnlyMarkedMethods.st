@@ -1,3 +1,0 @@
-accessing
-installOnlyMarkedMethods
-	^ installOnlyMarkedMethods

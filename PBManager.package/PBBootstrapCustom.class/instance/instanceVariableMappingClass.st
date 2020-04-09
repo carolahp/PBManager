@@ -1,3 +1,0 @@
-accessing
-instanceVariableMappingClass
-	self subclassResponsibility 

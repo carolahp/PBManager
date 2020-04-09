@@ -1,3 +1,0 @@
-bootstrapping
-prepareBootstrap
-	self setDefaultOptions 

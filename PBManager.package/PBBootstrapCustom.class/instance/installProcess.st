@@ -1,4 +1,0 @@
-bootstrapping
-installProcess
-	builder 
-		initializeImage
