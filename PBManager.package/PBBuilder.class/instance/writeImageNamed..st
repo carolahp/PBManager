@@ -1,4 +1,4 @@
-image-functions
+script-execution
 writeImageNamed: aString
 	| imageFileReference aDictionary pbImage |
 	imageFileReference := (self locationOfBootstrappedImages pathString, '/', aString, '.', PBImageInDisk imageExtension) asFileReference.

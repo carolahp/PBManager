@@ -9,4 +9,5 @@ initializePresenter
 			arguments: self arguments 
 			workingDirectory: self pbBuilder locationOfBootstrappedImages pathString 
 			withTimeout: 5 seconds
+			onExitDo: [ :process :c | process inspect ]
 	]

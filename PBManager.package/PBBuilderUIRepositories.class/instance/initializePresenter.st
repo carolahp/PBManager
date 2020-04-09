@@ -3,6 +3,7 @@ initializePresenter
 	buttonAddRepo whenActionPerformedDo:  
 	[ :event | 
 		| repoFileRef |
+		"open dialog to search for the repository"
 		repoFileRef := UIManager default 
 			chooseExistingFileReference: 'Open repo' 
 			extensions: #('lang') 
@@ -28,10 +29,8 @@ initializePresenter
 		self pbBuilder announceRepositoryLoaded
 	 ].
 
-	buttonRefresh whenActionPerformedDo: [ :event | | newListItems |
-		newListItems := self listRepo listItems 
-								collect: [ :item | PBRepository fromLangFile: item languageFile].
-		self listRepo items: newListItems.
+	buttonRefresh whenActionPerformedDo: [ :event |
+		self loadDefaultRepositories.
 		self pbBuilder pbRepository: nil	
 	].
 

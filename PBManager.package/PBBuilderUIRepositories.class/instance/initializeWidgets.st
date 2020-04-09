@@ -20,8 +20,6 @@ initializeWidgets
 	labelRepo label: 'Language Definition Repositories'.
 
 	listRepo := self newList.
-	listRepo items: self defaultRepositories.
-	
 	listRepo displayBlock: [ :item | | prefix suffix |
 		prefix := ''.
 		suffix := ''. 
@@ -30,4 +28,5 @@ initializeWidgets
 		(item = self loadedRepository)
 			ifTrue: [ suffix := '(loaded)' ].	 
 		prefix, item languageName, suffix
-			]
+			].
+	self loadDefaultRepositories

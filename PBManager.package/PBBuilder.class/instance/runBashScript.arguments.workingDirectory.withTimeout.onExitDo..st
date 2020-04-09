@@ -1,9 +1,9 @@
 script-execution
-runBashScript: aCommand arguments: aCollection workingDirectory: aPathString withTimeout: aDuration 
+runBashScript: aCommand arguments: aCollection workingDirectory: aPathString withTimeout: aDuration onExitDo: aBlock
 	
 	^ (self bashScript: aCommand arguments: aCollection workingDirectory: aPathString)
 			runAndWaitWithTimeout: aDuration
 				onTimeoutDo: [ 
 					'Timeout!' inspect
 					]
-				onExitDo: [ :process :outString  |	] 
+				onExitDo: aBlock

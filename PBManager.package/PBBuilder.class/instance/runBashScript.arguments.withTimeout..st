@@ -1,4 +1,4 @@
-image-functions
+script-execution
 runBashScript: aCommand arguments: aCollection withTimeout: aDuration 
 	
 	^ (self bashScript: aCommand arguments: aCollection)

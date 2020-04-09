@@ -36,5 +36,5 @@ initializeImage
 "	espellBackend simulator stackPages pages do: [ :page | espellBackend simulator stackPages freeStackPage: page ].
 	espellBackend simulator freeUntracedStackPages.	
 "
-	PBStepFinishedSignal log: 'image initialized'.
+	PBStepFinishedSignal emit: 'image initialized'.
 	self inform: 'Image Generated successfully'

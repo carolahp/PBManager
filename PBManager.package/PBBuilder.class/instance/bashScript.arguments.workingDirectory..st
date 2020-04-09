@@ -1,4 +1,4 @@
-image-functions
+script-execution
 bashScript: aCommand arguments: aCollection workingDirectory: aPathString
 	
 	^ OSSUnixSubprocess new
