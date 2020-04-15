@@ -1,3 +1,3 @@
-as yet unclassified
+accessing
 instanceVariableMapping
 	^ instanceVariableMapping ifNil: [ instanceVariableMapping := PBInstanceVariableMappingGeneric on: self ]

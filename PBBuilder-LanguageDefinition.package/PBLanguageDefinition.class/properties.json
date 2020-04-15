@@ -11,7 +11,8 @@
 		"tonelFileReference",
 		"pbRepository",
 		"pbBootstrapper",
-		"instanceVariableMapping"
+		"instanceVariableMapping",
+		"vmRequirements"
 	],
 	"name" : "PBLanguageDefinition",
 	"type" : "normal"

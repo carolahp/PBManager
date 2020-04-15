@@ -1,0 +1,3 @@
+cleaning
+immediateClassRoles
+	^ #(#SmallInteger #Character)
