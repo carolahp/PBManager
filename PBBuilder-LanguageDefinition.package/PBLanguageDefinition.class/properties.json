@@ -10,7 +10,8 @@
 		"behaviorDefinitionMap",
 		"tonelFileReference",
 		"pbRepository",
-		"pbBootstrapper"
+		"pbBootstrapper",
+		"instanceVariableMapping"
 	],
 	"name" : "PBLanguageDefinition",
 	"type" : "normal"

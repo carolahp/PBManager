@@ -12,7 +12,8 @@
 		"checkboxInstallClasses",
 		"checkboxInstallMethods",
 		"checkboxInstallProcess",
-		"pbBuilder"
+		"pbBuilder",
+		"checkboxGenericBootstrapper"
 	],
 	"name" : "PBBuilderUIGenerateImage",
 	"type" : "normal"

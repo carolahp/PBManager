@@ -6,5 +6,5 @@ initializeImage
 	^ self bootstrapper 
 		prepareBootstrap;
 		initializeBuilder;
-		installStubs
+		installStubsAndInitialObjects
 		
