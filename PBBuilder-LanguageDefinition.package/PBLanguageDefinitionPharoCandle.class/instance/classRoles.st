@@ -13,12 +13,13 @@ classRoles
 		#ByteArray -> #PCByteArray.
 		#Association -> #PCAssociation.
 		#BlockClosure -> #PCBlock.
-		#MethodContext -> #PCMethodContext.
 		#Point -> #PCPoint.
 		#Process -> #PCProcess.
 		#Semaphore -> #PCSemaphore.
-		#ByteString -> #PCString.
-		#ByteSymbol -> #PCSymbol.
+		"#ByteString -> #PCString."
+		#String -> #PCString.
+		"#ByteSymbol -> #PCSymbol."
+		#Symbol -> #PCSymbol.
 		#True -> #PCTrue.
 		#False -> #PCFalse.
 		#UndefinedObject -> #PCUndefinedObject.
@@ -30,6 +31,5 @@ classRoles
 		#ClassVariable -> #PCAssociation.
 		#ClassInstaller -> #PCClassBuilder.
 		#Message -> #PCMessage.
-		#Block -> #PCBlock.
 		#Smalltalk -> #PCSmalltalk
 		} asDictionary
