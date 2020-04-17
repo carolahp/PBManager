@@ -33,5 +33,7 @@ baseline: spec
 		
 		spec baseline: 'PBHybridDebugger'
 			with: [ spec repository: 'github://carolahp/PBHybridDebugger'  ].
+		spec baseline: 'PharoBootstrapGeneric'
+			with: [ spec repository: 'github://carolahp/PharoBootstrapGeneric'  ].
 		
 	]
