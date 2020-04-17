@@ -7,8 +7,8 @@ initialize
 	vmVersion := self pbBuilder vmTargetVersion.
 	
 	" Check if the Pharo VM was already downloaded in the imagesDirectory "
-	((imagesDirectory containsReference: imagesDirectory / 'pharo') and: 
-	(imagesDirectory containsReference: imagesDirectory / 'pharo-local')) ifTrue: [
+	((imagesDirectory / 'pharo') exists 
+	and: (imagesDirectory / 'pharo-local') exists) ifTrue: [
 		^ self
 		].
 	" Download the Pharo VM "
@@ -16,7 +16,7 @@ initialize
 		runBashScript: 'wget' 
 		arguments: { 'https://get.pharo.org/vm', vmVersion asString }
 		workingDirectory: imagesDirectory pathString
-		withTimeout: 5 seconds.
+		withTimeout: 10 seconds.
 	self pbBuilder 
 		runBashScript: 'bash' 
 		arguments: { './vm', vmVersion asString } workingDirectory: imagesDirectory pathString
