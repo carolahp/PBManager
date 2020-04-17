@@ -2,12 +2,22 @@ baselines
 baseline: spec
 	<baseline>
 	spec for: #common do: [
-		"spec baseline: 'PharoBootstrapProcess'."
 		
+		"Packages"
+		spec 
+			package: 'PBBuilder-LanguageDefinition';
+			package: 'PBManager' 
+				with: [ spec requires: #('PBBuilder-LanguageDefinition') ];
+			package: 'PBBuilder-LanguageVisualization'
+				with: [ spec requires: #('PBBuilder-LanguageDefinition' 'Roassal2') ].
+		"Groups"
+			spec
+				group: 'default' with: #('PBManager');
+				group: 'Visual' with: #('PBBuilder-LanguageVisualization').
+	
 		"Dependencies"
-		
 		spec baseline: 'Tonel'
-			with: [spec 	repository: 'github://pharo-vcs/tonel:v1.0.15' ].
+			with: [spec 	repository: 'github://pharo-vcs/tonel:v1.0.13' ].
  
 		spec baseline: 'DebuggableASTInterpreter'
 			with: [spec repository: 'github://carolahp/DebuggableASTInterpreter:v1.3' ].
@@ -24,11 +34,4 @@ baseline: spec
 		spec baseline: 'PBHybridDebugger'
 			with: [ spec repository: 'github://carolahp/PBHybridDebugger'  ].
 		
-		"Packages"
-		spec 
-			package: 'PBBuilder-LanguageDefinition';
-			package: 'PBManager' 
-				with: [ spec requires: #('PBBuilder-LanguageDefinition' 'PBBuilder-LanguageVisualization') ];
-			package: 'PBBuilder-LanguageVisualization' 
-				with: [ spec requires: #('PBBuilder-LanguageDefinition') ]
 	]
