@@ -1,0 +1,3 @@
+vm-requirements
+instSpecDescriptions
+	^ self vmRequirements instSpecDescriptions

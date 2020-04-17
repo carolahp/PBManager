@@ -13,7 +13,8 @@
 		"checkboxInstallMethods",
 		"checkboxInstallProcess",
 		"pbBuilder",
-		"checkboxGenericBootstrapper"
+		"checkboxGenericBootstrapper",
+		"textLog"
 	],
 	"name" : "PBBuilderUIGenerateImage",
 	"type" : "normal"

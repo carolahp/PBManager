@@ -4,12 +4,14 @@ defaultSpec
 		newRow: [ : mrow |
 			mrow newColumn: [ :col | 
 				col 
-					newRow: [:row | row add: #labelTitle ];
-					newRow: [:row | row add: #checkboxInstallClasses ];
-					newRow: [:row | row add: #checkboxInstallMethods ];
-					newRow: [:row | row add: #checkboxInstallProcess ];
-					newRow: [:row | row add: #checkboxGenericBootstrapper ];
-					newRow: [:row | row add: #textInputImageName; add: #buttonGenerateImage ] 
+					newRow: [:row | row add: #labelTitle ] height: self toolbarHeight;
+					newRow: [:row | row add: #checkboxInstallClasses ] height: self toolbarHeight;
+					newRow: [:row | row add: #checkboxInstallMethods ] height: self toolbarHeight;
+					newRow: [:row | row add: #checkboxInstallProcess ] height: self toolbarHeight;
+					newRow: [:row | row add: #checkboxGenericBootstrapper ] height: self toolbarHeight;
+					newRow: [:row | row add: #textInputImageName; add: #buttonGenerateImage ] height: self toolbarHeight;
+					add: #textLog
 				]
-			] height: self toolbarHeight * 7; 
-				yourself 
+			] ;
+		 
+		yourself 

@@ -9,6 +9,9 @@ initializeWidgets
 	textInputImageName := self newTextInput.
 	textInputImageName autoAccept: true.
 	
+	textLog := self newTextInput.
+	textLog autoAccept: true.
+	
 	labelTitle := self newLabel.
 	labelTitle label: 'Generate Image in Memory installing:'.
 	
