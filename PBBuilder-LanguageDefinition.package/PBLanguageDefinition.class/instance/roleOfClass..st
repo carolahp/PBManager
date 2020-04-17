@@ -1,3 +1,3 @@
 class roles
 roleOfClass: aRGBehavior 
-	^ [ self classRoles keyAtValue: aRGBehavior ] on: ValueNotFound do: [ nil ]
+	^ [ self classRoles keyAtValue: aRGBehavior name ] on: ValueNotFound do: [ nil ]
