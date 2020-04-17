@@ -8,7 +8,7 @@ initialize
 	
 	" Check if the Pharo VM was already downloaded in the imagesDirectory "
 	((imagesDirectory / 'pharo') exists 
-	and: (imagesDirectory / 'pharo-local') exists) ifTrue: [
+	and: (imagesDirectory / 'pharo-vm') exists) ifTrue: [
 		^ self
 		].
 	" Download the Pharo VM "
