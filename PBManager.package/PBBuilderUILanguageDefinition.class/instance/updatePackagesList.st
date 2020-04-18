@@ -6,7 +6,7 @@ updatePackagesList
 	
 	listPackages  items: packages.
 	
-	labelPackagesNum label: 'Packages In: ' , (listPackages  listItems size) asString.
+	labelPackagesNum label: 'Packages: ' , (listPackages  listItems size) asString.
 	
 	listPackages setSelectedIndex: 0.
 	self updateClassesList
