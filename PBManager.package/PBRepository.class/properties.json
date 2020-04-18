@@ -22,7 +22,8 @@
 		"languageFile",
 		"classesAreInstalled",
 		"methodsAreInstalled",
-		"processIsInstalled"
+		"processIsInstalled",
+		"pbBuilder"
 	],
 	"name" : "PBRepository",
 	"type" : "normal"

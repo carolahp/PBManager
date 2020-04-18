@@ -33,4 +33,9 @@ initializePresenter
 		self pbBuilder installMethods.
 		self pbBuilder installProcess.
 		self writeSelectedImage 
-	 ]
+	 ].
+
+	buttonInspectCodeVariable whenActionPerformedDo: 
+	[ :event | | selectedVar |
+		selectedVar := listCodeVariables selectedItem.
+		selectedVar ifNotNil: [:var | var value inspect] ].

@@ -13,7 +13,8 @@
 		"bootstrappedImage",
 		"locationOfBootstrappedImages",
 		"locationOfRepositories",
-		"bootstrappedImages"
+		"bootstrappedImages",
+		"bootstrapping"
 	],
 	"name" : "PBBuilder",
 	"type" : "normal"

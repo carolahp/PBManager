@@ -23,7 +23,16 @@ defaultSpec
 										add: #buttonDebugInImage;
 						  				add: #buttonEvaluateInImage								  
 								] height: self toolbarHeight;
-								add: #textCodeInput
+								add: #textCodeInput ;
+								newRow: [ :row1 |
+									row1 
+										add: #labelCodeVariables;
+										add: #buttonInspectCodeVariable width: self buttonWidth ] height: self toolbarHeight;
+								add: #listCodeVariables								
+								"newRow: [ :row1 |
+									row1 
+										add: #textCodeInput ;
+										add: #listCodeVariables ]"
 							];"
 						newColumn: [ :col | 
 							col 

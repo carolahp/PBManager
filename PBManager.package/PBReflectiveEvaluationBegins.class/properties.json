@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "PBReflectiveEvaluation",
+	"category" : "PBManager-announcements",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "PBReflectiveEvaluationBegins",
+	"type" : "normal"
+}

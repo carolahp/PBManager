@@ -3,6 +3,11 @@ initializeImage
 	self pbRepository classesAreInstalled: false.
 	self pbRepository methodsAreInstalled: false.
 	self pbRepository processIsInstalled: false.
+	
+	self checkpoint:Character cr asString,
+		'--------------------------------', Character cr asString, 
+		'  Bootstrapping ', pbRepository languageName ,  Character cr asString, 
+		'--------------------------------', Character cr asString.
 	self bootstrapper 
 		prepareBootstrap;
 		initializeBuilder.
