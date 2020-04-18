@@ -2,4 +2,4 @@ initialization
 initialize 
 	super initialize.
 	bootstrapping := false.
-	pbBuilderUI := PBBuilderUI withPBBuilder: self
+	pbBuilderUI := PBBuilderUIWindow withPBBuilder: self

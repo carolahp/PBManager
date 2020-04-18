@@ -1,0 +1,20 @@
+{
+	"commentStamp" : "",
+	"super" : "ComposablePresenter",
+	"category" : "PBManager-UI",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"pbBuilder",
+		"pbBuilderRepositoriesUI",
+		"pbBuilderUILanguageDefinition",
+		"pbRepository",
+		"pbBuilderUIBashScripter",
+		"pbBuilderUIGenerateImage",
+		"pbBuilderUIImagesInDisk",
+		"pbBuilderUIImagesInMemory"
+	],
+	"name" : "PBBuilderUIWindow",
+	"type" : "normal"
+}
