@@ -2,5 +2,6 @@ updating
 setDefaultCheckboxState
 	
 	checkboxInstallClasses state: true.
-	checkboxInstallMethods state: false.
-	checkboxInstallProcess state: false
+	checkboxInstallMethods state: true.
+	checkboxInstallProcess state: true.
+	checkboxGenericBootstrapper state: false

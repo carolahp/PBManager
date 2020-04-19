@@ -1,8 +1,8 @@
 initialization
 initializePresenter
 	buttonDebugInImage whenActionPerformedDo:  
-	[ :event |  
-		self selectedImage debug: textCodeInput text ].
+	[ :event | 
+		self selectedImage debug: textCodeInput text temps: listCodeVariables listItems ].
 	
 	buttonEvaluateInImage whenActionPerformedDo:  
 	[ :event |
