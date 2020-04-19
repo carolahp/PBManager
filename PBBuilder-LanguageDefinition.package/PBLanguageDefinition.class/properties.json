@@ -12,7 +12,8 @@
 		"pbRepository",
 		"pbBootstrapper",
 		"instanceVariableMapping",
-		"vmRequirements"
+		"vmRequirements",
+		"metaclassesNames"
 	],
 	"name" : "PBLanguageDefinition",
 	"type" : "normal"
