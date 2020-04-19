@@ -5,6 +5,10 @@ initializeWidgets
 	labelTitle := self newLabel.
 	labelTitle label: 'Generated Images loaded in Memory'.
 	
+	buttonInspectImage := self newButton.
+	buttonInspectImage label: 'Inspect'.
+	buttonInspectImage icon: (Smalltalk iconNamed: #glamorousInspect).
+	
 	listGeneratedImages := self newMultiColumnList.
 	listGeneratedImages displayBlock: [ :img | self wrapImageInMemoryItem: img].
 	listGeneratedImages sortingBlock: [ :a :b | a generationTime > b generationTime ].

@@ -23,7 +23,8 @@
 		"buttonGenerateImageMinimal",
 		"listCodeVariables",
 		"labelCodeVariables",
-		"buttonInspectCodeVariable"
+		"buttonInspectCodeVariable",
+		"buttonInspectImage"
 	],
 	"name" : "PBBuilderUIImagesInMemory",
 	"type" : "normal"

@@ -13,7 +13,7 @@ defaultSpec
 				newRow: [ :row1 | 
 					row1 
 						add: #pbBuilderUIImagesInMemory 
-				] height: 400;
+				] height: 300;
 				newRow: [ :row1 |
 					row1 
 						

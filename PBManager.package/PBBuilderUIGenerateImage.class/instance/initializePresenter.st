@@ -1,6 +1,5 @@
 initialization
 initializePresenter
-	| bootstrapperClass |
 	
 	buttonGenerateImage whenActionPerformedDo:  
 	[ :event | | builder |
@@ -19,7 +18,6 @@ initializePresenter
 			builder installProcess ].
 		builder announceImageGenerated ] 
 			ensure: [ 
-				builder announcer subscriptions reset.
 				builder pbRepository builder: nil.
 				builder bootstrapping: false ]
 	 ].

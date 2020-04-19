@@ -14,6 +14,7 @@ initializeImage
 	self bootstrapper 	builder initializeBootstrapEnvironment.
 	self checkpoint: 'bootstrap environment initialized'.
 	self bootstrapper 	builder createVMStubs.
+	self announce: PBVMStubsCreatedAnnouncement new.
 	self checkpoint: 'vm stubs created'.
 	self bootstrapper 	builder flushNewSpace.
 	self bootstrapper 	builder createInitialObjects.

@@ -35,6 +35,11 @@ initializePresenter
 		self writeSelectedImage 
 	 ].
 
+	buttonInspectImage whenActionPerformedDo: 
+	[ :event | 
+		self selectedImage inspectSpurImage
+	].
+
 	buttonInspectCodeVariable whenActionPerformedDo: 
 	[ :event | | selectedVar |
 		selectedVar := listCodeVariables selectedItem.
