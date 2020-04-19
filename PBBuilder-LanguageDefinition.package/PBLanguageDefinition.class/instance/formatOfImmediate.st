@@ -1,3 +1,3 @@
 accessing-constants
 formatOfImmediate
-	^ 7
+	^ self vmRequirements formatOfImmediate

@@ -1,0 +1,14 @@
+{
+	"commentStamp" : "",
+	"super" : "PBInstruction",
+	"category" : "PBBuilder-LanguageDefinition-Hooks",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"code",
+		"temps"
+	],
+	"name" : "PBInstructionGenericRemote",
+	"type" : "normal"
+}

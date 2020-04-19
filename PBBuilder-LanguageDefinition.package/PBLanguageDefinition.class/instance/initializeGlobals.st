@@ -1,0 +1,3 @@
+class roles
+initializeGlobals
+	self subclassResponsibility 

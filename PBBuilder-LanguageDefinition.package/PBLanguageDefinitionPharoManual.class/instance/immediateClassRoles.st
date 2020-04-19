@@ -1,3 +1,3 @@
 class roles
 immediateClassRoles
-	^ #(#SmallInteger #Character #SmallFloat64)
+	^ super immediateClassRoles, #(#SmallFloat64)

@@ -1,3 +1,3 @@
 class roles
 immediateClassRoles
-	self subclassResponsibility 
+	^#(#SmallInteger #Character)

@@ -1,6 +1,6 @@
 initialization
 initializeIndexes
-	| pcClass pcContext pcProcess pcProcessorScheduler pcDictionary pcSmalltalk |
+	| pcClass pcContext pcProcess pcProcessorScheduler pcDictionary pcSmalltalk pcAssociation |
 	 
 	" Class "
 	pcClass := (environment classWithRole: #Class) name.
@@ -43,3 +43,8 @@ initializeIndexes
 	" Dictionary "
 	pcDictionary := (environment classWithRole: #Dictionary) name.
 	dictionaryArrayIndex := self lookup: #array in: pcDictionary.
+	
+	" Association "
+	pcAssociation := (environment classWithRole: #Association) name.
+	associationKeyIndex := self lookup: #key in: pcAssociation.
+	associationValueIndex := self lookup: #value in: pcAssociation

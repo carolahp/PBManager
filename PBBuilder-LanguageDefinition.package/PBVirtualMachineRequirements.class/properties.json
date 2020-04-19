@@ -1,7 +1,7 @@
 {
 	"commentStamp" : "",
 	"super" : "Object",
-	"category" : "PBBuilder-LanguageDefinition",
+	"category" : "PBBuilder-LanguageDefinition-VMRequirements",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],

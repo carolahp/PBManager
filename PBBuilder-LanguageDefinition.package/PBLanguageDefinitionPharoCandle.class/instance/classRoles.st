@@ -1,4 +1,4 @@
-as yet unclassified
+accessing
 classRoles
 	^{
 		#ProtoObject -> #PCObject.
@@ -16,9 +16,7 @@ classRoles
 		#Point -> #PCPoint.
 		#Process -> #PCProcess.
 		#Semaphore -> #PCSemaphore.
-		"#ByteString -> #PCString."
 		#String -> #PCString.
-		"#ByteSymbol -> #PCSymbol."
 		#Symbol -> #PCSymbol.
 		#True -> #PCTrue.
 		#False -> #PCFalse.

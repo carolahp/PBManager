@@ -1,4 +1,4 @@
-accessing
+accessing-specialClasses
 metaclassesNames
 	
 	^ metaclassesNames ifNil: [

@@ -1,0 +1,3 @@
+objectsInitializations
+instructionsToCreateInitialObjects
+	self subclassResponsibility 
