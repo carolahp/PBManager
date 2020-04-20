@@ -1,0 +1,3 @@
+creating-classes
+instructionRegisterInstalledBehaviorInGlobals: anEPMirror 
+	self subclassResponsibility 
