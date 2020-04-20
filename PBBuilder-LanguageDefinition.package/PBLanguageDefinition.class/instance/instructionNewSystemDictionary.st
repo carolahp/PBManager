@@ -1,0 +1,3 @@
+instructions-instantiation
+instructionNewSystemDictionary 
+	self subclassResponsibility 

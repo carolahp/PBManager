@@ -1,5 +1,5 @@
 instructions-instantiation
-newGenericInstruction
+newInstruction
 	^ PBInstructionGenericRemote new 
 		languageDefinition: self;
 		imageBuilder: self imageBuilder;
