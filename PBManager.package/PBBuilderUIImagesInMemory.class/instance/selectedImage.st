@@ -1,4 +1,4 @@
 accessing
 selectedImage
 
-	^ self listGeneratedImages selectedItem 
+	^ self listGeneratedImages listItems at: self listGeneratedImages selectedIndex 
