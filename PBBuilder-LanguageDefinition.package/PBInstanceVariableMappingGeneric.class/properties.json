@@ -30,7 +30,9 @@
 		"processSchedulerActiveProcessIndex",
 		"dictionaryArrayIndex",
 		"associationKeyIndex",
-		"associationValueIndex"
+		"associationValueIndex",
+		"classSharedPoolsIndex",
+		"classVariableKeyIndex"
 	],
 	"name" : "PBInstanceVariableMappingGeneric",
 	"type" : "normal"

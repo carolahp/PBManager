@@ -1,0 +1,3 @@
+mapping
+classSharedPoolsIndex
+	^ classSharedPoolsIndex

@@ -1,6 +1,6 @@
 initialization
 initializeIndexes
-	| pcClass pcContext pcProcess pcProcessorScheduler pcDictionary pcSmalltalk pcAssociation |
+	| pcClass pcContext pcProcess pcProcessorScheduler pcDictionary pcSmalltalk pcAssociation pcClassVariable |
 	 
 	" Class "
 	pcClass := (environment classWithRole: #Class) name.
@@ -12,7 +12,7 @@ initializeIndexes
 	classNumberOfVariables := self numberOfInstanceVariablesOf: pcClass.
 	listOfClassSlots := self allSlotsOf: pcClass.
 	classPoolIndex := self lookup: #classVariables in: pcClass.
-	"classSharedPoolsIndex := self lookup: #sharedPools in: #Class."
+	classSharedPoolsIndex := self lookup: #sharedPools in: #Class.
 	metaclassThisClassIndex := self lookup: #soleInstance in: (environment classWithRole: #Metaclass) name.
 	
 	" Context "
@@ -47,4 +47,8 @@ initializeIndexes
 	" Association "
 	pcAssociation := (environment classWithRole: #Association) name.
 	associationKeyIndex := self lookup: #key in: pcAssociation.
-	associationValueIndex := self lookup: #value in: pcAssociation
+	associationValueIndex := self lookup: #value in: pcAssociation.
+	
+	" Class Variable "
+	pcClassVariable := (environment classWithRole: #ClassVariable) name.
+	classVariableKeyIndex := self lookup: #key in: pcClassVariable
