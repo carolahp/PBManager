@@ -5,7 +5,9 @@
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
-	"instvars" : [ ],
+	"instvars" : [
+		"classRoles"
+	],
 	"name" : "PBLanguageDefinitionPharoCandle",
 	"type" : "normal"
 }

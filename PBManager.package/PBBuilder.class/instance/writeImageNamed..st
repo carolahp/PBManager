@@ -18,6 +18,6 @@ writeImageNamed: aString
 	" Write repository: ring model + .lang file in disk "
 	repositoryDirectory := self locationOfBootstrappedImages / fileReference basenameWithoutExtension.
 	self pbRepository writeToDiskInDirectory: repositoryDirectory.
-	self halt.
+	
 	self announceImageWritten: aString.
 	^ pbImage

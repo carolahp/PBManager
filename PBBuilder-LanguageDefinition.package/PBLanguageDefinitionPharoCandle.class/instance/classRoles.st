@@ -1,6 +1,6 @@
 accessing
 classRoles
-	^{
+	^ classRoles ifNil: [ classRoles := {
 		#ProtoObject -> #PCObject.
 		#ProcessorScheduler -> #PCProcessorScheduler.
 		#Context -> #PCMethodContext.
@@ -30,4 +30,4 @@ classRoles
 		#ClassInstaller -> #PCClassBuilder.
 		#Message -> #PCMessage.
 		#Smalltalk -> #PCSmalltalk
-		} asDictionary
+		} asDictionary ] 
