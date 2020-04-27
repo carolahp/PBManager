@@ -1,0 +1,3 @@
+*PBBuilder-LanguageDefinition
+isPBBehavior
+	^ false
