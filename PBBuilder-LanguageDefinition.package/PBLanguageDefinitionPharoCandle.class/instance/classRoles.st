@@ -7,7 +7,7 @@ classRoles
 		#Class -> #PCClass.
 		#Metaclass -> #PCMetaclass.
 		#Array -> #PCArray.
-		#MethodDictionary -> #PCDictionary . 
+		#MethodDictionary -> #PCMethodDictionary . 
 		#CompiledMethod -> #PCCompiledMethod.
 		#Character -> #PCCharacter. 
 		#ByteArray -> #PCByteArray.
