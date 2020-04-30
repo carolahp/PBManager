@@ -1,3 +1,3 @@
 class roles
 initializeGlobals
-	self subclassResponsibility 
+	self addGlobalsNamed: self globalsNames
