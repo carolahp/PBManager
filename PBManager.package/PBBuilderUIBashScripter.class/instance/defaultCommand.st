@@ -1,3 +1,3 @@
 accessing
 defaultCommand
-	^ './pharo' 
+	^ '../vm/pharo' 

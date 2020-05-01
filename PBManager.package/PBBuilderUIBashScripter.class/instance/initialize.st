@@ -3,9 +3,10 @@ initialize
 	| imagesDirectory vmVersion |
 	super initialize.
 	
-	imagesDirectory := self pbBuilder locationOfBootstrappedImages.
+	imagesDirectory := self pbBuilder locationOfVMForBootstrappedImages.
 	vmVersion := self pbBuilder vmTargetVersion.
 	
+	self registerSubscriptions.
 	" Check if the Pharo VM was already downloaded in the imagesDirectory "
 	((imagesDirectory / 'pharo') exists 
 	and: (imagesDirectory / 'pharo-vm') exists) ifTrue: [

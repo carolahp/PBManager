@@ -1,0 +1,3 @@
+accessing-constants
+locationOfVMForBootstrappedImages
+	^ self class defaultLocationOfVMForBootstrappedImages ensureCreateDirectory; yourself 

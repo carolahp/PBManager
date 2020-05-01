@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "",
+	"super" : "Announcement",
+	"category" : "PBManager-announcements",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"imageInDisk"
+	],
+	"name" : "PBSelectedImageInDiskChanged",
+	"type" : "normal"
+}
