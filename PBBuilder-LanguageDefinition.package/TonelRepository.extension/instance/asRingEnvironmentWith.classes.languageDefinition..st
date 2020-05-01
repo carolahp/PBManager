@@ -9,7 +9,7 @@ asRingEnvironmentWith: packageNames classes: classesNames languageDefinition: aC
 	
 	aRG2Environment := aClass new.
 	aRG2Environment announcer suspendAllWhile: [ 
-		(packageNames) do: [ :pn | 
+		(packages) do: [ :pn | 
 			| snap defs package version |
 			package := aRG2Environment ensurePackageNamed: pn asSymbol.
 			version := self versionWithInfo: (self versionInfoFromVersionNamed: pn).
