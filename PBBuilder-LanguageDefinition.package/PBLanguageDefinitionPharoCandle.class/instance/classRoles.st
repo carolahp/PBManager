@@ -18,6 +18,7 @@ classRoles
 		#Semaphore -> #PCSemaphore.
 		#String -> #PCString.
 		#Symbol -> #PCSymbol.
+		#ByteSymbol -> #PCSymbol.
 		#True -> #PCTrue.
 		#False -> #PCFalse.
 		#UndefinedObject -> #PCUndefinedObject.

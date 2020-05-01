@@ -2,7 +2,9 @@
 	"commentStamp" : "",
 	"super" : "TestCase",
 	"category" : "PBBuilder-LanguageDefinition-Tests",
-	"classinstvars" : [ ],
+	"classinstvars" : [
+		"language"
+	],
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
