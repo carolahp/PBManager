@@ -19,7 +19,7 @@ defaultSpec
 						
 						add: #pbBuilderUIImagesInDisk;
 						add: #pbBuilderUIBashScripter
-				] height: 100
+				] height: 200
 			];
 		yourself
 	

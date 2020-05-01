@@ -8,6 +8,7 @@ defaultSpec
 					row 
 						add: #labelTitle;
 						add: #buttonRun ] height: self toolbarHeight;
-				add: #textBashInput ];				 	
+				add: #textBashInput;
+				add: #textBashOutput]; 	
 		yourself
 	
