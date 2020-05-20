@@ -1,5 +1,5 @@
 objectsInitializations
-instructionInstallClass: aClassDefinition
+hookInstallClass: aClassDefinition
 	
 	| aClass type code |
 	"aClassDefinition is a class in the language definition"

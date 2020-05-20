@@ -32,5 +32,6 @@ classRoles
 	#Dictionary -> #Dictionary.	 "Dictionaries are used to build class variables"
 	#WideString -> #WideString	.	 "The Wide guys right now are needed here because they commonly appear as literals"
 	#WideSymbol -> #WideSymbol.
-	#Smalltalk -> #SmalltalkImage } asDictionary
+	#Smalltalk -> #SmalltalkImage.
+	#SystemDictionary -> #SystemDictionary } asDictionary
 	

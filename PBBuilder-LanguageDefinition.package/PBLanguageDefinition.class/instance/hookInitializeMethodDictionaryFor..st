@@ -1,5 +1,5 @@
 instructions-instantiation
-instructionInitializeMethodDictionaryFor: aClassMirror 
+hookInitializeMethodDictionaryFor: aClassMirror 
 	| code temps |
 	code := 	'theBehavior methodDictionary: ({classMethodDictionary} new: capacity)' format: 	{'classMethodDictionary'-> (self classWithRole: #MethodDictionary) name } asDictionary.
 	temps := {

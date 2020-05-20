@@ -1,3 +1,0 @@
-instructions-instantiation
-instructionInstallClass: aClassDefinition
-	self subclassResponsibility 

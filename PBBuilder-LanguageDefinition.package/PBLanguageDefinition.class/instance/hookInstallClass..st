@@ -1,3 +1,3 @@
 instructions-instantiation
-instructionNewSystemDictionary 
+hookInstallClass: aClassDefinition
 	self subclassResponsibility 

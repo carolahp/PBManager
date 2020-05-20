@@ -1,3 +1,3 @@
 evaluating
 evaluate
-	^ imageBuilder bootstrapInterpreter evaluateCode: self code withTemps: self temps
+	^ imageBuilder debuggerInterpreter evaluateCode: self code withTemps: self temps
