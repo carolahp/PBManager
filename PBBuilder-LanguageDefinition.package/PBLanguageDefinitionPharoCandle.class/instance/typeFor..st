@@ -3,7 +3,7 @@ typeFor: aClass
 	| isCompiledMethod |
 	aClass isImmediateClass
 		ifTrue: [ ^ 'beImmediate' ].
-	isCompiledMethod := aClass = (self classWithRole: #CompiledMethod).
+	isCompiledMethod := (aClass = self classCompiledMethod).
 	^ aClass isWeak
 		ifTrue: [ 'beWeak' ]
 		ifFalse: [ aClass isPointers

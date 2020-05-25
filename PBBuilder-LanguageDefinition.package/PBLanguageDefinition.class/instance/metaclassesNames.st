@@ -3,7 +3,7 @@ metaclassesNames
 	
 	^ metaclassesNames ifNil: [
 		| metaclass metaclassClass | 
-		metaclass := self classWithRole: 'Metaclass'.
+		metaclass := self classMetaclass.
 		metaclassClass := metaclass metaclass.
 		metaclassesNames := { metaclass name . metaclassClass name } ]
 	

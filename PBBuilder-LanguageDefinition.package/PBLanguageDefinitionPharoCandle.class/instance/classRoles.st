@@ -18,7 +18,7 @@ classRoles
 		#Semaphore -> #PCSemaphore.
 		#String -> #PCString.
 		#Symbol -> #PCSymbol.
-		#ByteSymbol -> #PCSymbol.
+		"#ByteSymbol -> #PCSymbol."
 		#True -> #PCTrue.
 		#False -> #PCFalse.
 		#UndefinedObject -> #PCUndefinedObject.
@@ -27,9 +27,8 @@ classRoles
 		#LargePositiveInteger -> #PCLargePositiveInteger.
 		#LargeNegativeInteger -> #PCLargeNegativeInteger.
 		#Dictionary -> #PCDictionary.
-		#ClassVariable -> #PCAssociation.
 		#ClassInstaller -> #PCClassBuilder.
 		#Message -> #PCMessage.
 		#Smalltalk -> #PCSmalltalk. "optional"
-		#SystemDictionary -> #PCDictionary
+		"#SystemDictionary -> #PCDictionary"
 		} asDictionary ] 
