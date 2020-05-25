@@ -2,5 +2,5 @@ class roles
 fixProtoObjectClassSuperclass
 	| protObjectClass |
 	protObjectClass := self classProtoObject.
-	protObjectClass classSide superclass: self classMetaclass
+	protObjectClass classSide superclass: self classClass
 	
