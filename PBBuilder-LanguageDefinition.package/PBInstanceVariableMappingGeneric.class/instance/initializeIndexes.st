@@ -43,6 +43,7 @@ initializeIndexes
 	" Dictionary "
 	pcDictionary := environment classDictionary name.
 	dictionaryArrayIndex := self lookup: #array in: pcDictionary.
+	dictionaryTallyIndex := self lookup: #tally in: pcDictionary.
 	
 	" Association "
 	pcAssociation := environment classAssociation name.

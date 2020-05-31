@@ -29,6 +29,7 @@
 		"smalltalkImageGlobalsIndex",
 		"processSchedulerActiveProcessIndex",
 		"dictionaryArrayIndex",
+		"dictionaryTallyIndex",
 		"associationKeyIndex",
 		"associationValueIndex",
 		"classSharedPoolsIndex",

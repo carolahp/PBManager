@@ -1,7 +1,6 @@
 *PBManager-LanguageDefinition
 addError: aString 
 	| errors errorsTag |
-	self propertyNamed: #languageErrors put: nil.
 	errorsTag := self parent class errorsTag.
 	errors := self propertyNamed: errorsTag.
 	errors ifNil: [ 
