@@ -21,4 +21,5 @@ runTests
 	smallIntDef cleanErrors.
 	(smallIntDef layout isImmediateLayout) ifFalse: [ smallIntDef addError: 'SmallInteger is not an Immediate' ].
 	(smallIntDef allInstVarNames isEmpty) ifFalse: [ smallIntDef addError: 'SmallInteger has instance variables' ].
-	self classVarInheritsFromAssociation
+	self classVarInheritsFromAssociation.
+	self systemDictionaryInheritsFromDictionary
