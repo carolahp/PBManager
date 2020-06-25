@@ -31,5 +31,6 @@ classRoles
 		#ClassVariable -> #Association.
 		#ClassInstaller -> #ClassBuilder.
 		#Smalltalk -> #SmalltalkImage.
+		#SystemDictionary -> #SystemDictionary.
 		#System -> #System
 		} asDictionary

@@ -10,8 +10,10 @@ createInitialObjects
 	classLoader initializeClassPools.
 	
 	rsDictionary := self bootstrapInterpreter
-		evaluateCode: 'aClassNamesCollection asDictionary'
-		withTemps: { 
+		evaluateCode: 'dictionaryClass withAll: aClassNamesCollection'
+		withTemps: {
+			'dictionaryClass' ->
+			(self classWithRole: #SystemDictionary) mirror . 
 			'aClassNamesCollection' -> 
 			(self objectSpace newArrayWithAll: 
 				(self bootstrapEnvironment associations collect: [ :assoc | 
