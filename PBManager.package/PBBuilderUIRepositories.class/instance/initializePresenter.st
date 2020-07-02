@@ -37,5 +37,5 @@ initializePresenter
 
 	buttonOpenFolderContainingRepos whenActionPerformedDo: [ 
 		:event |
-		self pbBuilder runBashScript: 'open' arguments: { self pbBuilder locationOfRepositories pathString }.
+		 self pbBuilder locationOfRepositories pathString asFileReference openInOSFileBrowser
 	 ]
