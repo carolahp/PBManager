@@ -1,3 +1,3 @@
-accessing-map
+accessing-mapping
 classPoolIndex
 	^ classPoolIndex

@@ -1,3 +1,3 @@
-mapping
+accessing-mapping
 associationValueIndex
 	^ associationValueIndex
