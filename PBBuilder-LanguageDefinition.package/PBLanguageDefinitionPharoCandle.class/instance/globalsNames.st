@@ -1,3 +1,3 @@
 class roles
 globalsNames
-	^ #(SmalltalkImage)
+	^ #(Processor Undeclared Smalltalk)
