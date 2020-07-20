@@ -5,7 +5,7 @@ writeImageNamed: aString
 	fileReference := (self locationOfBootstrappedImages / baseName) asFileReference.
 	fileReference exists ifTrue: [ 
 		self error: 'Can''t write the file! (this should never happen)'  ].
-	self pbRepository pbBootstrapper builder writeImageIn: fileReference . 
+	self pbRepository pbBootstrapper writeImageIn: fileReference . 
 	
 	aDictionary := { 
 		#name -> aString . 
