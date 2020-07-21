@@ -1,4 +1,5 @@
 cleaning
 clean
-
-	self cleanWithMetaclassNamed: #PCMetaclass
+	
+	self cleanWithMetaclassNamed: #PCMetaclass.
+	self initializeUninstallables.
