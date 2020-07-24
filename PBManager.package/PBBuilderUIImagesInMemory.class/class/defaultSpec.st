@@ -12,7 +12,8 @@ defaultSpec
 								newRow: [:row1 | 
 									row1 
 										"add: #buttonViewCode width: self buttonWidth;"
-										add: #buttonInspectImage 
+										add: #buttonInspectImage;
+										add: #buttonRunImageTests
 								] height: self toolbarHeight;
 								add: #listGeneratedImages height: self toolbarHeight * 2;
 								newRow: [ :row1 |

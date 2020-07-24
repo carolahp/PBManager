@@ -24,7 +24,8 @@
 		"listCodeVariables",
 		"labelCodeVariables",
 		"buttonInspectCodeVariable",
-		"buttonInspectImage"
+		"buttonInspectImage",
+		"buttonRunImageTests"
 	],
 	"name" : "PBBuilderUIImagesInMemory",
 	"type" : "normal"

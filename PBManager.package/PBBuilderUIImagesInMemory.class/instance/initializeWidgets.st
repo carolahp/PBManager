@@ -9,6 +9,10 @@ initializeWidgets
 	buttonInspectImage label: 'Inspect'.
 	buttonInspectImage icon: (Smalltalk iconNamed: #glamorousInspect).
 	
+	buttonRunImageTests := self newButton.
+	buttonRunImageTests label: 'Test'.
+	buttonRunImageTests icon: (Smalltalk iconNamed: #testNotRun).
+	
 	listGeneratedImages := self newMultiColumnList.
 	listGeneratedImages displayBlock: [ :img | self wrapImageInMemoryItem: img].
 	listGeneratedImages sortingBlock: [ :a :b | a generationTime > b generationTime ].

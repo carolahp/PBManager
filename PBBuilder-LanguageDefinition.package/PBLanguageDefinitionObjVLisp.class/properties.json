@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "PBLanguageDefinitionPharoCandle",
+	"category" : "PBBuilder-LanguageDefinition-Core",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "PBLanguageDefinitionObjVLisp",
+	"type" : "normal"
+}
