@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "",
+	"super" : "Object",
+	"category" : "PBBuilder-LanguageDefinition-ObjVLisp",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"classRoles"
+	],
+	"name" : "OLLanguageDefinition",
+	"type" : "normal"
+}

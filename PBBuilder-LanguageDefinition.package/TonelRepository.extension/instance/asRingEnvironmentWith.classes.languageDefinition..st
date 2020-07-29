@@ -8,25 +8,5 @@ asRingEnvironmentWith: packageNames classes: classesNames languageDefinition: aC
 		 ifNotNil: [packageNames].
 	
 	aRG2Environment := aClass new.
-	aRG2Environment announcer suspendAllWhile: [ 
-		(packages) do: [ :pn | 
-			| snap defs package version |
-			package := aRG2Environment ensurePackageNamed: pn asSymbol.
-			version := self versionWithInfo: (self versionInfoFromVersionNamed: pn).
-			snap := version snapshot.
-			
-			defs := classesNames 
-				ifNil: [ snap definitions ]
-				ifNotNil: [ snap definitions select: [:def | classesNames includes: def className ] ].
-			defs do: [ :each |	
-					
-					(each asRingDefinitionIn: aRG2Environment) ensureRingDefinitionIn: aRG2Environment package: package ]
-			displayingProgress: 'snap'.] 
-		 displayingProgress: 'version'.
-		].		
-			
-	aRG2Environment clean .
-	
-	aRG2Environment behaviorsDo: [ :beh |
-		beh superclass == beh ifTrue: [ beh superclass: nil. ] ].			
-	^ aRG2Environment fixProtoObjectClassSuperclass; yourself 
+	aRG2Environment loadTonelRepository: self packagesNames: packages classesNames: classesNames.
+	^ aRG2Environment 
