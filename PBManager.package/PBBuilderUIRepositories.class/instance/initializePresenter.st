@@ -36,6 +36,10 @@ initializePresenter
 	].
 
 	buttonOpenFolderContainingRepos whenActionPerformedDo: [ 
-		:event |
-		 self pbBuilder locationOfRepositories pathString asFileReference openInOSFileBrowser
-	 ]
+		:event | |path|
+		
+		path := [self selectedRepository languageFile absolutePath] 
+						on: Error 
+						do: [self pbBuilder locationOfRepositories pathString].
+		path asFileReference openInOSFileBrowser.
+		 ]
