@@ -1,4 +1,4 @@
-accessing
+instantiation
 default 
 	| tonel langDefinition tonelFileReference |
 	tonelFileReference := './bootstrap/language-definitions/candleOriginal' asFileReference.

@@ -1,0 +1,3 @@
+metamodel
+organizationClass
+	^ PBMOrganization 

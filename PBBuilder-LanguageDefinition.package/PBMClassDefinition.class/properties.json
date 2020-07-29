@@ -1,11 +1,14 @@
 {
 	"commentStamp" : "",
-	"super" : "PBLanguageDefinition",
+	"super" : "RGClassDefinition",
 	"category" : "PBBuilder-LanguageDefinition-Core",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
-	"instvars" : [ ],
-	"name" : "PBLanguageDefinitionObjVLisp",
+	"instvars" : [
+		"type",
+		"mcDef"
+	],
+	"name" : "PBMClassDefinition",
 	"type" : "normal"
 }

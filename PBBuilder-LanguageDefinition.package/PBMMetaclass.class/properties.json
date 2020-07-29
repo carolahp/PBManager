@@ -1,11 +1,11 @@
 {
-	"commentStamp" : "CaroHernandez 3/15/2019 12:08",
-	"super" : "PBLanguageDefinition",
+	"commentStamp" : "",
+	"super" : "RGMetaclass",
 	"category" : "PBBuilder-LanguageDefinition-Core",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [ ],
-	"name" : "PBLanguageDefinitionPharoCandle",
+	"name" : "PBMMetaclass",
 	"type" : "normal"
 }

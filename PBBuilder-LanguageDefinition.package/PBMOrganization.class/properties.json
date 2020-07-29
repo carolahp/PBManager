@@ -1,11 +1,13 @@
 {
 	"commentStamp" : "",
-	"super" : "PBLanguageDefinition",
+	"super" : "RGOrganization",
 	"category" : "PBBuilder-LanguageDefinition-Core",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
-	"instvars" : [ ],
-	"name" : "PBLanguageDefinitionObjVLisp",
+	"instvars" : [
+		"mcDef"
+	],
+	"name" : "PBMOrganization",
 	"type" : "normal"
 }

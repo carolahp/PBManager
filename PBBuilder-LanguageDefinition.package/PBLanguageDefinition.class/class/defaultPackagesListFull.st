@@ -1,3 +1,3 @@
 accessing
 defaultPackagesListFull
-	self subclassResponsibility 
+	^ nil

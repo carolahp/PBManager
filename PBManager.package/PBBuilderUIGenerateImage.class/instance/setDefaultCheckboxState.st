@@ -4,4 +4,4 @@ setDefaultCheckboxState
 	checkboxInstallClasses state: true.
 	checkboxInstallMethods state: true.
 	checkboxInstallProcess state: true.
-	checkboxGenericBootstrapper state: false
+	checkboxGenericBootstrapper state: true

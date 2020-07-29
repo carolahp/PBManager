@@ -18,8 +18,9 @@ asRingEnvironmentWith: packageNames classes: classesNames languageDefinition: aC
 			defs := classesNames 
 				ifNil: [ snap definitions ]
 				ifNotNil: [ snap definitions select: [:def | classesNames includes: def className ] ].
-			defs do: [ :each |		
-				each ensureRingDefinitionIn: aRG2Environment package: package ]
+			defs do: [ :each |	
+					
+					(each asRingDefinitionIn: aRG2Environment) ensureRingDefinitionIn: aRG2Environment package: package ]
 			displayingProgress: 'snap'.] 
 		 displayingProgress: 'version'.
 		].		

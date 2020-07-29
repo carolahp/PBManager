@@ -1,11 +1,11 @@
 {
-	"commentStamp" : "CaroHernandez 3/15/2019 12:08",
-	"super" : "PBLanguageDefinition",
+	"commentStamp" : "",
+	"super" : "RGPackage",
 	"category" : "PBBuilder-LanguageDefinition-Core",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [ ],
-	"name" : "PBLanguageDefinitionPharoCandle",
+	"name" : "PBMPackage",
 	"type" : "normal"
 }
