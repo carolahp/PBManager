@@ -1,0 +1,3 @@
+hooks
+hookSetSpecialObjectsArray: anEP2RemoteArray 
+	self subclassResponsibility 

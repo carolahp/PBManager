@@ -1,0 +1,3 @@
+hooks
+hookCreateInitialObjects
+	self subclassResponsibility 

@@ -1,0 +1,3 @@
+objectsInitializations
+hookMainProcess
+	^self subclassResponsibility 
