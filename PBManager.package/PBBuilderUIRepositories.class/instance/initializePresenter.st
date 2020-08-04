@@ -1,5 +1,15 @@
 initialization
 initializePresenter 
+	buttonNewRepo whenActionPerformedDo:  
+	[ :event | | languageDefinitionClass languageName | 
+		"ask for metamodel class of the new language (subclass of EPMClass)"
+		languageDefinitionClass := Smalltalk classNamed: textNewRepoMetaclass text.
+		languageName := textNewRepoName text.
+		self pbBuilder pbRepository: (PBRepository fromMetamodelClass: languageDefinitionClass named: languageName inDirectory: self pbBuilder locationOfRepositories ).
+		loadedRepository := self selectedRepository.
+		self refresh
+	].
+	
 	buttonAddRepo whenActionPerformedDo:  
 	[ :event | 
 		| repoFileRef |

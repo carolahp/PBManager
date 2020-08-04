@@ -1,6 +1,25 @@
 initialization
 initializeWidgets 
-
+	buttonNewRepo := self newButton.
+	buttonNewRepo icon: (Smalltalk iconNamed: #smallNew).
+	
+	labelNewRepo := self newLabel.
+	labelNewRepo label: 'New Repository'.
+	
+	labelNewRepoName := self newLabel.
+	labelNewRepoName label: 'name: '.
+	
+	textNewRepoName := self newTextInput.
+	textNewRepoName autoAccept: true.
+	textNewRepoName text: 'ObjVLisp'.
+	
+	labelNewRepoMetaclass := self newLabel.
+	labelNewRepoMetaclass label: 'metaclass: '.
+	
+	textNewRepoMetaclass := self newTextInput.
+	textNewRepoMetaclass autoAccept: true.
+	textNewRepoMetaclass text: 'OLObjVLisp'.
+	
 	buttonAddRepo := self newButton.
 	buttonAddRepo icon: (Smalltalk iconNamed: #add).
 	
@@ -17,7 +36,7 @@ initializeWidgets
 	buttonOpenFolderContainingRepos icon: (Smalltalk iconNamed: #glamorousOpen).
 	
 	labelRepo  := self newLabel.
-	labelRepo label: 'Language Definition Repositories'.
+	labelRepo label: 'Existent Repositories'.
 
 	listRepo := self newList.
 	listRepo displayBlock: [ :item | | prefix suffix |
