@@ -16,7 +16,7 @@ classRoles
 		#Point -> #PCPoint.
 		#Process -> #PCProcess.
 		#Semaphore -> #PCSemaphore.
-		#String -> #PCString.
+		#ByteString -> #PCString.
 		#Symbol -> #PCSymbol.
 		"#ByteSymbol -> #PCSymbol."
 		#True -> #PCTrue.
