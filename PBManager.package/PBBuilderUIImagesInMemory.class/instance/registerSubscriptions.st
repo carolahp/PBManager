@@ -13,4 +13,5 @@ registerSubscriptions
 		self textCodeInput text: evt code.
 		self listCodeVariables items: evt temps
 		 ].
+	self pbBuilder announcer when: PBBuilderRepositoryLoadedAnnouncement send: #reset to: self.
 	
