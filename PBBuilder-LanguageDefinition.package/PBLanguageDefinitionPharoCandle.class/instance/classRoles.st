@@ -15,7 +15,7 @@ classRoles
 		#BlockClosure -> #PCBlock.
 		#Point -> #PCPoint.
 		#Process -> #PCProcess.
-		#Semaphore -> #PCSemaphore.
+		"#Semaphore -> #PCSemaphore."
 		#ByteString -> #PCString.
 		#Symbol -> #PCSymbol.
 		"#ByteSymbol -> #PCSymbol."
@@ -27,7 +27,6 @@ classRoles
 		#LargePositiveInteger -> #PCLargePositiveInteger.
 		#LargeNegativeInteger -> #PCLargeNegativeInteger.
 		#Dictionary -> #PCDictionary.
-		#ClassInstaller -> #PCClassBuilder.
 		#Message -> #PCMessage.
 		#Smalltalk -> #PCSmalltalk. "optional"
 		"#SystemDictionary -> #PCDictionary"

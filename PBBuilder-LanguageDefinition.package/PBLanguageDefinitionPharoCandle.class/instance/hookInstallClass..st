@@ -1,4 +1,4 @@
-objectsInitializations
+hooks
 hookInstallClass: aClassDefinition
 	
 	| aClass type code |

@@ -1,4 +1,4 @@
-objectsInitializations
+hooks
 hookMainProcess
 	
 	^ self newInstruction 
