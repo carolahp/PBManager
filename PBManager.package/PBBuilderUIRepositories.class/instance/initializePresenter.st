@@ -42,7 +42,7 @@ initializePresenter
 
 	buttonRefresh whenActionPerformedDo: [ :event |
 		self loadDefaultRepositories.
-		self pbBuilder pbRepository ifNotNil: [ :rep | rep ringEnvironment pbBootstrapper builder ifNotNil: [ :bldr | bldr unload ] ]  .
+		self pbBuilder pbRepository ifNotNil: [ :rep | rep unload ]  .
 		self pbBuilder pbRepository: nil	
 	].
 

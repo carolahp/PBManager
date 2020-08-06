@@ -1,0 +1,3 @@
+hooks
+hookInitalizeGlobals
+	self subclassResponsibility 
