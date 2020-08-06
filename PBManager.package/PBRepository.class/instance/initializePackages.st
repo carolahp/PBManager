@@ -19,7 +19,7 @@ initializePackages
 	"initialize my ring environment for the selected full packages"
 	classesList := (self ringEnvironment packages asArray
 		select: [ :pkg | thePackages keys includes: pkg name asSymbol ])
-		gather: #definedBehaviors.
+		gather: #allDefinedBehaviors.
 	"initialize my classes dictionary"
 	classKeys := classesList collect: #name.
 	classValues := classesList
