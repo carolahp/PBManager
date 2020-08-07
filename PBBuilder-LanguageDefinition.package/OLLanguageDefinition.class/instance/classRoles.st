@@ -29,6 +29,6 @@ classRoles
 		#Dictionary -> #PCDictionary.
 		#ClassInstaller -> #PCClassBuilder.
 		#Message -> #PCMessage.
-		#Smalltalk -> #PCSmalltalk. "optional"
+		#SmalltalkImage -> #PCSmalltalk. "optional"
 		"#SystemDictionary -> #PCDictionary"
 		} asDictionary ] 

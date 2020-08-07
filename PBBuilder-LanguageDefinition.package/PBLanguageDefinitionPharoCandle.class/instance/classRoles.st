@@ -28,6 +28,6 @@ classRoles
 		#LargeNegativeInteger -> #PCLargeNegativeInteger.
 		#Dictionary -> #PCDictionary.
 		#Message -> #PCMessage.
-		#Smalltalk -> #PCSmalltalk. "optional"
+		#SmalltalkImage -> #PCSmalltalk. "optional"
 		"#SystemDictionary -> #PCDictionary"
 		} asDictionary ] 
