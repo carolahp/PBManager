@@ -21,5 +21,6 @@ hookInstallClass: aClassDefinition
 			'type' -> type.
 			'instanceVariablesString' -> ('#(', (' ' join: aClass instVarNames), ')').
 			'classVariablesString' -> aClass behaviorStrategy classPool keys printString } asDictionary.	
-	^ self newInstruction 
-		code: code
+	
+	^ (self newInstruction 
+		code: code) evaluate
