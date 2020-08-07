@@ -24,8 +24,9 @@ initializeWidgets
 	checkboxInstallProcess := self newCheckBox. 
 	checkboxInstallProcess label: 'app entry point'.
 	
-	checkboxGenericBootstrapper := self newCheckBox. 
-	checkboxGenericBootstrapper label: 'Generic bootstrapper'.
+	buttonInstallClasses := self newButton.
+	buttonInstallMethods := self newButton.
+	buttonInstallProcess := self newButton.
 	
 	self setDefaultCheckboxState.
 	self update
