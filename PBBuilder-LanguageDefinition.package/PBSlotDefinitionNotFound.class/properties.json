@@ -6,6 +6,6 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [ ],
-	"name" : "PBClassDefinitionNotFound",
+	"name" : "PBSlotDefinitionNotFound",
 	"type" : "normal"
 }

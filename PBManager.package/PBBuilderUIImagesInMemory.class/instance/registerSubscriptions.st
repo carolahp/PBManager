@@ -4,8 +4,8 @@ registerSubscriptions
 		self addGeneratedImageToList.
 		self setEnabledStatusOfButtons: true.
 		" Remove code and variables from evaluator window "
-		self textCodeInput text: ''.
-		self listCodeVariables items: #()
+		self listCodeVariables items: #().
+		self listAccessedObjects items: #()
 	].
 	
 	self pbBuilder announcer when: PBSimulatedEvaluationDone send: #updateAccessedObjectsList to: self.
