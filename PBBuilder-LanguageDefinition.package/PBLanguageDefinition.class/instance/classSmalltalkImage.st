@@ -1,4 +1,4 @@
 accessing-specialClasses
-classSmalltalk
+classSmalltalkImage
 	
 	^ self classWithRole: #SmalltalkImage

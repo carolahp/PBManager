@@ -1,0 +1,3 @@
+accessing-constants
+locationOfNewRepositories
+	^ self class defaultLocationOfNewRepositories

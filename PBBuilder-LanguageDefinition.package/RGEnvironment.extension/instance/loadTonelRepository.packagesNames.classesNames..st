@@ -1,4 +1,4 @@
-accessing-specialClasses
+*PBBuilder-LanguageDefinition
 loadTonelRepository: aTonelRepository packagesNames: packagesNames classesNames: classesNames
 		
 	self announcer suspendAllWhile: [ 
