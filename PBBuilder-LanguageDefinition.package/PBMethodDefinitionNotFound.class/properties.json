@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "KeyNotFound",
+	"category" : "PBBuilder-LanguageDefinition-Exceptions",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "PBMethodDefinitionNotFound",
+	"type" : "normal"
+}
