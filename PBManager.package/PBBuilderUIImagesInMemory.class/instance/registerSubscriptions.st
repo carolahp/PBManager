@@ -1,6 +1,7 @@
 announcements-subscriptions
 registerSubscriptions
 	self pbBuilder announcer when: PBImageGeneratedAnnouncement, PBVMStubsCreatedAnnouncement do: [ :evt |
+		
 		self addGeneratedImageToList.
 		self setEnabledStatusOfButtons: true.
 		" Remove code and variables from evaluator window "

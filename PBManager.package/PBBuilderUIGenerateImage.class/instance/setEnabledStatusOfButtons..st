@@ -1,10 +1,9 @@
 updating
 setEnabledStatusOfButtons: aBoolean
-	self buttonGenerateImage enabled: aBoolean.
-	self checkboxInstallClasses enabled: aBoolean.
-	self checkboxInstallMethods enabled: aBoolean.
-	self checkboxInstallProcess enabled: aBoolean.
-	self buttonInstallProcess enabled: aBoolean.
-	self buttonInstallProcess enabled: aBoolean.
-	self buttonInstallProcess enabled: aBoolean.
-	
+	{self buttonGenerateImage.
+	self checkboxInstallClasses.
+	self checkboxInstallMethods.
+	self checkboxInstallProcess.
+	self buttonInstallProcess.
+	self buttonInstallProcess.
+	self buttonInstallProcess} do: [ :widget | widget enabled: aBoolean ]

@@ -1,5 +1,5 @@
 hooks
-hookMainProcess
+hookEntryPoint
 	
 	^ self newInstruction 
 		code: 'PCSystem start'

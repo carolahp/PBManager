@@ -18,6 +18,7 @@ initializePresenter
 	buttonInstallClasses
 		whenActionPerformedDo: [ :event | 
 			| builder |
+			self halt.
 			builder := self pbBuilder.
 			self initializeBuilder.
 			builder initializeImage.

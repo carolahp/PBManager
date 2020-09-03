@@ -1,3 +1,3 @@
 objectsInitializations
-hookMainProcess
+hookEntryPoint
 	^self subclassResponsibility 

@@ -2,7 +2,7 @@ as yet unclassified
 ensureClassNamed: aSymbol
 
 	self assert: (aSymbol endsWith: ' classTrait') not.
-	
+	self halt.
 	"(aSymbol endsWith: ' class') ifTrue: [ | uniqueInstName |
 		uniqueInstName := aSymbol copyFrom:1 to: aSymbol size - ' class' size.
 		^ self ask behaviorNamedExactlyAs: uniqueInstName ifAbsent: [ self ensureClassNamed: uniqueInstName ]

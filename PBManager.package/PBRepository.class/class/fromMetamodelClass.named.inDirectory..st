@@ -1,6 +1,6 @@
 instance creation
 fromMetamodelClass: aClass named: aString inDirectory: aDirectoryReference 
-	| aPBRepository path |
+	| path |
 	"instantiate aClass and create a repository containing it"
 	
 	path := (aDirectoryReference / aString) ensureCreateDirectory.
@@ -11,10 +11,7 @@ fromMetamodelClass: aClass named: aString inDirectory: aDirectoryReference
 	
 	path deleteAllChildren."
 	
-	aPBRepository := self new 
-		languageDefinitionClass: aClass;
-		languageName: aString;
+	^ (self fromMetamodelClass: aClass named: aString)
 		tonelPath: path;
 		ensureLangDefinitionFile;
-		yourself.
-	^ aPBRepository 
+		yourself

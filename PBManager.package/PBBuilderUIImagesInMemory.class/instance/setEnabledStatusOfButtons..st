@@ -9,4 +9,5 @@ setEnabledStatusOfButtons: aBoolean
 	self textExternalCodeInput .
 	self buttonGenerateImageMinimal .
 	self buttonInspectImage.
-	self buttonRunImageTests } do: [ :widget | widget enabled: aBoolean ] .
+	self buttonRunImageTests.
+	self buttonInspectCodeVariable } do: [ :widget | widget enabled: aBoolean ] .

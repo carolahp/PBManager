@@ -1,4 +1,4 @@
 updating
 setEnabledStatusOfButtons: aBoolean
-	self buttonDeleteImage enabled: aBoolean.
-	self buttonInspectImage enabled: aBoolean
+	{self buttonDeleteImage.
+	self buttonInspectImage} do: [ :widget | widget enabled: aBoolean ]
