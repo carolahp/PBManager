@@ -1,7 +1,7 @@
 objectsInitializations
 initializeNotinstallables 
 
-	(self classNamed: #PCObject) metaclass 
+	(self classWithRole: #ProtoObject) metaclass 
 		localMethodsDo: [ :method |
 			((#(new new:) indexOf: method selector) > 0)
 			 	ifTrue: [ method markAsNotInstallable ] ].

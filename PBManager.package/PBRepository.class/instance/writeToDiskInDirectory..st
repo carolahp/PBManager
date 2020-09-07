@@ -3,7 +3,7 @@ writeToDiskInDirectory: aFileReference
 	| dictionary jsonString langFileReference |
 	" Writing model in Tonel format "
 	aFileReference ensureCreateDirectory.
-	self ringEnvironment writeIntoTonel: aFileReference.
+	self ringEnvironment exportAsTonelRepository: aFileReference.
 	
 	" Writing .lang file "
 	langFileReference := aFileReference / self class langFileName, self class langFileExtension.

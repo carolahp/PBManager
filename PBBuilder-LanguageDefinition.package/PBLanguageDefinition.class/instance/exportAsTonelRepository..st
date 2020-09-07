@@ -1,5 +1,5 @@
 exporting
-writeIntoTonel: aFileReference
+exportAsTonelRepository: aFileReference
 
 	(self ask packages select: [:pkg | pkg isRingResolved and: pkg isEmpty not]) do: [ :aPackage |
 		| aSnapshot info aVersion |
