@@ -6,7 +6,7 @@ installStub
 	"this is the class with role metaclass installed in the kernel"
 	remoteMetaclassClass := self parent classMetaclass remote 
 		ifNil: [
-			self parent classMetaclass installMetaclassStub
+			self parent classMetaclass installMetacircularStub
 		].
 	newMetaclass := remoteMetaclassClass basicNew asRemoteMetaclass.
 	newMetaclass format: self classSide format.
