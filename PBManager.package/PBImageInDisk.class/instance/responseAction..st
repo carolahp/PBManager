@@ -4,7 +4,7 @@ responseAction: aResponseString
 	response := aResponseString , Character cr asString, 'Process finished'.
 	self inform: response.
 	outputFile := File
-		openForReadFileNamed: (self imageFileReference absolutePath , 'txt') pathString.
+		openForReadFileNamed: (self imageFileReference absolutePath , 'txt') asFileReference ensureCreateFile pathString.
 	Transcript
 		crShow: '';
 		crShow:
