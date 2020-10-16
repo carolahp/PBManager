@@ -1,5 +1,5 @@
 hooks
-hookEntryPoint
+entryPointCode
 	
 	^ self newInstruction 
 		code: 'PCSystem start'

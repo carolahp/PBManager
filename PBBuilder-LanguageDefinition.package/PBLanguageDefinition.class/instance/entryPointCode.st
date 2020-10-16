@@ -1,3 +1,3 @@
 objectsInitializations
-hookEntryPoint
+entryPointCode
 	^self subclassResponsibility 
