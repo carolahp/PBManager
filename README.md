@@ -3,7 +3,7 @@ Pharo Bootstrap manager with UI
 
 ## Quick Start
 
-First load the Pharo Bootstrap as a prerequisite. This baseline installs also Espell and the VM Maker lir
+First load the Pharo Bootstrap as a prerequisite. This baseline installs also Espell and the VM Maker libs
 
 ```Smalltalk
 [ Metacello new 
