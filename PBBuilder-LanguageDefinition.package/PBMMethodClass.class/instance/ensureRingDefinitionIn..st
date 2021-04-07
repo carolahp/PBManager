@@ -1,6 +1,6 @@
 metamodel;
 ensureRingDefinitionIn: anRGEnvironment 
-	
+	self halt: 'old metamodel?'.
 	^ anRGEnvironment backend definitionFor: mcDef ifAbsentRegister: [
 		| def classDef metaclassDef myParent protocol |
 		classDef := anRGEnvironment ensureClassNamed: mcDef className asSymbol.
