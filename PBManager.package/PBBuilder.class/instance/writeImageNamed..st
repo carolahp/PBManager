@@ -3,7 +3,7 @@ writeImageNamed: aString
 	| imageFileReference aDictionary pbImage |
 	imageFileReference := (self locationOfBootstrappedImages pathString, '/', aString, '.', PBImageInDisk imageExtension) asFileReference.
 	imageFileReference exists ifTrue: [ 
-		^ nil ].
+		"^ nil" ].
 	self pbRepository pbBootstrapper builder writeImageIn: imageFileReference . 
 	
 	aDictionary := { 

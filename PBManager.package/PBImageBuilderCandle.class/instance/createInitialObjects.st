@@ -36,7 +36,7 @@ createInitialObjects
 	espellBackend systemDictionary: (smalltalk instanceVariableAtIndex: 1).
 	
 	
-	self bootstrapInterpreter evaluateCode: 'theString initialize.' withTemps: { 'theString' -> (self classWithRole: #ByteString) mirror }.
+"	self bootstrapInterpreter evaluateCode: 'theString initialize.' withTemps: { 'theString' -> (self classWithRole: #ByteString) mirror }."
 	self bootstrapInterpreter evaluateCode: 'theFloat initialize.' withTemps: { 'theFloat' -> (self classWithRole: #Float) mirror }.
 	
 	self checkpoint: 'created_initial_objects'.

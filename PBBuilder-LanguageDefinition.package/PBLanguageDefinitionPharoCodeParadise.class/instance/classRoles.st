@@ -18,7 +18,7 @@ classRoles
 		#Point -> #Point.
 		#Process -> #Process.
 		#Semaphore -> #Semaphore.
-		#ByteString -> #String.
+		#ByteString -> #ByteString.
 		#ByteSymbol -> #Symbol.
 		#True -> #True.
 		#False -> #False.
