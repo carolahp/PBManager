@@ -26,7 +26,7 @@ baseline: spec
 			package: 'PBBuilder-LanguageDefinition';
 			package: 'PBManager' 
 				with: [ spec requires: #('PBBuilder-LanguageDefinition' 
-					'DebuggableASTInterpreter' 'Tonel' 'SpurReader' 'OSSubprocess' 'PBHybridDebugger' 'PharoBootstrapGeneric' ) ];
+					'DebuggableASTInterpreter' 'Tonel' 'SpurReader' 'OSSubprocess' 'PBHybridDebugger') ];
 			package: 'PBBuilder-LanguageVisualization'
 				with: [ spec requires: #('PBBuilder-LanguageDefinition' 'Roassal2') ].
 		"Groups"
