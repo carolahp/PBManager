@@ -8,7 +8,7 @@ baseline: spec
 			with: [spec 	repository: 'github://pharo-vcs/tonel:v1.0.13' ].
  
 		spec baseline: 'DebuggableASTInterpreter'
-			with: [spec repository: 'github://carolahp/DebuggableASTInterpreter:markAccessedObjects' ].
+			with: [spec repository: 'github://carolahp/DebuggableASTInterpreter:compatibility-espell2' ].
 		
 		spec baseline: 'SpurReader'
 			with: [ spec repository: 'github://carolahp/PharoImageInspector'  ].
