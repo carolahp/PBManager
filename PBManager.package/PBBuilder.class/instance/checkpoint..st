@@ -1,3 +1,4 @@
 announce
 checkpoint: aString 
-	self announcer announce: (PBSubStepFinishedSignal new message: '> ', aString)
+	"self announcer announce: (PBStepFinished new message: '> ', aString)"
+	Transcript show: aString
