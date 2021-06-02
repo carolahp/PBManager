@@ -1,0 +1,3 @@
+scripting
+commandClass 
+	^ PBBuilder commandClass

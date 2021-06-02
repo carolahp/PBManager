@@ -6,7 +6,7 @@ runBashScript
 	self 
 			runBashScript: scriptCommand
 			arguments: scriptArguments
-			workingDirectory: self defaultVMDirectory pathString 
+			workingDirectory: self ensureVMDirectory pathString 
 			withTimeout: timeout
 			onTimeoutDo: [ :cmd |  self inform: 'Process did not finish before ', timeout asString ]
 			onExitDo: [ :cmd :stdOut :stdErr | | response | 

@@ -18,6 +18,5 @@ initialize
 						#timestamp -> self timestamp } asDictionary 
 					onStream: fs] ]
 	
-	
 		
 	

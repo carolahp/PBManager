@@ -1,3 +1,4 @@
 scripting
 defaultVMDirectory
-	^ imageFileReference parent parent / 'vm'
+	
+	^ (imageFileReference parent parent / 'vm') asFileReference
