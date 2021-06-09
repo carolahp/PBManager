@@ -14,6 +14,7 @@ initialize
 						#name -> self name. 
 						#bootstrapper -> self bootstrapper. 
 						#scriptCommand -> self scriptCommand. 
+						#metamodel -> self metamodel asString.
 						#scriptArguments -> self scriptArguments.
 						#timestamp -> self timestamp } asDictionary 
 					onStream: fs] ]

@@ -10,6 +10,7 @@ writeImageNamed: aString
 	aDictionary := { 
 		#name -> aString . 
 		#bootstrapper -> self pbRepository pbBootstrapper class asString. 
+		#metamodel -> self pbRepository ringEnvironment class asString.
 		#scriptCommand -> './pharo'.
 		#scriptArguments -> { fileReference pathString }. 
 		#timestamp -> DateAndTime now asString } asDictionary.
