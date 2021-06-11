@@ -1,13 +1,14 @@
 {
 	"commentStamp" : "",
-	"super" : "Object",
+	"super" : "PBInstruction",
 	"category" : "PBBuilder-LanguageDefinition-Hooks",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"languageDefinition"
+		"code",
+		"temps"
 	],
-	"name" : "PBInstruction",
+	"name" : "PBReflectiveInstruction",
 	"type" : "normal"
 }

@@ -1,3 +1,3 @@
 hooks
-hookInitalizeGlobals
+createRemoteSystemDictionary
 	self subclassResponsibility 

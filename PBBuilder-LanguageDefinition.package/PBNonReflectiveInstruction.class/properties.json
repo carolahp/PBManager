@@ -6,9 +6,8 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"code",
-		"temps"
+		"block"
 	],
-	"name" : "PBInstructionGenericRemote",
+	"name" : "PBNonReflectiveInstruction",
 	"type" : "normal"
 }

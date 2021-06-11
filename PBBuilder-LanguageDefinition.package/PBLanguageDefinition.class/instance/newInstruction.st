@@ -1,6 +1,6 @@
 instructions-instantiation
 newInstruction
-	^ PBInstructionGenericRemote new 
+	^ PBReflectiveInstruction new 
 		languageDefinition: self;
 		imageBuilder: self imageBuilder;
 		yourself
