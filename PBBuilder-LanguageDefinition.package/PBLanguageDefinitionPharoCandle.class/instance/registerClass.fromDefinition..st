@@ -1,5 +1,5 @@
 hooks
-hookRegisterClass: remoteClass fromDefinition: aRGBehavior 
+registerClass: remoteClass fromDefinition: aRGBehavior 
 	self classLoader
 		registerClass: remoteClass asRemoteClass
 		definition: aRGBehavior

@@ -1,5 +1,5 @@
 hooks
-hookInstallClass: aClassDefinition
+installClass: aClassDefinition
 	
 	| aClass type code |
 	"aClassDefinition is a class in the language definition"

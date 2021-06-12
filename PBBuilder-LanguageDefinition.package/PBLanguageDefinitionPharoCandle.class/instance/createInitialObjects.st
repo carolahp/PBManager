@@ -1,4 +1,4 @@
 hooks
-hookCreateInitialObjects
+createInitialObjects
 	^ self newInstruction
 		code: 'PCString initialize'

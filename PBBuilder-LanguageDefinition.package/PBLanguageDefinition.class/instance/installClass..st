@@ -1,3 +1,3 @@
 instructions-instantiation
-hookInstallClass: aClassDefinition
+installClass: aClassDefinition
 	self subclassResponsibility 

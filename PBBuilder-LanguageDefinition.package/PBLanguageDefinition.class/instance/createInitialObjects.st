@@ -1,3 +1,3 @@
 hooks
-hookInstallMethods
+createInitialObjects
 	self subclassResponsibility 

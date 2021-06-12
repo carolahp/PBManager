@@ -1,3 +1,3 @@
 hooks
-hookInstallMethods
+installMethods
 	self allClasses do: [ :classDef | classDef installMethods ]
