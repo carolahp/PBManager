@@ -32,10 +32,6 @@ initializeIndexes
 	processNextLinkIndex := self lookup: #nextLink in: pcProcess.
 	"processNameIndex := self lookup: #name in: #Process."
 	
-	" SmalltalkImage "
-	pcSmalltalk := environment classSmalltalkImage name.
-	smalltalkImageGlobalsIndex := self lookup: #globals in: pcSmalltalk.
-	
 	" ProcessorScheduler "
 	pcProcessorScheduler := environment classProcessorScheduler name.
 	processSchedulerActiveProcessIndex := self lookup: #activeProcess in: pcProcessorScheduler.
@@ -50,6 +46,3 @@ initializeIndexes
 	associationKeyIndex := self lookup: #key in: pcAssociation.
 	associationValueIndex := self lookup: #value in: pcAssociation.
 	
-	" Class Variable "
-	pcClassVariable := environment classClassVariable name.
-	classVariableKeyIndex := self lookup: #key in: pcClassVariable
