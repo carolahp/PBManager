@@ -1,3 +1,7 @@
 evaluating
 debug
-	^ (PBHybridDebugger withCode: self code temps: self temps interpreter: self imageBuilder debuggerInterpreter interpreter) openWithSpec
+	^ (PBHybridDebugger
+		withCode: self code
+		temps: self temps
+		interpreter: self imageBuilder debuggerInterpreter interpreter)
+		openWithSpec
