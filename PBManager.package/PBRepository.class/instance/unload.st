@@ -1,3 +1,0 @@
-unloading
-unload
-	^ self destroy
