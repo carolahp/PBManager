@@ -1,7 +1,9 @@
 initialization
 destroy 
-	announcer subscriptions reset.
-	announcer := nil.
+	announcer ifNotNil: [ 
+		announcer subscriptions reset.
+		announcer := nil.
+	 ].
 	pbRepository := nil.
 	pbBuilderUI := nil
 		
