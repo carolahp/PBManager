@@ -10,7 +10,7 @@ baseline: spec
 			spec
 				baseline: 'DebuggableASTInterpreter'
 				with: [ spec
-						repository: 'github://carolahp/DebuggableASTInterpreter:compatibility-espell2';
+						repository: 'github://carolahp/DebuggableASTInterpreter:metal';
 						loads: 'Bootstrap' ].
 			spec
 				baseline: 'SpurReader'
