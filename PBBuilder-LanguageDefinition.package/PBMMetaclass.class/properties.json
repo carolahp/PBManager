@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "RGMetaclass",
+	"category" : "PBBuilder-LanguageDefinition-Core",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "PBMMetaclass",
+	"type" : "normal"
+}

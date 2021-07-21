@@ -1,8 +1,10 @@
 {
 	"commentStamp" : "",
 	"super" : "TestCase",
-	"category" : "PBBuilder-LanguageDefinition",
-	"classinstvars" : [ ],
+	"category" : "PBBuilder-LanguageDefinition-Tests",
+	"classinstvars" : [
+		"language"
+	],
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [

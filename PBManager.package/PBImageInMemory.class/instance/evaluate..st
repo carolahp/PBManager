@@ -1,3 +1,3 @@
 code execution
 evaluate: aString 
-	^ self newInterpreter evaluateAST: (self evaluator parse: aString)
+	^ self evaluate: aString temps: #()

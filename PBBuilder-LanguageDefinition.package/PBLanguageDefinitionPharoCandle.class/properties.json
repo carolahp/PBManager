@@ -1,7 +1,7 @@
 {
 	"commentStamp" : "CaroHernandez 3/15/2019 12:08",
 	"super" : "PBLanguageDefinition",
-	"category" : "PBBuilder-LanguageDefinition",
+	"category" : "PBBuilder-LanguageDefinition-Core",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],

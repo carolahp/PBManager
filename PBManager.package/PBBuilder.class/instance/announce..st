@@ -1,0 +1,3 @@
+announcements
+announce: aPBReflectiveEvaluationAnnouncement
+	self announcer announce: aPBReflectiveEvaluationAnnouncement

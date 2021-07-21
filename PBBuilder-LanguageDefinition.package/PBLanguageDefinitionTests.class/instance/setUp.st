@@ -1,3 +1,3 @@
 running
 setUp 
-	language := PBLanguageDefinitionPharoCandle default.
+	language := self class languageDefinition

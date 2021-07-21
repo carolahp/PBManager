@@ -1,4 +1,0 @@
-announcements-subscriptions
-enableImageNameTextAndWriteButton
-	self textImageName text: self pbRepository imageFileName.
-	self buttonWriteGenImage enable

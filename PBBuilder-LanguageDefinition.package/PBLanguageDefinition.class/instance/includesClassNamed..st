@@ -1,4 +1,4 @@
-accessing
+testing
 includesClassNamed: aName
 
 	^ (self includesVariableNamed: aName)

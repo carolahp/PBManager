@@ -9,6 +9,9 @@ initializeWidgets
 	textInputImageName := self newTextInput.
 	textInputImageName autoAccept: true.
 	
+	textLog := self newTextInput.
+	textLog autoAccept: true.
+	
 	labelTitle := self newLabel.
 	labelTitle label: 'Generate Image in Memory installing:'.
 	
@@ -20,6 +23,10 @@ initializeWidgets
 	
 	checkboxInstallProcess := self newCheckBox. 
 	checkboxInstallProcess label: 'app entry point'.
+	
+	buttonInstallClasses := self newButton.
+	buttonInstallMethods := self newButton.
+	buttonInstallProcess := self newButton.
 	
 	self setDefaultCheckboxState.
 	self update

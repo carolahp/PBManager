@@ -11,19 +11,34 @@ defaultSpec
 							col 
 								newRow: [:row1 | 
 									row1 
-										add: #buttonViewCode width: self buttonWidth;
+										"add: #buttonViewCode width: self buttonWidth;"
+										add: #buttonInspectImage;
+										add: #buttonRunImageTests
+								] height: self toolbarHeight;
+								add: #listGeneratedImages height: self toolbarHeight * 2;
+								newRow: [ :row1 |
+									row1
 										add: #textInputImageName;
-										add: #buttonWriteGenImage width: self buttonWidth * 1.5  ] height: self toolbarHeight;
-								add: #listGeneratedImages ];
+										add: #buttonWriteGenImage 
+											width: self buttonWidth * 1.5  ] height: self toolbarHeight ];
 								
 						newColumn: [ :col | 
 							col 
 								newRow: [ :row1 |
 									row1
 										add: #buttonDebugInImage;
-						  				add: #buttonEvaluateInImage								  
+						  				add: #buttonEvaluateInImage							  
 								] height: self toolbarHeight;
-								add: #textCodeInput
+								add: #textCodeInput ;
+								newRow: [ :row1 |
+									row1 
+										add: #labelCodeVariables;
+										add: #buttonInspectCodeVariable width: self buttonWidth ] height: self toolbarHeight;
+								add: #listCodeVariables								
+								"newRow: [ :row1 |
+									row1 
+										add: #textCodeInput ;
+										add: #listCodeVariables ]"
 							];"
 						newColumn: [ :col | 
 							col 

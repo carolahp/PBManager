@@ -1,4 +1,4 @@
 accessing
 globalVariables
 
-	^ #()
+	^  self globalsNames

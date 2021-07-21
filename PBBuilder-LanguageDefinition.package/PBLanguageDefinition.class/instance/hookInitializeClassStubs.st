@@ -1,0 +1,3 @@
+hooks
+hookInitializeClassStubs
+	self subclassResponsibility 

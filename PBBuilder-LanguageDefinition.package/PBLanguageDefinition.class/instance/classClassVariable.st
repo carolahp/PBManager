@@ -1,4 +1,5 @@
-accessing
+accessing-specialClasses
 classClassVariable
 	
-	^ self classWithRole: #ClassVariable
+	^ [ self classWithRole: #ClassVariable ] on: PBClassDefinitionNotFound 
+			do: [ self classWithRole: #Association ]

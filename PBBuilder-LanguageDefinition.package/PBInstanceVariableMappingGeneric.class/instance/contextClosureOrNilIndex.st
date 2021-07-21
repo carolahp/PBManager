@@ -1,0 +1,3 @@
+accessing-mapping
+contextClosureOrNilIndex
+	^ contextClosureOrNilIndex

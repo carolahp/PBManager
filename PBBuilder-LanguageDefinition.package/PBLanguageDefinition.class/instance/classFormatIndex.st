@@ -1,0 +1,3 @@
+accessing-instVars-mapping
+classFormatIndex
+	^ self instanceVariableMapping classFormatIndex

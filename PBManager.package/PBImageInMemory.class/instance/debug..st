@@ -1,5 +1,3 @@
 code execution
 debug: aString 
-	(PBHybridDebugger 
-				withCode: aString
-				interpreter: self newInterpreter) openWithSpec
+	self debug: aString temps: #()

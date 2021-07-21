@@ -1,0 +1,20 @@
+{
+	"commentStamp" : "",
+	"super" : "ComposablePresenter",
+	"category" : "PBManager-UI",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"labelTitle",
+		"labelClassesNum",
+		"listPackages",
+		"listClasses",
+		"buttonEditCode",
+		"buttonVisualize",
+		"pbBuilder",
+		"labelPackagesNum"
+	],
+	"name" : "PBBuilderUILanguageDefinition",
+	"type" : "normal"
+}

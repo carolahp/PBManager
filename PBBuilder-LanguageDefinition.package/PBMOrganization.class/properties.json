@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "",
+	"super" : "RGOrganization",
+	"category" : "PBBuilder-LanguageDefinition-Core",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"mcDef"
+	],
+	"name" : "PBMOrganization",
+	"type" : "normal"
+}

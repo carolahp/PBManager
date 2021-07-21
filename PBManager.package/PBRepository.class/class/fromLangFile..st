@@ -2,6 +2,7 @@ instance creation
 fromLangFile: aFileReference
 	| aLangDefClass aPBRepository aPath langDefClassName |
 	"read language definition from the file .lang, instantiate a PBLanguageDefinition"
+	
 	aPBRepository := STONJSON fromString: aFileReference readStream upToEnd.
 	
 	langDefClassName := aPBRepository languageDefinitionClass.

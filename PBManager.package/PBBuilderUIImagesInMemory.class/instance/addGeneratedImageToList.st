@@ -1,6 +1,7 @@
 updating
 addGeneratedImageToList
 	| newImage pbRepo |
+	
 	pbRepo := self pbBuilder pbRepository.
 	newImage := PBImageInMemory 
 					withImageBuilder: pbRepo pbBootstrapper builder
@@ -14,5 +15,4 @@ addGeneratedImageToList
 				
 	self textInputImageName text: self pbBuilder pbRepository imageFileName. 
 	
-	self listGeneratedImages setSelectedIndex: 0.
 	self update

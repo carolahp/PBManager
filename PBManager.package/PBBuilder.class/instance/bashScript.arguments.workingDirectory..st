@@ -1,7 +1,7 @@
 script-execution
 bashScript: aCommand arguments: aCollection workingDirectory: aPathString
 	
-	^ OSSUnixSubprocess new
+	^ self newCommand
 			command: aCommand;
 			arguments: aCollection;
 			workingDirectory: aPathString;

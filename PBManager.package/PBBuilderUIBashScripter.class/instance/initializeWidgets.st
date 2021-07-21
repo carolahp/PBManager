@@ -8,4 +8,6 @@ initializeWidgets
 	
 	textBashInput := self newTextInput.
 	textBashInput autoAccept: true.
-	textBashInput text: self defaultCommand
+	textBashInput text: self defaultCommand.
+	
+	textBashOutput := self newText

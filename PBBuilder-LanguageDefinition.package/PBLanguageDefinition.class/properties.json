@@ -1,7 +1,7 @@
 {
 	"commentStamp" : "",
 	"super" : "RGEnvironment",
-	"category" : "PBBuilder-LanguageDefinition",
+	"category" : "PBBuilder-LanguageDefinition-Core",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
@@ -10,7 +10,11 @@
 		"behaviorDefinitionMap",
 		"tonelFileReference",
 		"pbRepository",
-		"pbBootstrapper"
+		"pbBootstrapper",
+		"instanceVariableMapping",
+		"vmRequirements",
+		"metaclassesNames",
+		"classRoles"
 	],
 	"name" : "PBLanguageDefinition",
 	"type" : "normal"

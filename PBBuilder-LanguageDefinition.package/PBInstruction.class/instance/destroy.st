@@ -1,0 +1,3 @@
+destroy
+destroy
+	languageDefinition := nil

@@ -1,3 +1,3 @@
 accessing
 languageDefinitionClass
-	^ languageDefinitionClass
+	^ languageDefinitionClass ifNil: [ self ringEnvironment class ]

@@ -1,0 +1,3 @@
+hooks
+hookCreateMetaclassStubWithClassLoader: aPBClassLoaderGeneric 
+	self subclassResponsibility 

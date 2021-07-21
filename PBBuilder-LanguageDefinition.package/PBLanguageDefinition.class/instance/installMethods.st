@@ -1,0 +1,3 @@
+hooks
+installMethods
+	self subclassResponsibility 

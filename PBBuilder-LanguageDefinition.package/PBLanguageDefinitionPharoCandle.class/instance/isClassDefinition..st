@@ -1,0 +1,3 @@
+testing
+isClassDefinition: someCode
+	^ false

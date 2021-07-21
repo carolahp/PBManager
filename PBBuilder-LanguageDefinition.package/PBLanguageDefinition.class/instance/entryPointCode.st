@@ -1,0 +1,3 @@
+objectsInitializations
+entryPointCode
+	^self subclassResponsibility 

@@ -1,0 +1,3 @@
+hooks
+createRemoteSystemDictionary
+	^ self newDummyInstruction

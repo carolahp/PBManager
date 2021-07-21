@@ -1,0 +1,3 @@
+hooks
+hookSetSystemDictionary: anEP2SystemDictionary 
+	self subclassResponsibility 

@@ -12,7 +12,11 @@
 		"checkboxInstallClasses",
 		"checkboxInstallMethods",
 		"checkboxInstallProcess",
-		"pbBuilder"
+		"pbBuilder",
+		"textLog",
+		"buttonInstallClasses",
+		"buttonInstallMethods",
+		"buttonInstallProcess"
 	],
 	"name" : "PBBuilderUIGenerateImage",
 	"type" : "normal"

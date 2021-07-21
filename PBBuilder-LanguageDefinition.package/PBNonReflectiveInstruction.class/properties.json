@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "",
+	"super" : "PBInstruction",
+	"category" : "PBBuilder-LanguageDefinition-Hooks",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"block"
+	],
+	"name" : "PBNonReflectiveInstruction",
+	"type" : "normal"
+}

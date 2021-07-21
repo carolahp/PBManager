@@ -1,0 +1,3 @@
+destroy
+destroy
+	environment := nil

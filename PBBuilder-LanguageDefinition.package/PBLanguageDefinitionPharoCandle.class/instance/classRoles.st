@@ -1,24 +1,24 @@
-as yet unclassified
+accessing
 classRoles
-	^{
+	^ classRoles ifNil: [ classRoles := {
 		#ProtoObject -> #PCObject.
 		#ProcessorScheduler -> #PCProcessorScheduler.
 		#Context -> #PCMethodContext.
 		#Class -> #PCClass.
 		#Metaclass -> #PCMetaclass.
 		#Array -> #PCArray.
-		#MethodDictionary -> #PCMethodDictionary. 
+		#MethodDictionary -> #PCMethodDictionary . 
 		#CompiledMethod -> #PCCompiledMethod.
 		#Character -> #PCCharacter. 
 		#ByteArray -> #PCByteArray.
 		#Association -> #PCAssociation.
 		#BlockClosure -> #PCBlock.
-		#MethodContext -> #PCMethodContext.
 		#Point -> #PCPoint.
 		#Process -> #PCProcess.
-		#Semaphore -> #PCSemaphore.
+		"#Semaphore -> #PCSemaphore."
 		#ByteString -> #PCString.
-		#ByteSymbol -> #PCSymbol.
+		#Symbol -> #PCSymbol.
+		"#ByteSymbol -> #PCSymbol."
 		#True -> #PCTrue.
 		#False -> #PCFalse.
 		#UndefinedObject -> #PCUndefinedObject.
@@ -27,9 +27,7 @@ classRoles
 		#LargePositiveInteger -> #PCLargePositiveInteger.
 		#LargeNegativeInteger -> #PCLargeNegativeInteger.
 		#Dictionary -> #PCDictionary.
-		#ClassVariable -> #PCAssociation.
-		#ClassInstaller -> #PCClassBuilder.
 		#Message -> #PCMessage.
-		#Block -> #PCBlock.
-		#Smalltalk -> #PCSmalltalk
-		} asDictionary
+		#SmalltalkImage -> #PCSmalltalk. "optional"
+		"#SystemDictionary -> #PCDictionary"
+		} asDictionary ] 

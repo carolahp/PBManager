@@ -1,0 +1,4 @@
+toggling
+markRepositoryAsModified
+	self pbRepository markAsModified.
+	self pbBuilder announceRepositoryLoaded 

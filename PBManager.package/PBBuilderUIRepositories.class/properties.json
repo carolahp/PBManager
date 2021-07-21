@@ -14,7 +14,13 @@
 		"pbBuilder",
 		"buttonOpenFolderContainingRepos",
 		"loadedRepository",
-		"buttonRefresh"
+		"buttonRefresh",
+		"labelNewRepo",
+		"buttonNewRepo",
+		"textNewRepoName",
+		"textNewRepoMetaclass",
+		"labelNewRepoName",
+		"labelNewRepoMetaclass"
 	],
 	"name" : "PBBuilderUIRepositories",
 	"type" : "normal"

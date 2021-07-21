@@ -5,11 +5,12 @@ writeImageNamed: aString
 	fileReference := (self locationOfBootstrappedImages / baseName) asFileReference.
 	fileReference exists ifTrue: [ 
 		self error: 'Can''t write the file! (this should never happen)'  ].
-	self pbRepository pbBootstrapper builder writeImageIn: fileReference . 
+	self pbRepository pbBootstrapper writeImageIn: fileReference . 
 	
 	aDictionary := { 
 		#name -> aString . 
 		#bootstrapper -> self pbRepository pbBootstrapper class asString. 
+		#metamodel -> self pbRepository ringEnvironment class asString.
 		#scriptCommand -> './pharo'.
 		#scriptArguments -> { fileReference pathString }. 
 		#timestamp -> DateAndTime now asString } asDictionary.

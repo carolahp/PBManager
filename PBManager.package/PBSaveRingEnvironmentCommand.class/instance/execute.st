@@ -3,5 +3,5 @@ execute
 		
 	"Writing system package in file"
 	tonelFileReference ensureCreateDirectory .
-	languageDefinition writeIntoTonel: tonelFileReference .
+	languageDefinition exportAsTonelRepository: tonelFileReference .
 	self inform: 'Exported to: ', tonelFileReference fullName 

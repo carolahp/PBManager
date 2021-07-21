@@ -13,7 +13,9 @@
 		"script",
 		"scriptCommand",
 		"scriptArguments",
-		"timestamp"
+		"timestamp",
+		"spurImage",
+		"metamodel"
 	],
 	"name" : "PBImageInDisk",
 	"type" : "normal"

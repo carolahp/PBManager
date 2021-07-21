@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "RGBehavior",
+	"category" : "PBBuilder-LanguageDefinition-Hooks",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "PBBehavior",
+	"type" : "normal"
+}

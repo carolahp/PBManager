@@ -1,0 +1,3 @@
+hooks
+hookInitializeProcessScheduler
+	self subclassResponsibility 

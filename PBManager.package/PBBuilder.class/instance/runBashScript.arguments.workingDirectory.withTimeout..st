@@ -1,9 +1,5 @@
 script-execution
 runBashScript: aCommand arguments: aCollection workingDirectory: aPathString withTimeout: aDuration 
 	
-	^ (self bashScript: aCommand arguments: aCollection workingDirectory: aPathString)
-			runAndWaitWithTimeout: aDuration
-				onTimeoutDo: [ 
-					'Timeout!' inspect
-					]
-				onExitDo: [ :process :outString  |	] 
+	^ self runBashScript: aCommand arguments: aCollection workingDirectory: aPathString withTimeout: aDuration onTimeoutDo: [ :cmd | self error: 'error: timeout on bash script execution' ] onExitDo: [  ]
+	

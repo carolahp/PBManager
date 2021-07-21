@@ -20,7 +20,12 @@
 		"textExternalResponse",
 		"labelAccessedObjects",
 		"listAccessedObjects",
-		"buttonGenerateImageMinimal"
+		"buttonGenerateImageMinimal",
+		"listCodeVariables",
+		"labelCodeVariables",
+		"buttonInspectCodeVariable",
+		"buttonInspectImage",
+		"buttonRunImageTests"
 	],
 	"name" : "PBBuilderUIImagesInMemory",
 	"type" : "normal"

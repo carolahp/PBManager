@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "",
+	"super" : "RGMethod",
+	"category" : "PBBuilder-LanguageDefinition-Core",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"mcDef"
+	],
+	"name" : "PBMMethodClass",
+	"type" : "normal"
+}

@@ -9,6 +9,7 @@
 		"labelTitle",
 		"buttonRun",
 		"textBashInput",
+		"textBashOutput",
 		"pbBuilder",
 		"command",
 		"arguments"

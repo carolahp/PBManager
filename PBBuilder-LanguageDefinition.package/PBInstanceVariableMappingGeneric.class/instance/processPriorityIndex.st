@@ -1,0 +1,3 @@
+instance variables mapping
+processPriorityIndex
+	^ processPriorityIndex

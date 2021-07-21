@@ -1,0 +1,15 @@
+{
+	"commentStamp" : "",
+	"super" : "PBInstruction",
+	"category" : "PBBuilder-LanguageDefinition-Hooks",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"className",
+		"instVarName",
+		"localObject"
+	],
+	"name" : "PBInstructionInstVarAssignment",
+	"type" : "normal"
+}

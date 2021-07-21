@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "RGPackage",
+	"category" : "PBBuilder-LanguageDefinition-Core",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "PBMPackage",
+	"type" : "normal"
+}
