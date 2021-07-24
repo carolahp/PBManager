@@ -17,7 +17,8 @@ initialize
 						#metamodel -> self metamodel asString.
 						#scriptArguments -> self scriptArguments.
 						#timestamp -> self timestamp } asDictionary 
-					onStream: fs] ]
+					onStream: fs] ].
+			executionTimestamps := #() asOrderedCollection 
 	
 		
 	
