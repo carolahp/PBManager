@@ -11,5 +11,5 @@ runBashScript
 			onTimeoutDo: [ :cmd |  self inform: 'Process did not finish before ', timeout asString ]
 			onExitDo: [ :cmd :stdOut :stdErr | | response | 
 				response := stdOut contents.
-				self responseAction: response.
-				^ response ]
+				^ self responseAction: response.
+				 ]

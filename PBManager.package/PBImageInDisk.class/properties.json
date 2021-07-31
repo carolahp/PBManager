@@ -16,7 +16,8 @@
 		"timestamp",
 		"spurImage",
 		"metamodel",
-		"executionTimestamps"
+		"executionTimestamps",
+		"output"
 	],
 	"name" : "PBImageInDisk",
 	"type" : "normal"
