@@ -13,7 +13,7 @@ initializeIndexes
 	listOfClassSlots := self allSlotsOf: pcClass.
 	classPoolIndex := self lookup: #classVariables in: pcClass.
 	classSharedPoolsIndex := self lookup: #sharedPools in: #Class.
-	metaclassThisClassIndex := self lookup: #soleInstance in: environment classMetaclass name.
+	"metaclassThisClassIndex := self lookup: #soleInstance in: environment classMetaclass name."
 	
 	" Context "
 	pcContext := environment classContext name.	
