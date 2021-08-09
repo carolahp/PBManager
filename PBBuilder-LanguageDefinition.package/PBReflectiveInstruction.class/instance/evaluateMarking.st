@@ -1,5 +1,7 @@
 evaluating
 evaluateMarking
-	^ self imageBuilder debuggerInterpreter
+	| interpreterWithMarking |
+	interpreterWithMarking := DASTEvaluatorWithMarking newFrom: self imageBuilder debuggerInterpreter.
+	^ interpreterWithMarking
 		evaluateCode: self code
 		withTemps: self temps
