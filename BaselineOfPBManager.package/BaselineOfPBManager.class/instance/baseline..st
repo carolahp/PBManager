@@ -10,11 +10,11 @@ baseline: spec
 			spec
 				baseline: 'DebuggableASTInterpreter'
 				with: [ spec
-						repository: 'github://carolahp/DebuggableASTInterpreter:metal';
+						repository: 'github://carolahp/DebuggableASTInterpreter:v2.0.0';
 						loads: 'Bootstrap' ].
 			spec
 				baseline: 'SpurReader'
-				with: [ spec repository: 'github://carolahp/PharoImageInspector' ].
+				with: [ spec repository: 'github://carolahp/PharoImageInspector:v1.0.0' ].
 			spec
 				baseline: 'OSSubprocess'
 				with: [ spec
@@ -24,7 +24,7 @@ baseline: spec
 				with: [ spec repository: 'github://ObjectProfile/Roassal2/src' ].
 			spec
 				baseline: 'PBHybridDebugger'
-				with: [ spec repository: 'github://carolahp/PBHybridDebugger' ].
+				with: [ spec repository: 'github://carolahp/PBHybridDebugger:v1.0.0' ].
 			"Packages"
 			spec
 				package: 'PBBuilder-LanguageDefinition';
