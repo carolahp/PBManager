@@ -6,7 +6,7 @@ baseline: spec
 		do: [ "Dependencies"
 			spec
 				baseline: 'Tonel'
-				with: [ spec repository: 'github://pharo-vcs/tonel:v1.0.13' ].
+				with: [ spec repository: 'github://pharo-vcs/tonel:v1.0.17' ].
 			spec
 				baseline: 'DebuggableASTInterpreter'
 				with: [ spec
@@ -18,7 +18,7 @@ baseline: spec
 			spec
 				baseline: 'OSSubprocess'
 				with: [ spec
-						repository: 'github://pharo-contributions/OSSubprocess:v1.1.1/repository' ].
+						repository: 'github://pharo-contributions/OSSubprocess:v1.2.2/repository' ].
 			spec
 				baseline: 'Roassal2'
 				with: [ spec repository: 'github://ObjectProfile/Roassal2/src' ].
