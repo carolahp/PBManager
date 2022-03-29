@@ -18,7 +18,7 @@ baseline: spec
 			spec
 				baseline: 'OSSubprocess'
 				with: [ spec
-						repository: 'github://pharo-contributions/OSSubprocess:v1.2.2/repository' ].
+						repository: 'github://pharo-contributions/OSSubprocess:v1.3.0/repository' ].
 			spec
 				baseline: 'Roassal2'
 				with: [ spec repository: 'github://ObjectProfile/Roassal2/src' ].
